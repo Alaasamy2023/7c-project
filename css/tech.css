@@ -1,0 +1,323 @@
+@charset "utf-8";
+
+.tech_lcd_wrap *,
+.tech_wrap * { color:#111;}
+.detail_wrap .detail_list,
+.tech_m0auto { width:1200px; margin: 0 auto;}
+.tech_wrap .intro.noline {border-top:0;}
+.tech_wrap .intro { padding: 120px 0 0; border-top:1px solid #dcdcdc; text-align: center; font-size: 21px; line-height: 36px; letter-spacing: -0.25px;}
+.tech_wrap .intro h3 { font-size: 60px; font-weight: 300;}
+.tech_wrap .intro h3 b{ font-weight:900; font-family: arial;}
+.tech_wrap .intro h3 b:after { content: ""; display: inline-block; width: 33px; height: 20px; background: #F5C242; margin: 0 6px;}
+/* 220425 수정 */
+.tech_wrap .intro h3 + strong { display:block; font-size: 40px; margin:30px 0 10px;}
+.tech_wrap .intro h3 img {vertical-align:baseline;}
+/* //220425 수정 */
+.tech_wrap .intro p { padding: 50px 0 70px;}
+.img_zoom { overflow: hidden;}
+.img_zoom.wide{margin-top:0;}
+.img_zoom * { opacity: 0; -webkit-animation: img_zoom 1 1.4s .5s both; animation: img_zoom 1 1.4s .5s both;}
+@-webkit-keyframes img_zoom {
+	0% { opacity: 0; -webkit-transform: scale(3); transform: scale(3);}
+	50% { opacity: 1; -webkit-transform: scale(1.5); transform: scale(1.5);}
+	100% { opacity: 1; -webkit-transform: scale(1); transform: scale(1);}
+}
+@keyframes img_zoom {
+	0% { opacity: 0; -webkit-transform: scale(3); transform: scale(3);}
+	50% { opacity: 1; -webkit-transform: scale(1.5); transform: scale(1.5);}
+	100% { opacity: 1; -webkit-transform: scale(1); transform: scale(1);}
+}
+.tech_wrap .ace { padding: 120px 0 95px;}
+.tech_wrap .ace h3 { text-align: center; position: relative; font-size: 60px; line-height: 30px; margin: 0 0 75px;}
+.tech_wrap .ace h3:after { content: ""; position:absolute; left: 0; width: 100%; height: 1px; background: #111; top: 50%;}
+.tech_wrap .ace h3 span { position: relative; z-index: 2; background:#fff; padding: 0 44px;}
+.tech_wrap .ace ul { display: table; width: 100%;}
+.tech_wrap .ace ul li { display: table-cell; position: relative; width: 33.333%; padding: 200px 20px 0 20px; text-align: center; font-size: 18px; line-height: 30px; background: no-repeat center top; word-wrap: keep-all;}
+.tech_wrap .ace ul strong{ display: block; padding: 0 0 23px; font-size: 36px; line-height: 1;}
+.tech_wrap .ace ul strong::first-letter {  color:#F5C242;}
+.tech_wrap .ace ul li.ico1 { background-image: url(../images/tech/ico_ace1.png);}
+.tech_wrap .ace ul li.ico2 { background-image: url(../images/tech/ico_ace2.png);}
+.tech_wrap .ace ul li.ico3 { background-image: url(../images/tech/ico_ace3.png);}
+.tech_wrap .ace ul li ~ li:after { content: ""; position: absolute; left: 0; top: 50%; width: 1px; height: 393px; background: #eaeaea; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);}
+
+.detail_wrap .bg { padding: 120px 0;}
+.detail_wrap .bg:nth-last-of-type(odd) { background:#f8f8f8; }
+.detail_wrap .bg:nth-last-of-type(odd) .detail_list > div:nth-child(odd) .thoumb,
+.detail_wrap .bg:nth-last-of-type(odd) .detail_list > div:nth-child(even)  .info,
+.detail_wrap .bg:nth-last-of-type(even) .detail_list > div:nth-child(odd)  .info,
+.detail_wrap .bg:nth-last-of-type(even) .detail_list > div:nth-child(even) .thoumb { float: left;}
+.detail_wrap .bg:nth-last-of-type(even) .detail_list > div:nth-child(odd) .thoumb,
+.detail_wrap .bg:nth-last-of-type(odd) .detail_list > div:nth-child(odd) .info,
+.detail_wrap .bg:nth-last-of-type(even) .detail_list > div:nth-child(even) .info,
+.detail_wrap .bg:nth-last-of-type(odd) .detail_list > div:nth-child(even) .thoumb { float: right;}
+/* 220425 수정 */
+.detail_wrap .bg .detail_list.right > div:nth-child(odd) .thoumb,
+.detail_wrap .bg .detail_list.right > div:nth-child(even) .info,
+.intro + .detail_wrap .detail_list > div:nth-child(odd) .info,
+.intro + .detail_wrap .detail_list > div:nth-child(even) .thoumb { float:right;}
+.detail_wrap .bg .detail_list.right > div:nth-child(even) .thoumb,
+.detail_wrap .bg .detail_list.right > div:nth-child(odd) .info,
+.intro + .detail_wrap .detail_list > div:nth-child(odd) .thoumb,
+.intro + .detail_wrap .detail_list > div:nth-child(even) .info { float:left;}
+
+.detail_wrap .bg:nth-last-of-type(odd) .detail_list > div:nth-child(even),
+.detail_wrap .bg:nth-last-of-type(even) .detail_list > div:nth-child(odd),
+.intro + .detail_wrap .detail_list > div:nth-child(even) { text-align: right;}
+
+.intro + .detail_wrap {margin-bottom:60px;padding-top:120px;}
+.intro + .detail_wrap .detail_list > div+div {margin-top:120px;}
+.intro + .detail_wrap .detail_list .info p {padding:0; margin-top:30px;}
+/* //220425 수정 */
+
+.detail_wrap .detail_list > div:after { content: ""; display: block; clear: both;}
+.detail_wrap .detail_list > div .info { width: 500px;}
+.detail_wrap .detail_list > div .info h3 { font-size: 48px; line-height: 1; padding: 0 0 32px;}
+.detail_wrap .detail_list > div .info h3:before { content: ""; display: inline-block; margin: 0 20px 0 0;width: 20px; height: 12px; background: #F5C242; vertical-align: text-top;}
+.detail_wrap .detail_list > div .info strong { font-size: 32px; line-height: 44px;word-break:keep-all;}
+.detail_wrap .detail_list > div .info strong.type2{display:block;margin-right:-50px;}
+.detail_wrap .detail_list > div .info p { padding: 15px 0 33px; font-size: 18px; line-height: 30px;}
+.detail_wrap .detail_list > div .info p.ml-1{margin-left:-20px;}
+.detail_wrap .detail_list > div .thoumb { font-size: 15px; color:#555;}
+.detail_wrap .detail_list > div .thoumb img { width: 100%; max-width: 620px; padding: 0 0 15px;}
+.detail_wrap .detail_list > div ~ div { margin-top: 100px;}
+
+.detail_wrap .bg:nth-last-of-type(odd) { position: relative;}
+.detail_wrap .bg:nth-last-of-type(odd):before,
+.detail_wrap .bg:nth-last-of-type(odd):after { content: ""; position: absolute; top: 0; bottom: 0; width: 200%; z-index: -1; background: #f8f8f8;}
+.detail_wrap .bg:nth-last-of-type(odd):before { left:-150%;}
+.detail_wrap .bg:nth-last-of-type(odd):after { right:-150%; }
+
+/* lcd */
+.tech_lcd_wrap .tech_m0auto { padding: 120px 0 250px;} /* 210705 수정 */
+.tech_lcd_wrap > .tech_m0auto:first-of-type.noline { border-top:0;}
+.tech_lcd_wrap > .tech_m0auto:first-of-type { border-top:1px solid #dcdcdc; padding-top: 50px;}
+.tech_lcd_wrap h3 { font-size: 45px; padding: 0 0 100px;}
+.tech_lcd_wrap h3:before { content: ""; display: inline-block; margin: 0 17px 0 0; width: 26px; height: 7px; vertical-align: 11px; background: #c01c3f;}
+.tech_lcd_wrap .tech_tit { display: block; padding: 0 0 40px; font-size: 60px; text-align:center; line-height: 1; font-weight: normal;}
+.tech_lcd_wrap .tech_txt { padding: 0 0 70px; font-size: 22px; text-align:center; line-height: 36px; letter-spacing: -1px;}
+.tech_lcd_wrap .tech_txt2 { text-align: center; font-size: 18px;}
+.tech_lcd_wrap .ani_big_img { margin: 0 0 100px;}
+.tech_lcd_wrap h4 { font-size: 36px; text-align: center; font-weight: bold; padding: 0 0 35px; font-weight: 500}
+.tech_lcd_wrap .ips_info { width: 585px; margin: 15px auto 0;}
+.tech_lcd_wrap .ips_info:after { content: ""; display: block; clear: both;}
+.tech_lcd_wrap .ips_info > div { width: 210px;}
+.tech_lcd_wrap .ips_info > div p { line-height: 30px; font-size: 16px; color:#fff; text-align: center;}
+.tech_lcd_wrap .ips_info .ips1 { float:left;}
+.tech_lcd_wrap .ips_info .ips2 { float:right;}
+.tech_lcd_wrap .ips_info .ips1 p { background: #555;}
+.tech_lcd_wrap .ips_info .ips2 p { background: #aa033e;}
+.tech_lcd_wrap .ips_full { position: relative; background: #f8f8f8;}
+.tech_lcd_wrap .ips_full:before,
+.tech_lcd_wrap .ips_full:after { content: ""; position: absolute; top: 0; bottom: 0; width: 200%; z-index: -1; background: #f8f8f8;}
+.tech_lcd_wrap .ips_full:before { left:-150%;}
+.tech_lcd_wrap .ips_full:after { right:-150%; }
+.tech_lcd_wrap .ips_full h4 { padding: 45px 0 20px; text-align: left;}
+.tech_lcd_wrap .ips_full ul { display: table; width: 100%; height: 405px; border: 1px solid #eaeaea; border-collapse: collapse; background: #fff;}
+.tech_lcd_wrap .ips_full ul li { display: table-cell; position: relative; padding: 260px 50px 0; border: 1px solid #eaeaea; width: 33.333%;}
+.tech_lcd_wrap .ips_full ul li img { position: absolute; left: 50%; top: 30px; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%);}
+.tech_lcd_wrap .ips_full ul li strong { display: block; font-size: 24px; line-height: 1;}
+.tech_lcd_wrap .ips_full ul li p { padding: 15px 0 0; font-size:18px; line-height: 28px; letter-spacing: -1px;}
+.tech_lcd_wrap .oxide_list { border-top:1px solid #eaeaea; margin: 77px 0 124px;}
+.tech_lcd_wrap .oxide_list.type2 li p{padding-left:20px;}
+.tech_lcd_wrap .oxide_list li { display: table; width: 100%; border-bottom:1px solid #eaeaea;word-break:keep-all;}
+.tech_lcd_wrap .oxide_list li > * {  display: table-cell; vertical-align: middle; min-height: 127px; padding: 30px 40px; box-sizing: border-box;}
+.tech_lcd_wrap .oxide_list li strong { width: 320px; font-size: 32px;}
+.tech_lcd_wrap .oxide_list li p { font-size: 18px; line-height: 30px;}
+.tech_lcd_wrap .cell_img { padding: 45px 0 75px; text-align: center;}
+.tech_lcd_wrap .slim_img { padding: 50px 0 20px;}
+.tech_lcd_wrap .mini_info:after { content: ""; display: block; clear: both;}
+.tech_lcd_wrap .mini_info > div { width: 581px;}
+.tech_lcd_wrap .mini_info h4 { width: calc(100% - 30px); position: relative; text-align: left; line-height: 60px; color:#fff; padding: 0 0 0 18px; font-size: 24px;}
+.tech_lcd_wrap .mini_info h4:after { content: ""; position: absolute; right:-21px; top: 9px; width:42px; height: 42px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
+.tech_lcd_wrap .mini_info .left h4 { background: #555;}
+.tech_lcd_wrap .mini_info .left h4:after { background: #555;}
+.tech_lcd_wrap .mini_info .left > div { position: relative; height: 848px; border: 1px solid #999; background: url(../images/tech/img_mini1_2.png) no-repeat center 60% / 100% auto; line-height: 1;}
+.tech_lcd_wrap .mini_info .left > div .txt1 { position: absolute; left: 0; right:0; top: 105px; text-align: center; padding: 128px 0 0; font-size: 30px; font-weight: bold; background: url(../images/tech/img_mini1_1.png) no-repeat center top;}
+.tech_lcd_wrap .mini_info .left > div .txt1 em { display: block; padding: 15px 0 0; font-size: 15px; color:#666;}
+.tech_lcd_wrap .mini_info .left > div .txt2 { position: absolute; left: 0; right:0; top: 43%; text-align: center; font-size: 30px; font-weight: bold; color: #aa033e;}
+.tech_lcd_wrap .mini_info .left > div .txt3 { position: absolute; left: 0; right:0; bottom: 170px; text-align: center; padding: 40px 0 0; font-size: 30px; font-weight: bold; background: url(../images/tech/img_mini1_3.png) no-repeat center top;}
+.tech_lcd_wrap .mini_info .left > div .txt3 em { display: block; padding: 15px 0 0; font-size: 15px; color:#666;}
+.tech_lcd_wrap .mini_info .right h4 { background: #060000;}
+.tech_lcd_wrap .mini_info .right h4:after { background: #060000;}
+.tech_lcd_wrap .mini_info .right > div {height: 848px; border: 1px solid #999; padding: 55px 60px 0; text-align: left;}
+.tech_lcd_wrap .mini_info .right > div li { font-size: 24px; line-height: 30px; color:#111;word-break:keep-all;}
+.tech_lcd_wrap .mini_info .right > div strong { display: block; font-size: 30px; color:#bbb;}
+.tech_lcd_wrap .mini_info .right > div img { padding: 25px 0;}
+
+.tech_lcd_wrap .mini_info .left { float: left;}
+.tech_lcd_wrap .mini_info .right { float: right;}
+.tech_lcd_wrap .mini_info p { padding: 30px 0 20px; line-height: 1; font-size: 30px; text-align: left; font-weight: 500;}
+
+
+.tech_lcd_wrap .ani_big_img,.ani_big_img{ overflow: hidden;}
+.tech_lcd_wrap .ani_big_img *,.ani_big_img * { opacity: 0;}
+.tech_lcd_wrap .ani_big_img.ani:not(.img_zoom) *,.ani_big_img.ani:not(.img_zoom) * { -webkit-animation: img_zoom 1 1.4s both; animation: img_zoom 1 1.4s both;}
+
+/* 210702 추가 */
+/* oled */
+#content .wrap.pad_bttom_none {padding-bottom: 0;}
+.oled_banner {position: relative; -webkit-animation: bg_zoom 1 1.4s both; animation: bg_zoom 1 1.4s both;}
+.oled_banner .oled_banner_bg { width:1920px; height: 519px; position: relative; left: -360px; background: url('../images/background/bg_technology_oled.png') no-repeat center center/cover;}
+.oled_banner .oled_banner_inner {position: absolute; width: 100%;top: 0; left: 0; padding-top: 120px;}
+.oled_banner .oled_banner_inner h1 {font-size: 48px; color: #fff; line-height: 1;}
+.oled_banner .oled_banner_inner p {font-size: 30px; line-height: 1.4; color: #fff; margin: 20px 0 35px 0; word-break: keep-all;}
+.oled_banner .oled_banner_inner a {display: inline-block; width: 222px; font-size: 16px; color: #fff; height: 56px; line-height: 56px;  border: 1px solid #FFF;  text-align: center; border-radius: 5px; -webkit-transition: all 0.3s; transition: all 0.3s;}
+.oled_banner .oled_banner_inner a:hover {background: #fff; color: #111; -webkit-transition: all 0.3s; transition: all 0.3s;}
+/* //210702 추가 */
+
+
+@media screen and (max-width: 1400px) { /* 모바일 1199 ~ 1400 */
+	.detail_wrap .detail_list > div .info strong.type2{margin-right:0;}
+	.detail_wrap .detail_list > div .info strong.type2 br.forWeb{display:none;}
+}
+@media screen and (max-width: 1200px) { /* 모바일 375 ~ 1200 */
+
+	.detail_wrap .detail_list,
+	.tech_m0auto { width: 100%; padding: 0 14px;}
+	.tech_wrap .intro { border: none; padding: 50px 0 0; font-size: 15px;}
+	.tech_wrap .intro h3 { font-size: 26px;}
+	.tech_wrap .intro h3 b:after { width: 15px; height: 10px;}
+	/* 220425 수정 */
+	.tech_wrap .intro h3 + strong { margin:3px 0 0; font-size:20px; font-weight:500; }
+	.tech_wrap .intro h3 > img { height:20px; }
+	/* //220425 수정 */
+	.tech_wrap .intro p { font-size:16px; line-height:26px; word-break:keep-all; padding:50px 0;}
+	.tech_wrap .intro p br { display: none; text-align: justify;}
+	.detail_wrap .bg,
+	.tech_wrap .ace {padding:80px 0;}
+	.tech_wrap .ace h3 { font-size: 30px;}
+	.tech_wrap .ace h3 span { padding: 0 20px;}
+	.tech_wrap .ace ul li { display: block; width: 100%; background-size:100px auto; padding: 120px 20px 0 20px; font-size: 16px; line-height: 27px; }
+	.tech_wrap .ace ul li ~ li { margin:80px 0 0;}
+	.tech_wrap .ace ul li ~ li:after { top:-43px;width:100%;height:1px;}
+	.tech_wrap .ace ul strong { font-size: 25px;line-height:35px;}
+	.detail_wrap .bg:nth-last-of-type(odd) .detail_list > div:nth-child(odd) .thoumb,
+	.detail_wrap .bg:nth-last-of-type(odd) .detail_list > div:nth-child(even)  .info,
+	.detail_wrap .bg:nth-last-of-type(even) .detail_list > div:nth-child(odd)  .info,
+	.detail_wrap .bg:nth-last-of-type(even) .detail_list > div:nth-child(even) .thoumb,
+	.detail_wrap .bg:nth-last-of-type(even) .detail_list > div:nth-child(odd) .thoumb,
+	.detail_wrap .bg:nth-last-of-type(odd) .detail_list > div:nth-child(odd) .info,
+	.detail_wrap .bg:nth-last-of-type(even) .detail_list > div:nth-child(even) .info,
+	.detail_wrap .bg:nth-last-of-type(odd) .detail_list > div:nth-child(even) .thoumb,
+		/* 220425 수정 */
+	.detail_wrap .bg .detail_list.right > div:nth-child(odd) .thoumb,
+	.detail_wrap .bg .detail_list.right > div:nth-child(even) .info,
+	.detail_wrap .bg .detail_list.right > div:nth-child(even) .thoumb,
+	.detail_wrap .bg .detail_list.right > div:nth-child(odd) .info,
+	.intro + .detail_wrap .detail_list > div:nth-child(odd) .info,
+	.intro + .detail_wrap .detail_list > div:nth-child(even) .thoumb,
+	.intro + .detail_wrap .detail_list > div:nth-child(odd) .thoumb,
+	.intro + .detail_wrap .detail_list > div:nth-child(even) .info { float:none;}
+	.detail_wrap .detail_list > div ~ div{margin-top:80px;}
+
+	.detail_wrap .bg:nth-last-of-type(odd) .detail_list > div:nth-child(even),
+	.detail_wrap .bg:nth-last-of-type(even) .detail_list > div:nth-child(odd) { text-align: left;}
+	.detail_wrap .detail_list > div .info { width: 100%; text-align: center; word-break:keep-all;}
+	.detail_wrap .detail_list > div .info p br,
+	.detail_wrap .detail_list > div .info p { font-size: 16px; line-height:26px;}
+	.detail_wrap .detail_list > div .info p.ml-1{margin-left:0;}
+	.detail_wrap .detail_list > div .info strong { display: block; text-align: center; font-size: 20px; line-height: 30px; display: inline-block;} /*0806*/
+	.detail_wrap .detail_list > div .info h3 { text-align: center; font-size: 26px;}
+	.detail_wrap .detail_list > div .thoumb { padding: 40px 0 0; text-align: center; font-size: 14px;}
+
+	.intro + .detail_wrap {padding-top:75px;}
+	.intro + .detail_wrap .detail_list > div+div {margin-top:75px;}
+	.intro + .detail_wrap .detail_list .info {padding-top:0;}
+	.detail_wrap .detail_list > div .info strong {margin-bottom:5px;}
+	.intro + .detail_wrap .detail_list .info p {margin-top:20px;}
+	.intro + .detail_wrap .detail_list > div .thoumb img {padding:0;}
+	/* //220425 수정 */
+
+	/* lcd */
+	.tech_lcd_wrap h3 { text-align: left; padding: 0 0 40px; font-size: 22px;}
+	.tech_lcd_wrap h3:before { width: 20px; height: 5px;}
+	.tech_lcd_wrap .ips_full h4 { padding-top:40px;}
+	.tech_lcd_wrap > .tech_m0auto:first-of-type { border: none;}
+	.tech_lcd_wrap .tech_txt br,
+	.tech_lcd_wrap .tech_tit br { display: none;}
+	.tech_lcd_wrap .tech_tit { line-height: normal; font-size: 25px;line-height:35px;}
+	.tech_lcd_wrap .tech_txt { color:#555; font-size: 16px; line-height: 27px; padding: 0 0 50px;}
+	.tech_lcd_wrap .tech_txt span{ color:#555; }
+	.tech_lcd_wrap .ips_info { width: 100%; text-align: center;}
+	.tech_lcd_wrap .ips_info .ips1,
+	.tech_lcd_wrap .ips_info .ips2 { float: none; width: 100%;}
+	.tech_lcd_wrap h4 { font-size: 23px;line-height:33px; padding-bottom:30px; }
+	.tech_lcd_wrap .tech_txt2{ line-height: 26px;font-size: 16px; line-height:26px;}
+	.tech_lcd_wrap .tech_m0auto { padding: 40px 0;}
+	.tech_lcd_wrap .ani_big_img { margin: 0 0 50px;}
+	.tech_lcd_wrap .ips_full ul li { display: block; width: 100%; padding:40px; text-align: center;}
+	.tech_lcd_wrap .ips_full ul li img { position: static; -webkit-transform:none; -ms-transform:none; transform:none; padding: 0 0 15px;}
+	.tech_lcd_wrap .ips_full ul li strong { font-size: 18px;line-height:27px;}
+	.tech_lcd_wrap .ips_full ul li p { font-size: 16px; line-height: 27px;}
+	.tech_lcd_wrap .oxide_list li { padding:25px 15px;}
+	.tech_lcd_wrap .oxide_list li > * { display: block; padding: 0; min-height: 0; font-size: 16px; line-height: 27px;}
+	.tech_lcd_wrap .oxide_list li strong { width: 100%; padding: 0 0 15px; font-size: 22px;line-height:32px;}
+	.tech_lcd_wrap .oxide_list li p,
+	.tech_lcd_wrap .oxide_list.type2 li p{font-size:16px; line-height:26px;padding-left:0;}
+	.tech_lcd_wrap .oxide_list { margin: 50px 0 60px;}
+	.tech_lcd_wrap .mini_info .left,
+	.tech_lcd_wrap .mini_info .right { float:none; width:100%; text-align: center !important;}
+	.tech_lcd_wrap .mini_info h4 { width: 100%; text-align: center; font-size: 20px; line-height: 50px; padding: 0;}
+	.tech_lcd_wrap .mini_info p { text-align: center; font-size:18px;line-height:28px;}
+	.tech_lcd_wrap .mini_info h4:after { display: none;}
+	/* .tech_lcd_wrap .mini_info img { margin: 0 0 40px;} */
+	.tech_lcd_wrap .mini_info .left > div { height: auto; padding: 300px 0;}
+	.tech_lcd_wrap .mini_info .left > div .txt1 { font-size: 20px; padding: 100px 0 0; background-size: 150px auto; top:70px;}
+	.tech_lcd_wrap .mini_info .left > div .txt2 { top: 44%;}
+	.tech_lcd_wrap .mini_info .left > div .txt3 { font-size: 20px; bottom:90px;}
+	.tech_lcd_wrap .mini_info .right { padding: 50px 0 0;}
+	.tech_lcd_wrap .mini_info .right > div { padding: 30px; height: auto;}
+	.tech_lcd_wrap .mini_info .right > div li { font-size: 18px; line-height: 25px;}
+	.img_zoom.wide{margin-top:-1px;}
+	.tech_lcd_wrap .mini_info .right > div strong{line-height:35px;}
+	.tech_lcd_wrap .tech_m0auto { padding: 40px 0 90px 0;} /* 210705 수정 */
+
+	/* 210702 추가 */
+	/* oled */
+	.oled_banner .oled_banner_bg {width:calc(100% + 40px); height:50vh; left:-20px;}
+	.oled_banner .oled_banner_inner {text-align: center;}
+	.oled_banner .oled_banner_inner h1 {font-size: 28px;}
+	.oled_banner .oled_banner_inner p {font-size: 20px; }
+	.oled_banner .oled_banner_inner a {font-size: 16px;}
+	/* //210702 추가 */
+}
+
+/* 210702 추가 */
+@media screen and (max-width: 767px) { /* 모바일 375 ~ 767 */
+	.oled_banner .oled_banner_inner {padding-top: 80px;}
+}
+@media screen and (max-width: 374px) { /* 모바일 375 ~ 767 */
+	.oled_banner .oled_banner_bg {height:55vh;}
+}
+/* //210702 추가 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */

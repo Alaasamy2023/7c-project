@@ -1,0 +1,2603 @@
+.compare-area {
+    position:relative;
+    line-height:0;
+    overflow:visible
+}
+.compare-area .img-default img {
+    width:100%;
+    height:auto
+}
+.compare-area .img-cover {
+    position:absolute;
+    left:0;
+    top:0;
+    width:50%;
+    height:100%;
+    overflow:hidden
+}
+.compare-area .img-cover img {
+    height:100%;
+    width:auto;
+    max-width:none
+}
+.compare-area .handle {
+    position:absolute;
+    left:50%;
+    top:0;
+    width:1px;
+    height:100%;
+    background:#fff
+}
+.compare-area .handle button {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    border:0;
+    border-radius:100%;
+    background:url(../images/common/icon-arrow-compare.html) #fff no-repeat 50% 50%;
+    background-size:100% auto;
+    cursor:e-resize;
+    width:9.3333333333vw;
+    height:9.3333333333vw
+}
+@media(min-width: 751px) {
+    .compare-area .handle button {
+        width:3.5460992908vw;
+        height:3.5460992908vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .compare-area .handle button {
+        width:50px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .compare-area .handle button {
+        height:50px
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .popup .contents-box {
+    padding:8vw 0
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box {
+        padding:8.5106382979vw 17.0212765957vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box {
+        padding:120px 240px
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .popup .contents-box .video-block {
+    padding-bottom:5.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .video-block {
+        padding-bottom:2.8368794326vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .video-block {
+        padding-bottom:40px
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .popup .contents-box .video-block .video-inner {
+    position:relative
+}
+.about-oled.what-is-oled .area-self-emissive .popup .contents-box .video-block .video-inner button {
+    position:absolute;
+    left:0;
+    bottom:2.6666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .video-block .video-inner button {
+        left:auto;
+        right:0;
+        bottom:1.4184397163vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .video-block .video-inner button {
+        bottom:20px
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list {
+    border-top:1px solid #ddd;
+    display:flex;
+    flex-direction:column
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list {
+        flex-direction:row;
+        justify-content:center;
+        padding-left:4.2553191489vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list {
+        padding-left:60px
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul {
+    display:flex;
+    flex-direction:column;
+    gap:2.6666666667vw;
+    padding-top:5.3333333333vw;
+    padding-left:5.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul {
+        margin:0;
+        gap:.2836879433vw;
+        max-width:65.9574468085vw;
+        padding:1.4184397163vw 0 1.4184397163vw 1.4184397163vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul {
+        gap:4px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul {
+        max-width:930px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul {
+        padding:20px 0 20px 20px
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul:nth-child(2) {
+    padding-top:2.6666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul:nth-child(2) {
+        padding-top:1.4184397163vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul:nth-child(2) {
+        padding-top:20px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul:nth-child(2) li:last-child {
+        width:35.4609929078vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul:nth-child(2) li:last-child {
+        width:500px
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul li {
+    color:#666;
+    font-weight:500;
+    font-size:3.7333333333vw;
+    line-height:142.8571428571%
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul li {
+        font-size:3.7333333333vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul li {
+        font-size:14px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul li {
+        font-size:14px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul li {
+        width:23.7588652482vw;
+        line-height:162.5%
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul li {
+        width:335px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul li {
+        font-size:16px
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul li {
+        font-size:1.134751773vw
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 1057.5px) {
+    .about-oled.what-is-oled .area-self-emissive .popup .contents-box .desc-list ul li {
+        font-size:12px
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .details strong {
+    font-weight:600
+}
+.about-oled.what-is-oled .area-self-emissive .cta-wrap {
+    text-align:center;
+    padding-top:8vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .cta-wrap {
+        padding-top:4.2553191489vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .cta-wrap {
+        padding-top:60px
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .cta-wrap .btn.open-lp:hover .icon.layer-btn:after,.about-oled.what-is-oled .area-self-emissive .cta-wrap .btn.open-lp:focus .icon.layer-btn:after {
+    background:url("../images/common/icon-layer-white.html") no-repeat 50% 50%
+}
+.about-oled.what-is-oled .area-self-emissive .cta-wrap .btn.open-lp span {
+    padding-right:5.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .cta-wrap .btn.open-lp span {
+        padding-right:1.4184397163vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .cta-wrap .btn.open-lp span {
+        padding-right:20px
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .cta-wrap .btn.open-lp span::after {
+    display:none
+}
+.about-oled.what-is-oled .area-self-emissive .cta-wrap .btn.open-lp .icon.layer-btn {
+    position:relative
+}
+.about-oled.what-is-oled .area-self-emissive .cta-wrap .btn.open-lp .icon.layer-btn::after {
+    width:3.2vw;
+    height:3.2vw;
+    content:"";
+    display:inline-block;
+    position:absolute;
+    top:50%;
+    right:0;
+    transform:translateY(-50%);
+    color:#fff;
+    background:url("../images/common/icon-layer.html") no-repeat 50% 50%;
+    border:none
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .cta-wrap .btn.open-lp .icon.layer-btn::after {
+        width:.8510638298vw;
+        height:.8510638298vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .cta-wrap .btn.open-lp .icon.layer-btn::after {
+        width:12px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .cta-wrap .btn.open-lp .icon.layer-btn::after {
+        height:12px
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .desc {
+    color:#333
+}
+.about-oled.what-is-oled .area-self-emissive .compare-area {
+    display:flex;
+    flex-direction:column
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area {
+        flex-direction:row;
+        justify-content:center;
+        padding:0;
+        gap:8.5106382979vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area {
+        gap:120px
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .compare-area .title {
+    text-align:center;
+    margin:0;
+    font-size:6.1333333333vw;
+    line-height:173.9130434783%;
+    padding:0 0 8vw
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .title {
+        font-size:6.1333333333vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .title {
+        font-size:23px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .title {
+        font-size:23px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .title {
+        line-height:125%;
+        padding:0 0 2.8368794326vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .title {
+        font-size:40px
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .title {
+        font-size:2.8368794326vw
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 940px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .title {
+        font-size:26.6666666667px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .title {
+        padding:0 0 40px
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .compare-area .oled .title {
+    padding-top:10.6666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .oled .title {
+        padding-top:0
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .compare-area .image-area {
+    display:flex;
+    justify-content:center
+}
+.about-oled.what-is-oled .area-self-emissive .compare-area .details {
+    text-align:left;
+    color:#000;
+    font-weight:500;
+    font-size:3.7333333333vw;
+    line-height:150%;
+    padding:8vw 2.6666666667vw 0
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .details {
+        font-size:3.7333333333vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .details {
+        font-size:14px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .details {
+        font-size:14px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .details {
+        margin:0 auto;
+        color:#000;
+        max-width:44.8226950355vw;
+        line-height:166.6666666667%;
+        padding:2.8368794326vw 2.1276595745vw 0
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .details {
+        max-width:632px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .details {
+        font-size:18px
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .details {
+        font-size:1.2765957447vw
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 940px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .details {
+        font-size:12px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .compare-area .details {
+        padding:40px 30px 0
+    }
+}
+.about-oled.what-is-oled .area-self-emissive .text-area .eyebrow {
+    color:#666
+}
+.about-oled.what-is-oled .area-self-emissive .description {
+    text-align:left;
+    color:#333;
+    font-weight:500;
+    font-size:4.2666666667vw;
+    line-height:150%;
+    padding:8vw 2.6666666667vw 0
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .area-self-emissive .description {
+        font-size:4.2666666667vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .area-self-emissive .description {
+        font-size:16px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .area-self-emissive .description {
+        font-size:16px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-self-emissive .description {
+        margin:0 auto;
+        color:#000;
+        max-width:57.4468085106vw;
+        line-height:160%;
+        padding:4.2553191489vw 2.1276595745vw 0
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .description {
+        max-width:810px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .description {
+        font-size:20px
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .area-self-emissive .description {
+        font-size:1.4184397163vw
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 940px) {
+    .about-oled.what-is-oled .area-self-emissive .description {
+        font-size:13.3333333333px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-self-emissive .description {
+        padding:60px 30px 0
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap {
+    display:flex;
+    flex-direction:column;
+    padding:0;
+	/* max-width: 1200px; */
+	max-width: 1410px;
+	margin: 80px auto 0;
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap {
+        flex-direction:row;
+        gap:8.12766vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap {
+        gap:30px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .title {
+    text-align:center;
+    margin:0;
+    font-size:6.1333333333vw;
+    font-weight:700;
+    color:#111;
+    line-height:121.7391304348%;
+    padding:0 0 9.6vw
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .title {
+        font-size:6.1333333333vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .title {
+        font-size:23px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .title {
+        font-size:23px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .title {
+        padding:0 0 2.8368794326vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .title {
+        font-size:40px
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .title {
+        font-size:2.8368794326vw
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 940px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .title {
+        font-size:26.6666666667px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .title {
+        padding:0 0 40px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .oled .title {
+    padding-top:10.6666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .oled .title {
+        padding-top:0
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .image-area {
+    opacity:0;
+    position:relative;
+    width:100%;
+    height:46.6666666667vw;
+    margin:0
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .image-area {
+        width:100%;
+        height:24.3971631206vw;
+        margin:0
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .image-area {
+        height:344px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .image-area img {
+    position:absolute;
+    left:0;
+    top:0;
+    transition:margin 1s,right .9s,left .9s;
+    width:40vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .image-area img {
+        width:21.2765957447vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .image-area img {
+        width:300px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .cover {
+    opacity:1;
+    position:relative;
+    perspective:500px;
+    width:74.6666666667vw;
+    margin:0 auto;
+    margin-top:-49.8666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .cover {
+        width:36.170212766vw;
+        margin:0 2.1276595745vw;
+        margin-top:-24.1134751773vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .cover {
+        width:510px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .cover {
+        margin:0 30px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .cover {
+        margin-top:-340px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .cover img {
+    width:100%;
+    transition:transform .9s
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area {
+    flex:1;
+    opacity:0;
+    transition:opacity .3s .5s;
+    font-size:3.7333333333vw;
+    line-height:142.8571428571%;
+    font-weight:500;
+    width:84vw;
+    color:#bbb
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area {
+        font-size:3.7333333333vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area {
+        font-size:14px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area {
+        font-size:14px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area {
+        line-height:166.6666666667%;
+        width:40.5673758865vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area {
+        font-size:18px
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area {
+        font-size:1.2765957447vw
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 940px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area {
+        font-size:12px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area {
+        width:572px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area strong {
+    color:#555;
+    font-weight:700
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul {
+    list-style:none;
+    margin:0;
+    padding:0
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul li {
+    margin:0
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links {
+    position:relative;
+    display:flex;
+    text-align:left
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links {
+        justify-content:left
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li {
+    display:inline;
+    padding:0 5.8666666667vw 0 0
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li {
+        padding:0 3.5460992908vw 0 0
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li {
+        padding:0 50px 0 0
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li span {
+    white-space:nowrap;
+    font-size:3.2vw;
+    line-height:125%;
+    color:#555;
+    font-weight:700;
+	letter-spacing: 0.06em;
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li span {
+        font-size:3.2vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li span {
+        font-size:12px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li span {
+        font-size:12px
+    }
+}
+@media(min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li span {
+        font-size:14px
+    }
+}
+@media(min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li span {
+        font-size:.9929078014vw;
+		letter-spacing: 0;
+    }
+}
+@media(min-width: 751px)and (max-width: 1208.5714285714px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li span {
+        font-size:12px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li a {
+    opacity:0;
+    transition:opacity .3s;
+    font-size:4.2666666667vw;
+    line-height:131.25%;
+    color:#767676;
+    text-decoration:none
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li a {
+        font-size:4.2666666667vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li a {
+        font-size:16px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li a {
+        font-size:16px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li a {
+        font-size:14px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li a {
+        line-height:145.4545454545%
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li a {
+        font-size:22px
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li a {
+        font-size:1.5602836879vw
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 940px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li a {
+        font-size:14.6666666667px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li.active a {
+    color:#F5C242;
+    text-decoration:underline;
+    text-underline-offset:2.1333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li.active a {
+        text-underline-offset:.7092198582vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.links li.active a {
+        text-underline-offset:10px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.details {
+    opacity:0;
+    transition:opacity .3s;
+    transition-delay:.2s;
+    padding:5.3333333333vw 0 0;
+    margin-top:1.3333333333vw;
+    display:flex;
+    align-items:stretch;
+    height:100%
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.details {
+        margin-top:0;
+        padding:1.5602836879vw 0 0
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.details {
+        padding:22px 0 0
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.details li {
+    visibility:hidden;
+    width:100%;
+	font-weight: 400;
+    flex-shrink:0;
+	color: #555;
+	text-align: left;
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.details li.active {
+    visibility:visible
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.details li.active:nth-child(2) {
+    margin-left:-100%
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .tab-area ul.details li.active:nth-child(3) {
+    margin-left:-200%
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .info-area {
+    opacity:0;
+    width:auto;
+    transition:opacity .9s;
+    transition-delay:.5s;
+    font-size:3.7333333333vw;
+    line-height:142.8571428571%;
+    font-weight:500;
+    color:#bbb;
+    border-top:1px solid #222;
+    width:84vw;
+    border-width:.8vw;
+    padding:5.3333333333vw 0 0;
+    margin:0 auto
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .info-area {
+        font-size:3.7333333333vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .info-area {
+        font-size:14px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .info-area {
+        font-size:14px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .info-area {
+        width:100%;
+        line-height:166.6666666667%;
+        border-width:.2127659574vw;
+        padding:2.8368794326vw 0 0
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .info-area {
+        font-size:18px
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .info-area {
+        font-size:1.2765957447vw
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 940px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .info-area {
+        font-size:12px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .info-area {
+        border-width:3px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .info-area {
+        padding:40px 0 0
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .lcd,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .oled {
+    position:relative;
+    padding:0;
+    display:flex;
+    flex-direction:column
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .lcd,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .oled {
+        flex:1 0 0
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .lcd .tab-area {
+    margin:24.6666666667vw auto 0
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .lcd .tab-area {
+        margin:11.7730496454vw 3.0496453901vw 0 5.2482269504vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .lcd .tab-area {
+        margin:166px 43px 0 74px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .oled .tab-area {
+    margin:24.6666666667vw auto 0
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .oled .tab-area {
+        margin:11.7730496454vw auto 0
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .oled .tab-area {
+        margin:166px auto 0
+    }
+}
+@media(min-width: 751px)and (max-width: 1470px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .oled .image-area {
+        margin-left:2.5531914894vw
+    }
+}
+@media(min-width: 751px)and (max-width: 1470px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .oled .image-area {
+        margin-left:36px
+    }
+}
+@media(min-width: 751px)and (max-width: 900px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .oled .image-area {
+        margin-left:3.4042553191vw
+    }
+}
+@media(min-width: 751px)and (max-width: 900px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .oled .image-area {
+        margin-left:48px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li {
+    position:relative
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li span:before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li:before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li:after {
+    display:block;
+    content:"";
+    position:absolute
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li:before {
+    margin:0 .5333333333vw;
+    border-right:1px solid #000
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li:before {
+        margin:0 .1418439716vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li:before {
+        margin:0 2px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li span:before {
+    border-left:1px solid #000;
+    border-top:1px solid #000;
+    margin:0 .5333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li span:before {
+        margin:0 .1418439716vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li span:before {
+        margin:0 2px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li:after {
+    display:block;
+    content:"";
+    position:absolute;
+    left:0;
+    width:1.3333333333vw;
+    height:1.3333333333vw;
+    background:#333;
+    border-radius:100%
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li:after {
+        width:.3546099291vw;
+        height:.3546099291vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li:after {
+        width:5px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready .tab-area .links li:after {
+        height:5px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .cover img {
+    transform:rotateY(53deg) scale(65%) translateY(4%) translateX(-54%)
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .cover img {
+        transform:rotateY(45deg) scale(78%) translateY(3%)
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .image-area img {
+    left:0;
+    right:auto
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .image-area img {
+        left:6.6666666667vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .image-area img {
+        left:94px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links {
+    flex-direction:row-reverse;
+    justify-content:start
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li span:before {
+    left:auto
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:before {
+    top:-29.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:before {
+        top:-13.475177305vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:before {
+        top:-190px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:after {
+    top:-30vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:after {
+        top:-13.829787234vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:after {
+        top:-195px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(1),.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(2),.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(3),.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(5) {
+    position:absolute
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(1)>span,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(2)>span,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(3)>span,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(5)>span {
+    position:absolute;
+    text-align:center
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(1):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(2):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(3):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(5):before {
+    height:0
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(1) span:before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(2) span:before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(3) span:before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(5) span:before {
+    display:none
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(1) {
+    left:49.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(1) {
+        left:22.695035461vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(1) {
+        left:320px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(1)>span {
+    top:-25.3333333333vw;
+    left:4.8vw;
+    width:13.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(1)>span {
+        top:-9.219858156vw;
+        left:-2.8368794326vw;
+        width:5.6737588652vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(1)>span {
+        top:-130px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(1)>span {
+        left:-40px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(1)>span {
+        width:80px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(2) {
+    left:42.2666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(2) {
+        left:19.5744680851vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(2) {
+        left:276px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(2)>span {
+    top:-19.3333333333vw;
+    left:5.4666666667vw;
+    width:13.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(2)>span {
+        top:-10.9929078014vw;
+        left:-2.8368794326vw;
+        width:5.6737588652vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(2)>span {
+        top:-155px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(2)>span {
+        left:-40px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(2)>span {
+        width:80px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(3) {
+    left:36.9333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(3) {
+        left:16.8794326241vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(3) {
+        left:238px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(3)>span {
+    top:-12.9333333333vw;
+    left:8.2666666667vw;
+    width:13.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(3)>span {
+        top:-9.219858156vw;
+        left:-2.8368794326vw;
+        width:5.6737588652vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(3)>span {
+        top:-130px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(3)>span {
+        left:-40px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(3)>span {
+        width:80px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(5) {
+    left:26.4vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(5) {
+        left:11.134751773vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(5) {
+        left:157px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(5)>span {
+    top:-12.9333333333vw;
+    left:-6.6666666667vw;
+    width:13.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(5)>span {
+        top:-9.219858156vw;
+        left:-2.8368794326vw;
+        width:5.6737588652vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(5)>span {
+        top:-130px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(5)>span {
+        left:-40px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(5)>span {
+        width:80px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4) span:before {
+    left:1.6vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4) span:before {
+        left:.2836879433vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4) span:before {
+        left:4px
+    }
+}
+@media(min-width: 751px)and (max-width: 900px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4) span:before {
+        left:-.5673758865vw
+    }
+}
+@media(min-width: 751px)and (max-width: 900px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4) span:before {
+        left:-8px
+    }
+}
+@media(min-width: 751px)and (max-width: 800px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4) span:before {
+        left:-.9929078014vw
+    }
+}
+@media(min-width: 751px)and (max-width: 800px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4) span:before {
+        left:-14px
+    }
+}
+@media(min-width: 751px)and (max-width: 780px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4) span:before {
+        left:-1.2765957447vw
+    }
+}
+@media(min-width: 751px)and (max-width: 780px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4) span:before {
+        left:-18px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4) span:before {
+    display:none
+}
+@media(min-width: 751px)and (max-width: 900px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4) span:before {
+        display:block;
+        width:0;
+        height:0;
+        top:-3.9007092199vw
+    }
+}
+@media(min-width: 751px)and (max-width: 900px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(4) span:before {
+        top:-55px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(6):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(6):before {
+    left:5.7333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(6):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(6):before {
+        left:1.4184397163vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(6):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(6):before {
+        left:20px
+    }
+}
+@media(min-width: 751px)and (max-width: 900px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(6):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(6):before {
+        left:.7092198582vw
+    }
+}
+@media(min-width: 751px)and (max-width: 900px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(6):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(6):before {
+        left:10px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(6) span:before {
+    display:none
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(7):after {
+    left:4vw;
+    top:-19.8666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(7):after {
+        left:1.4184397163vw;
+        top:-9.1489361702vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(7):after {
+        left:20px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(7):after {
+        top:-129px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(7):before {
+    top:-24vw;
+    left:-1.0666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(7):before {
+        width:0;
+        height:0;
+        top:-11.9858156028vw;
+        left:-2.6241134752vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(7):before {
+        top:-169px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(7):before {
+        left:-37px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(7) span:before {
+    left:4vw;
+    top:-19.4666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(7) span:before {
+        top:-9.1489361702vw;
+        left:1.4184397163vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(7) span:before {
+        top:-129px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.lcd .tab-area .links li:nth-child(7) span:before {
+        left:20px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .cover img {
+    transform:rotateY(-53deg) scale(65%) translateX(54%) translateY(4%)
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .cover img {
+        transform:rotateY(-45deg) scale(74%) translateX(3%)
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .image-area img {
+    left:auto;
+    right:0
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .image-area img {
+        right:14.8936170213vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .image-area img {
+        right:210px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:last-child {
+    padding-right:0
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li span:before {
+    left:auto
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:before {
+    top:-29.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:before {
+        top:-13.475177305vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:before {
+        top:-190px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:after {
+    top:-30vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:after {
+        top:-13.829787234vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:after {
+        top:-195px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(1) {
+    position:absolute;
+    left:50vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(1) {
+        left:24.8226950355vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(1) {
+        left:350px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(1)>span {
+    position:absolute;
+    text-align:center;
+    left:-6.6666666667vw;
+    top:-20.5333333333vw;
+    width:13.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(1)>span {
+        left:-2.8368794326vw;
+        width:5.6737588652vw;
+        top:-10.9929078014vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(1)>span {
+        left:-40px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(1)>span {
+        width:80px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(1)>span {
+        top:-155px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(1):before {
+    height:0
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(1) span:before {
+    display:none
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2) span:before {
+    right:-42vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2) span:before {
+        right:-21.134751773vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2) span:before {
+        right:-298px
+    }
+}
+@media(min-width: 751px)and (max-width: 870px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2) span:before {
+        right:-20.8510638298vw
+    }
+}
+@media(min-width: 751px)and (max-width: 870px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2) span:before {
+        right:-294px
+    }
+}
+@media(min-width: 751px)and (max-width: 820px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2) span:before {
+        right:-21.134751773vw
+    }
+}
+@media(min-width: 751px)and (max-width: 820px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2) span:before {
+        right:-298px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2):before {
+    height:0
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2) span:before {
+    top:-12vw;
+    width:0;
+    height:0
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2) span:before {
+        top:-7.4468085106vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(2) span:before {
+        top:-105px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3) span:before {
+    right:-15.4666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3) span:before {
+        right:-10.9929078014vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3) span:before {
+        right:-155px
+    }
+}
+@media(min-width: 751px)and (max-width: 870px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3) span:before {
+        right:-10.2836879433vw
+    }
+}
+@media(min-width: 751px)and (max-width: 870px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3) span:before {
+        right:-145px
+    }
+}
+@media(min-width: 751px)and (max-width: 820px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3) span:before {
+        right:-9.5744680851vw
+    }
+}
+@media(min-width: 751px)and (max-width: 820px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3) span:before {
+        right:-135px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3):before {
+    height:0
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3) span:before {
+    top:-9.0666666667vw;
+    width:0;
+    height:0
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3) span:before {
+        top:-3.9007092199vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(3) span:before {
+        top:-55px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+    left:auto;
+    right:-6.8vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+        right:-9.0070921986vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+        right:-127px
+    }
+}
+@media(min-width: 751px)and (max-width: 870px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+        right:-7.8014184397vw
+    }
+}
+@media(min-width: 751px)and (max-width: 870px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+        right:-110px
+    }
+}
+@media(min-width: 751px)and (max-width: 820px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+        right:-7.0921985816vw
+    }
+}
+@media(min-width: 751px)and (max-width: 820px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+        right:-100px
+    }
+}
+@media(min-width: 751px)and (max-width: 800px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+        right:-6.3829787234vw
+    }
+}
+@media(min-width: 751px)and (max-width: 800px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+        right:-90px
+    }
+}
+@media(min-width: 751px)and (max-width: 780px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+        right:-5.6737588652vw
+    }
+}
+@media(min-width: 751px)and (max-width: 780px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+        right:-80px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4):before {
+    height:0
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+    top:-6.4vw;
+    width:0;
+    height:0
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+        top:-1.2056737589vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.oled .tab-area .links li:nth-child(4) span:before {
+        top:-17px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate .cover {
+    opacity:0
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate .image-area {
+    opacity:1
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate .tab-area,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate .info-area {
+    opacity:1
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate .tab-area ul.links li.active span:before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate .tab-area ul.links li.active:before {
+    border-color:#F5C242
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate .tab-area ul.links li.active:after {
+    background:#F5C242
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate .tab-area ul.links li:before {
+    border-color:#555555
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate .tab-area ul.links li span:before {
+    border-color:#555555
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate .tab-area ul.links li a {
+    opacity:1
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate .tab-area ul.details {
+    opacity:1
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(1):before {
+    width:5.0666666667vw;
+    height:5.8666666667vw
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(2):before {
+    width:6.9333333333vw;
+    height:11.7333333333vw
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(3):before {
+    width:6.4vw;
+    height:18.4vw
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(5):before {
+    height:15.2vw
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(1):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(2):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(3):before {
+    border-width:0 0 1px 1px;
+    border-style:solid
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(1):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(2):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(3):before {
+        width:0;
+        border-width:0 1px 0 0
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(1):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(3):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(5):before {
+        width:0;
+        height:3.829787234vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(1):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(3):before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(5):before {
+        height:54px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(2):before {
+    border-width:0 0 1px 1px;
+    border-style:solid
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(2):before {
+        height:2.0567375887vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(2):before {
+        height:29px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(4):before {
+    height:28.5333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(4):before {
+        height:12.8368794326vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(4):before {
+        height:181px
+    }
+}
+@media(min-width: 751px)and (max-width: 900px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(4):before {
+        height:24.8vw
+    }
+}
+@media(min-width: 751px)and (max-width: 900px)and (min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(4):before {
+        height:9.6453900709vw
+    }
+}
+@media(min-width: 751px)and (max-width: 900px)and (min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(4):before {
+        height:136px
+    }
+}
+@media(min-width: 751px)and (max-width: 900px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(4) span:before {
+        height:3.5460992908vw;
+        width:2.4822695035vw;
+        border-width:1px 1px 0 0;
+        border-style:solid
+    }
+}
+@media(min-width: 751px)and (max-width: 900px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(4) span:before {
+        height:50px
+    }
+}
+@media(min-width: 751px)and (max-width: 900px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(4) span:before {
+        width:35px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(6):before {
+    height:28.5333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(6):before {
+        height:12.8368794326vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(6):before {
+        height:181px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(7):before {
+    border-width:0 1px 1px 1px;
+    border-style:solid;
+    width:17.0666666667vw;
+    height:4.6666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(7):before {
+        width:8.2269503546vw;
+        height:2.9787234043vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(7):before {
+        width:116px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(7):before {
+        height:42px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(7) span:before {
+    height:18.6666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(7) span:before {
+        height:8.0141843972vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd .tab-area .links li:nth-child(7) span:before {
+        height:113px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img {
+    left:0
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(1) {
+    margin-left:0
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(1) {
+        margin-left:1.0992907801vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(1) {
+        margin-left:15.5px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(2) {
+    margin-left:5.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(2) {
+        margin-left:3.9361702128vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(2) {
+        margin-left:55.5px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(3) {
+    margin-left:10.6666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(3) {
+        margin-left:6.7730496454vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(3) {
+        margin-left:95.5px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(4) {
+    margin-left:16vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(4) {
+        margin-left:9.609929078vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(4) {
+        margin-left:135.5px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(5) {
+    margin-left:21.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(5) {
+        margin-left:12.4113475177vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(5) {
+        margin-left:175px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(6) {
+    margin-left:26.6666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(6) {
+        margin-left:15.2482269504vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(6) {
+        margin-left:215px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(7) {
+    margin-left:32vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(7) {
+        margin-left:18.085106383vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(7) {
+        margin-left:255px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(8) {
+    margin-left:37.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(8) {
+        margin-left:20.9219858156vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(8) {
+        margin-left:295px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(9) {
+    margin-left:42.6666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(9) {
+        margin-left:23.6879432624vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(9) {
+        margin-left:334px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(10) {
+    margin-left:48vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(10) {
+        margin-left:26.524822695vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.lcd img:nth-child(10) {
+        margin-left:374px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(1):before {
+    height:8vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(1):before {
+        height:2.0567375887vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(1):before {
+        height:29px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(2):before {
+    height:17.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(2):before {
+        height:6.0992907801vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(2):before {
+        height:86px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(2) span:before {
+    height:10.6666666667vw;
+    width:52.5333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(2) span:before {
+        height:7.0921985816vw;
+        width:26.0992907801vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(2) span:before {
+        height:100px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(2) span:before {
+        width:368px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(3):before {
+    height:20.2666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(3):before {
+        height:9.6453900709vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(3):before {
+        height:136px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(3) span:before {
+    height:7.7333333333vw;
+    width:33.0666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(3) span:before {
+        height:3.5460992908vw;
+        width:19.1489361702vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(3) span:before {
+        height:50px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(3) span:before {
+        width:270px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(4):before {
+    height:22.9333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(4):before {
+        height:12.3404255319vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(4):before {
+        height:174px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(4) span:before {
+    height:5.0666666667vw;
+    width:12.8vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(4) span:before {
+        height:.8510638298vw;
+        width:11.2056737589vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(4) span:before {
+        height:12px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled .tab-area .links li:nth-child(4) span:before {
+        width:158px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled img {
+    right:0
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled img:nth-child(1) {
+    margin-right:16.2666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled img:nth-child(1) {
+        margin-right:9.5744680851vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled img:nth-child(1) {
+        margin-right:135px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled img:nth-child(2) {
+    margin-right:21.6vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled img:nth-child(2) {
+        margin-right:12.4113475177vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled img:nth-child(2) {
+        margin-right:175px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled img:nth-child(3) {
+    margin-right:26.9333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled img:nth-child(3) {
+        margin-right:15.2482269504vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled img:nth-child(3) {
+        margin-right:215px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled img:nth-child(4) {
+    margin-right:32.2666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled img:nth-child(4) {
+        margin-right:18.085106383vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.oled img:nth-child(4) {
+        margin-right:255px
+    }
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.done.lcd .tab-area,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.done.oled .tab-area {
+    transition:none
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.done.lcd .tab-area .links li span:before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.done.lcd .tab-area .links li:before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.done.lcd .tab-area .links li:after,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.done.oled .tab-area .links li span:before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.done.oled .tab-area .links li:before,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.done.oled .tab-area .links li:after {
+    transition:border-color .5s,background-color .5s;
+    transition-delay:0s
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.done.lcd .info-area,.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap .ready.animate.done.oled .info-area {
+    transition:none
+}
+.about-oled.what-is-oled .area-characteristics-value .list ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:2.6666666667vw
+}
+.about-oled.what-is-oled .area-characteristics-value .list ul li {
+    margin:0
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul {
+        flex-direction:row;
+        flex-wrap:wrap;
+        gap:.7092198582vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul {
+        gap:10px
+    }
+}
+.about-oled.what-is-oled .area-characteristics-value .list ul li {
+    width:100%;
+    display:flex;
+    background:#fff;
+    padding:6.6666666667vw 5.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li {
+        align-items:center;
+        width:calc(50% - .3546099291vw);
+        padding:2.8368794326vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li {
+        padding:40px
+    }
+}
+.about-oled.what-is-oled .area-characteristics-value .list ul li.margin-large {
+    padding:9.3333333333vw 5.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li.margin-large {
+        padding:2.8368794326vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li.margin-large {
+        padding:40px
+    }
+}
+.about-oled.what-is-oled .area-characteristics-value .list ul li .img {
+    width:13.3333333333vw;
+    height:13.3333333333vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li .img {
+        width:4.2553191489vw;
+        height:4.2553191489vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li .img {
+        width:60px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li .img {
+        height:60px
+    }
+}
+.about-oled.what-is-oled .area-characteristics-value .list ul li .img img,.about-oled.what-is-oled .area-characteristics-value .list ul li .img svg {
+    width:100%;
+    height:100%
+}
+.about-oled.what-is-oled .area-characteristics-value .list ul li .text {
+    flex:1;
+    color:#333;
+    font-size:3.7333333333vw;
+    line-height:142.8571428571%;
+    font-weight:500;
+    padding-left:5.3333333333vw
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li .text {
+        font-size:3.7333333333vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li .text {
+        font-size:14px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li .text {
+        font-size:14px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li .text {
+        line-height:166.6666666667%;
+        padding-left:2.8368794326vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li .text {
+        font-size:18px
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li .text {
+        font-size:1.2765957447vw
+    }
+}
+@media(min-width: 751px)and (min-width: 751px)and (max-width: 940px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li .text {
+        font-size:12px
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .area-characteristics-value .list ul li .text {
+        padding-left:40px
+    }
+}
+.about-oled.what-is-oled .area-characteristics-value .list ul li .text strong {
+    font-weight:700
+}
+.about-oled.what-is-oled .ask-to .interview-section {
+    display:flex;
+    flex-direction:column
+}
+.about-oled.what-is-oled .ask-to .interview-section .item:nth-child(2) {
+    padding-top:16vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .ask-to .interview-section .item:nth-child(2) {
+        padding-top:8.5106382979vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .ask-to .interview-section .item:nth-child(2) {
+        padding-top:120px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .ask-to .interview-section .item {
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        gap:5.3191489362vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .ask-to .interview-section .item {
+        gap:75px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .ask-to .interview-section .item:nth-child(2) {
+        flex-direction:row-reverse
+    }
+}
+.about-oled.what-is-oled .ask-to .interview-section .image img {
+    vertical-align:bottom
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .ask-to .interview-section .image {
+        width:45.7446808511vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .ask-to .interview-section .image {
+        width:645px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text {
+        width:40.4255319149vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text {
+        width:570px
+    }
+}
+.about-oled.what-is-oled .ask-to .interview-section .interview-title {
+    margin-top:5.3333333333vw;
+    padding-left:2.6666666667vw;
+    padding-right:2.6666666667vw;
+    font-size:5.3333333333vw;
+    text-align:center
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title {
+        font-size:5.3333333333vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title {
+        font-size:20px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title {
+        font-size:20px
+    }
+}
+@media(min-width: 1411px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title {
+        font-size:34px
+    }
+}
+@media(min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title {
+        font-size:2.4113475177vw
+    }
+}
+@media(min-width: 751px)and (max-width: 940px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title {
+        font-size:22.6666666667px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title {
+        margin-top:0;
+        padding-left:0;
+        padding-right:0;
+        text-align:start
+    }
+}
+.about-oled.what-is-oled .ask-to .interview-section .interview-title .title {
+    font-weight:500;
+    line-height:125%;
+    font-weight:700
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title .title {
+        line-height:129.4117647059%
+    }
+}
+.about-oled.what-is-oled .ask-to .interview-section .interview-title .desc {
+    font-size:4vw;
+    line-height:153.3333333333%;
+    margin-top:1.6vw;
+    font-weight:500;
+    color:#333
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title .desc {
+        font-size:4vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title .desc {
+        font-size:15px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title .desc {
+        font-size:15px
+    }
+}
+@media(min-width: 1411px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title .desc {
+        font-size:20px
+    }
+}
+@media(min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title .desc {
+        font-size:1.4184397163vw
+    }
+}
+@media(min-width: 751px)and (max-width: 940px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title .desc {
+        font-size:13.3333333333px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title .desc {
+        margin-top:.4255319149vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .ask-to .interview-section .interview-title .desc {
+        margin-top:6px
+    }
+}
+.about-oled.what-is-oled .ask-to .interview-section .text-area {
+    margin-top:5.3333333333vw;
+    padding-left:2.6666666667vw;
+    padding-right:2.6666666667vw;
+    padding-bottom:0
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area {
+        margin-top:1.4184397163vw;
+        padding-left:0;
+        padding-right:0;
+        padding-bottom:0
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area {
+        margin-top:20px
+    }
+}
+.about-oled.what-is-oled .ask-to .interview-section .text-area>div:nth-child(1) {
+    display:flex;
+    justify-content:flex-start;
+    gap:5.8666666667vw;
+    font-size:4.2666666667vw;
+    line-height:131.25%
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div:nth-child(1) {
+        font-size:4.2666666667vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div:nth-child(1) {
+        font-size:16px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div:nth-child(1) {
+        font-size:16px
+    }
+}
+@media(min-width: 1411px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div:nth-child(1) {
+        font-size:20px
+    }
+}
+@media(min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div:nth-child(1) {
+        font-size:1.4184397163vw
+    }
+}
+@media(min-width: 751px)and (max-width: 940px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div:nth-child(1) {
+        font-size:13.3333333333px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div:nth-child(1) {
+        line-height:150%;
+        gap:1.5602836879vw
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div:nth-child(1) {
+        gap:22px
+    }
+}
+.about-oled.what-is-oled .ask-to .interview-section .text-area>div:nth-child(1) .name {
+    font-weight:700
+}
+.about-oled.what-is-oled .ask-to .interview-section .text-area>div.team {
+    text-align:start;
+    margin-top:1.6vw;
+    font-size:3.7333333333vw;
+    line-height:135.7142857143%;
+    font-weight:500;
+    color:#333
+}
+@media(min-width: 375px)and (max-width: 750px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div.team {
+        font-size:3.7333333333vw
+    }
+}
+@media(min-width: 375px)and (max-width: 375pxpx) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div.team {
+        font-size:14px
+    }
+}
+@media(max-width: 374px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div.team {
+        font-size:14px
+    }
+}
+@media(min-width: 1411px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div.team {
+        font-size:16px
+    }
+}
+@media(min-width: 751px)and (max-width: 1410px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div.team {
+        font-size:1.134751773vw
+    }
+}
+@media(min-width: 751px)and (max-width: 1057.5px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div.team {
+        font-size:12px
+    }
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div.team {
+        margin-top:.4255319149vw;
+        line-height:162.5%
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .ask-to .interview-section .text-area>div.team {
+        margin-top:6px
+    }
+}
+.about-oled.what-is-oled .ask-to .interview-section .cta-wrap {
+    margin-top:8vw;
+    padding-left:2.6666666667vw;
+    padding-right:2.6666666667vw
+}
+@media(min-width: 751px) {
+    .about-oled.what-is-oled .ask-to .interview-section .cta-wrap {
+        margin-top:2.8368794326vw;
+        padding-left:0;
+        padding-right:0
+    }
+}
+@media(min-width: 751px)and (min-width: 1411px) {
+    .about-oled.what-is-oled .ask-to .interview-section .cta-wrap {
+        margin-top:40px
+    }
+}
+/*# sourceMappingURL=about-what-is-oled.min.css.map */

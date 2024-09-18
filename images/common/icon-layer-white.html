@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>LG디스플레이</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/images/icon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/icon/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" /><!-- 공통 css (import: style.css) -->
+    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css" /><!-- swiper css -->
+    <link rel="stylesheet" type="text/css" href="/css/aos.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.min.css" />
+    <script type="text/javascript" src="/js/common/jquery-latest.js"></script>
+    <!--<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/js/swiper.min.js"></script>&lt;!&ndash; swiper js &ndash;&gt;
+    <script type="text/javascript" src="/js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="/js/aos.js"></script>
+    <script type="text/javascript" src="/js/ui.js"></script>&lt;!&ndash; 공통 ui js &ndash;&gt;-->
+</head>
+<body>
+<!-- error -->
+<div class="mError">
+    <div class="errorCon kor">
+        <h1>
+            <span class="tx1">404</span>
+            <span class="tx2"><span class="brForMobile">요청하신 페이지를</span> 찾을 수 없습니다.</span>
+        </h1>
+        <p class="txt">
+            이용에 불편을 드려 죄송합니다.<br>
+            찾으시려는 페이지는 주소를 잘못 입력하였거나, 페이지 주소의 변경 또는 삭제 등의 이유로 페이지를 찾을수 없습니다.<br>
+            입력하신 페이지의 주소와 경로가 정확한지 한번 더 확인후 이용하시기 바랍니다.
+        </p>
+        <div class="btn_area">
+            <a href="javascript:history.back();" class="btn s06 c01">이전 페이지</a>
+            <a href="/kor" class="btn s06 c08">메인으로</a>
+        </div>
+    </div>
+
+    <div class="errorCon eng" style="display: none">
+        <h1>
+            <span class="tx1">404</span>
+            <span class="tx2"><span class="brForMobile">요청하신 페이지를</span> 찾을 수 없습니다.(en)</span>
+        </h1>
+        <p class="txt">
+            이용에 불편을 드려 죄송합니다.<br>
+            찾으시려는 페이지는 주소를 잘못 입력하였거나, 페이지 주소의 변경 또는 삭제 등의 이유로 페이지를 찾을수 없습니다.<br>
+            입력하신 페이지의 주소와 경로가 정확한지 한번 더 확인후 이용하시기 바랍니다.
+        </p>
+        <div class="btn_area">
+            <a href="javascript:history.back();" class="btn s06 c01">이전 페이지</a>
+            <a href="/eng" class="btn s06 c08">메인으로</a>
+        </div>
+    </div>
+
+    <div class="errorCon chn" style="display: none">
+        <h1>
+            <span class="tx1">404</span>
+            <span class="tx2"><span class="brForMobile">요청하신 페이지를</span> 찾을 수 없습니다.(zh)</span>
+        </h1>
+        <p class="txt">
+            이용에 불편을 드려 죄송합니다.<br>
+            찾으시려는 페이지는 주소를 잘못 입력하였거나, 페이지 주소의 변경 또는 삭제 등의 이유로 페이지를 찾을수 없습니다.<br>
+            입력하신 페이지의 주소와 경로가 정확한지 한번 더 확인후 이용하시기 바랍니다.
+        </p>
+        <div class="btn_area">
+            <a href="javascript:history.back();" class="btn s06 c01">이전 페이지</a>
+            <a href="/chn" class="btn s06 c08">메인으로</a>
+        </div>
+    </div>
+
+    <div class="errorCon vtn" style="display: none">
+        <h1>
+            <span class="tx1">404</span>
+            <span class="tx2"><span class="brForMobile">요청하신 페이지를</span> 찾을 수 없습니다.(vi)</span>
+        </h1>
+        <p class="txt">
+            이용에 불편을 드려 죄송합니다.<br>
+            찾으시려는 페이지는 주소를 잘못 입력하였거나, 페이지 주소의 변경 또는 삭제 등의 이유로 페이지를 찾을수 없습니다.<br>
+            입력하신 페이지의 주소와 경로가 정확한지 한번 더 확인후 이용하시기 바랍니다.
+        </p>
+        <div class="btn_area">
+            <a href="javascript:history.back();" class="btn s06 c01">이전 페이지</a>
+            <a href="/vtn" class="btn s06 c08">메인으로</a>
+        </div>
+    </div>
+</div>
+<script>
+    $( document ).ready(function() {
+        var url = window.location.href;
+        $('.errorCon').hide();
+
+        if (url.indexOf('/eng') != -1) {
+            $('.eng').show();
+        } else if (url.indexOf('/chn') != -1) {
+            $('.chn').show();
+        } else if (url.indexOf('/vtn') != -1) {
+            $('.vtn').show();
+        } else {
+            $('.kor').show();
+        }
+    });
+</script>
+
+<style type="text/css">
+    .mError{display:table;text-align:center;width:100%;height:100%;}
+    .mError .errorCon{display:table-cell;vertical-align:middle;}
+    .mError h1{color:#444;font-size:45px;}
+    .mError h1 .tx1{display:block;color:#f3f3f3;font-size:160px;font-weight:bold;line-height:120%;}
+    .mError h1 .tx2{display:block;margin:-67px 0 0;letter-spacing:-2px;}
+    .mError .txt{color:#666;font-size:16px;line-height:170%;padding:18px 0 0;}
+    .mError .btn_area{margin:52px 0 0;}
+    @media screen and (max-width: 768px) {
+        .mError h1{color:#444;font-size:30px;}
+        .mError h1 .tx1{font-size:110px;}
+        .mError h1 .tx2{margin-top:-40px;letter-spacing:-1px;}
+        .mError .txt{font-size:14px;padding:10px 20px;}
+        .mError .btn_area{margin-top:30px;}
+    }
+</style>
+<!-- //error -->
+
+</body>
+</html>

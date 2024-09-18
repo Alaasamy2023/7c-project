@@ -1,0 +1,7391 @@
+/* 20240603 개발 요청 사항(추가) */
+#message {
+	display: none;
+}
+/* // 20240603 개발 요청 사항(추가) */
+
+#content {
+	overflow: visible;
+}
+.mobile_br,
+.br_360,
+.br_1200_show {
+	display: none;
+}
+
+.type--b {
+	font-weight: 600 !important
+}
+.type--sb {
+	font-weight: 500 !important;
+}
+.type--rg {
+	font-weight: 400 !important;
+}
+.type--lt {
+	font-weight: 300 !important;
+}
+
+.br__maintain {
+	display: block !important
+}
+.for-a11y {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;	
+}
+.chk_right {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+}
+clearfix:after {
+	clear:both;
+	content:'';
+	display:block;
+}
+.tab_content > div + div {
+	display: none;
+}
+.tab-section {
+	position: relative;
+}
+
+/* product > tv */
+/* 20240530 추가 */
+/* body.scroll_lock {
+	overflow-y: hidden;
+	touch-action: none;
+	-ms-touch-action: none;
+} */
+/* //20240530 추가 */
+.oled-prod {
+	position: relative;
+}
+.oled-prod-popup {
+	top: inherit;
+	z-index: 101;
+	position: fixed;
+	bottom: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	transition: all .5s;
+}
+.oled-prod-popup.is-active {
+	bottom: 0;
+}
+/* 20240530_v2 수정사항  */
+.oled-prod-iframe {
+	display: none;
+	position: relative;
+	/* padding-top: 56%; */
+	width: 100%;
+	/* height: 0; */
+	height: 675px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/* // 20240530_v2 수정사항  */
+
+/* 20240530_v2 추가사항 */
+@media screen and (max-width: 1200px){
+	.oled-prod-iframe {
+		display: none;
+		position: relative;
+		top: inherit;
+		height: 0;
+		transform: inherit;
+		padding-top: 56%;
+	}
+}
+/* // 20240530_v2 추가사항 */
+
+/* 20240529 수정 */
+.oled-prod-iframe > iframe,
+.oled-prod-iframe > video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	max-width: 1200px;
+	max-height: 675px;
+	border: 0;
+}
+/* // 20240529 수정 */
+/* 20240529 추가 */
+.oled-prod-popup.oled-prod-popup--video iframe {
+	display: none !important
+}
+/* // 20240529 추가 */
+.oled-prod-popup__close {
+	display: none;
+	text-indent: -9999px;
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	width: 36px;
+	height: 36px;
+	background: url('../images/tv/oled3th/icon-popup-close.svg') no-repeat center center;
+	background-size: 36px;
+	z-index: 1;
+}
+/* :: kv */
+.oled-prod-kv {
+	width: 100%;
+	height: 700px;
+	background: url('../images/tv/oled3th/tv_kv.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+@media screen and (min-width:1921px){
+	.oled-prod-kv {
+		height: 36vw;
+	}
+}
+.oled-prod-kv__title {
+	padding-top: 106px;
+	text-align: center;
+	font-size: 44px;
+	line-height: 60px;
+	color: #fff;
+}
+.oled-prod-kv__emphasis {
+	display: block;
+	font-weight: 600;
+}
+
+.oled-prod-kv__title.oled-prod-kv__title--type2 .oled-prod-kv__emphasis {
+	display: inline-block;
+}
+.oled-prod-kv__title.oled-prod-kv__title--type3 .oled-prod-kv__emphasis {
+	display: inline;
+}
+
+
+.oled-prod-kv-type2 {
+	position: relative;
+	width: 100%;
+	height: 700px;
+}
+.oled-prod-kv-type2 .oled-prod-kv__title {
+	position: relative;
+}
+.oled-prod-kv-type2 .kv__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+@media screen and (min-width:1921px){
+	.oled-prod-kv-type2 {
+		height: 36vw;
+	}
+}
+
+
+
+/* // :: kv */
+
+/* :: tab */
+/* 20240529 피드백 추가 */
+.tab_content sup {
+	line-height: 1;
+}
+/* //20240529 피드백 추가 */
+.oled-prod-tab {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 70px;
+	border-top: 1px solid #DCDCDC;
+	border-bottom: 1px solid #DCDCDC;
+}
+.oled-prod-tab__item {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+/* 20240529 피드백 수정 */
+.oled-prod-tab__tit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.oled-prod-tab__btn {
+	font-size: 22px;
+	line-height: 1;
+	color: #555;
+}
+/* //20240529 피드백 수정 */
+.oled-prod-tab__item.active .oled-prod-tab__btn {
+	font-weight: 600;
+	color:#F5C242;
+}
+.oled-prod-tab__item.active .oled-prod-tab__btn::after {
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 4px;
+	background: #F5C242
+}
+/* // :: tab */
+
+/* :: video */
+.oled-prod-vid {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 150px 0;
+	text-align: center;
+}
+.oled-prod-vid__etc {
+	display: block;
+	margin-top: 18px;
+	color: #111;
+	font-size: 19px;
+	font-weight: 600;
+}
+.oled-prod-vid__sub {
+	display: block;
+	margin-top: 14px;
+	font-size: 22px;
+	font-weight: 700;
+	color: #111;
+}
+.oled-prod-vid__text {
+	margin-top: 28px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.6;
+	color: #111;
+}
+.oled-prod-vid__thumb {
+	position: relative;
+	width: 100%;
+	height: 675px;
+	margin-top: 80px;
+}
+.oled-prod-vid__btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 162px;
+	height: 60px;
+	background: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	font-weight: 700;
+	color: #111;
+	transition: all .3s;
+}
+.oled-prod-vid__btn:hover {
+	background: #F5C242;
+	color: #fff;
+}
+.oled-prod-vid__btn:after {
+	content: '';
+	display: inline-block;
+	width: 13px;
+	height: 14px;
+	background: url('../images/tv/oled3th/icon_play.png') no-repeat center center;
+	background-size: auto 100%;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+.oled-prod-vid__btn:hover:after {
+	background: url('../images/tv/oled3th/icon_play-w.png') no-repeat center center;
+	background-size: auto 100%;
+}
+.oled-prod-vid__btn .oled-prod-vid__icon {
+	vertical-align: middle;
+	margin-left: 3px;
+}
+.oled-prod3th .oled-prod-vid__thumb {
+	background: url('../images/tv/oled3th/tv_video_thumb.jpg') no-repeat center center;
+	background-size: cover;
+}
+.oled-prod2rd .oled-prod-vid__thumb {
+	background: url('../images/tv/oled2rd/tv_video_thumb.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.eng .oled-prod3th .oled-prod-vid__thumb,
+.chn .oled-prod3th .oled-prod-vid__thumb,
+.vtn .oled-prod3th .oled-prod-vid__thumb {
+	background: url('../images/tv/oled3th/tv_video_thumb_en.jpg') no-repeat center center;
+	background-size: cover;
+}
+.eng .oled-prod2rd .oled-prod-vid__thumb,
+.chn .oled-prod2rd .oled-prod-vid__thumb,
+.vtn .oled-prod2rd .oled-prod-vid__thumb {
+	background: url('../images/tv/oled2rd/tv_video_thumb_en.jpg') no-repeat center center;
+	background-size: cover;
+}
+/* // :: video */
+
+/* oled-prod-3th */
+.oled-meta .technology-ex-block .technology-ex {
+	background: none;
+}
+.oled-meta .technology-ex-block .technology-ex .title,
+.oled-meta .technology-ex-block .ex-meta-box .desc__list .desc__item,
+.oled-meta .text-area .desc {
+	font-weight: 400;
+}
+@media (min-width: 751px) and (min-width: 1411px) {
+	.oled-meta .technology-ex-block .ex-meta-box .desc__list .desc__item--meta2 .desc__meta2::before {
+		width: 297px;
+	}
+	.oled-meta .technology-ex-block .ex-meta-box .desc__list .desc__item {
+		font-size: 18px;
+	}
+	.oled-meta .text-area .title {
+		font-size: 64px;
+		font-weight: 500;
+	}
+	.oled-meta .text-area .desc {
+		margin-top: 40px;
+		font-size: 20px;
+	}
+}
+.oled-meta .technology-ex-block .ex-meta-box .desc__list .desc__item {
+	color: #bbb;
+}
+@media (min-width: 751px) {
+	.oled-meta .technology-ex-block .oled-box::after {
+		display: block;
+		background: url('../images/tv/oled3th/oled_meta_arrow.svg') no-repeat 50% 50%;
+		background-size: cover;
+		margin-left: -30px;
+		width: 81px;
+		height: 15px;
+	}
+	/* 20240530 수정 */
+	.oled-meta .technology-ex-block .ex-meta-box .title-list .title-item:nth-child(1) {
+		position: relative;
+		padding: 0 20px 0 0;
+	}
+	.oled-meta .technology-ex-block .ex-meta-box .title-list .title-item:nth-child(1):after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: -27px;
+		width: 81px;
+		height: 15px;
+		background: url('../images/tv/oled3th/oled_meta_arrow.svg') no-repeat 50% 50%;
+		background-size: auto 100%;
+	}
+	/* //20240530 수정 */
+}
+
+@media screen and (max-width: 1200px){
+	.br_1200_show {
+		display: block
+	}
+	.oled-meta .technology-ex-block .technology-ex {
+		background: #111;
+	}
+	.oled-meta .technology-ex-block .ex-meta-box .title-list .title-item:nth-child(1):after {
+		right: -3vw;
+	}
+}
+
+@media screen and (max-width: 750px){
+	.oled-meta .technology-ex-block .technology-ex {
+		background: none;
+	}
+	.oled-meta .technology-ex-block .oled-box::after {
+		height: 13vw;
+		background: url('../images/tv/oled3th/m/oled_meta_arrow.svg') no-repeat center center;
+		background-size: auto 100%;
+	}
+	.oled-meta .technology-ex-block .ex-meta-box {
+		margin-top: 30px;
+	}
+}
+/* // oled-prod-3th */
+
+/* :: sticky 1depth */
+/* .oled-prod-sticky {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 58px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1) 0s;
+	background: #EDEDED;
+	z-index: 19
+}
+.oled-prod-sticky.oled-prod-sticky--type02 {
+	background: #ccc;
+}
+.up .oled-prod-sticky.catch {
+	top: 81px;
+}
+.oled-prod-sticky__btn,
+.oled-prod-sticky__change {
+	position: relative;
+	height: 100%;
+	padding: 0 23px 0 50px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #111;
+}
+.oled-prod-sticky__btn:after {
+	content: '';
+	position: absolute;
+	top: 25px;
+	right: 0;
+	width: 14px;
+	height: 7px;
+	background: url(../images/tv/oled3th/icon_arrow_up.png) no-repeat center center;
+	background-size: 14px;
+	transform: rotate(180deg);
+	transition: all .3s;
+}
+.oled-prod-sticky__btn.active:after {
+	transform: rotate(0deg);
+}
+.oled-prod-sticky__list {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.oled-prod-sticky__item {
+	margin: 0 25px;
+	height: 100%;
+}
+.oled-prod-sticky__link {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	color: #606060;
+	height: 100%;
+}
+.oled-prod-sticky__item.active .oled-prod-sticky__link {
+	color: #111;
+	font-weight: 600;
+} */
+
+
+/* new */
+.sticky-bar {
+	white-space: nowrap;
+	position: sticky;
+	z-index: 19;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #EDEDED;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	top: -1px;
+	transition: top .3s;
+	padding: 16px 50px;
+}
+.sticky-bar__in {
+	position: absolute;
+	top: 58px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.8);
+	display: none;
+}
+.sticky-bar__in .sticky-bar__link {
+	position: relative;
+	display: block;
+	padding: 18px 50px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #111;
+}
+/* body.up #header {
+	top: -81px;
+} */
+
+.up .sticky-bar {
+	top: 79px !important;
+}
+/* body.testing .sticky-bar {
+	top: 0 !important;
+} */
+.sticky-title__btn {
+	position: relative;
+	font-size: 20px;
+	font-weight: 500;
+	color: #111;
+	padding-right: 26px;
+}
+.sticky-title__btn--org {
+	cursor: default;
+	pointer-events: none;
+}
+.sticky-title__btn:not(.sticky-title__btn--org):after {
+	content: '';
+	position: absolute;
+	top: 6px;
+	right: 0;
+	width: 14px;
+	height: 14px;
+	background: url('../images/tv/oled3th/icon_arrow_up.png') no-repeat center center;
+	background-size: 14px;
+	transform: rotate(180deg);
+	transition: all .3s;
+}
+@media screen and (min-width: 1201px){
+	.sticky-bar.active {
+		border-bottom: 0;
+	}
+	/* 20240530 추가 */
+	.chn .oled-tech-kv__etc {
+		display: block;
+		margin-top: 20px;
+		font-size: 20px;
+		font-weight: 600;
+		color: #fff;
+	}
+	/* //20240530 추가 */
+}
+
+.sticky-bar.active .sticky-title__btn:after {
+	transform: rotate(0deg);
+}
+.sticky-bar .sticky-tab-box {
+	display: flex;
+	justify-content: space-between;
+}
+.sticky-bar .sticky-tab-box ul {
+	list-style: none;
+	display: flex;
+	align-items: baseline;
+	gap: 4vw;
+}
+.sticky-bar .sticky-tab-box li.blind {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	font-size: 0;
+	line-height: 0;
+}
+.sticky-bar .sticky-tab-box li > * {
+	font-size: 14px;
+	color: #606060;
+}
+.sticky-bar .sticky-tab-box li.active > * {
+	color: #111111;
+	font-weight: 500;
+}
+.blind {
+	opacity: 0;
+}
+.sticky-bar--none .sticky-title__btn {
+	cursor: default;
+}
+.sticky-bar--none .sticky-title__btn:after {
+	display: none;
+}
+/* // new */
+
+
+.oled-prod-sticky__down {
+	position: absolute;
+	top: 58px;
+	left: 0;
+	width: 100%;
+	height: 58px;
+	background: #ccc;
+	display: none;
+}
+.oled-prod-sticky__change {
+	display: none;
+}
+/* // :: sticky 1depth */
+
+/* :: oled common text */
+.oled-meta-996 {
+	display: flex;
+	justify-content: space-between;
+	max-width: 996px;
+	margin: 0 auto 80px;
+	padding-top: 120px;
+}
+.oled-meta-996__left {
+	flex-basis: 508px;
+	flex-shrink: 0;
+}
+.oled-meta-996__title {
+	font-size:55px;
+	line-height: 1.3;
+	color: #111;
+}
+.oled-meta-996__title.oled-meta-996__title--m {
+	letter-spacing: -0.04em;
+	font-size: 50px;
+}
+.oled-meta-996__right {
+	flex-grow: 1;
+}
+.oled-meta-996__text {
+	font-size: 20px;
+	line-height: 1.6;
+	color: #555;
+}
+.oled-meta-996__text + .oled-meta-996__text {
+	margin-top: 16px;
+}
+/* 20240530_v5 수정 */
+.chn .oled-meta-996__text {
+	font-size: 19px;
+	line-height: 1.6;
+	color: #555;
+	word-break: break-all;
+}
+/* // 20240530_v5 수정 */
+/* // :: oled common text */
+
+/* evolution */
+.evolution-wrap {
+	max-width: 1200px;
+	margin: 0 auto
+}
+.evolution-top {
+	position: relative;
+	max-width: 1200px;
+	margin: 60px auto 0;
+	padding: 26px 0;
+	background: #fff;
+}
+.evolution-top__logo {
+	margin: 0 auto 22px;
+	display: block;
+}
+.evolution-top__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.evolution-top__item {
+	position: relative;
+	font-size: 18px;
+	font-weight: 600;
+	color: #111;
+}
+.evolution-top__item + .evolution-top__item {
+	margin-left: 27px;
+}
+.evolution-top__item + .evolution-top__item:before {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: -14px;
+	width: 1px;
+	height: 18px;
+	background: #BBBBBB;
+}
+
+.evolution-bottom {
+	position: relative;
+}
+.evolution-bottom:before {
+	content: '';
+	display: block;
+	margin: 24px auto;
+	width: 34px;
+	height: 34px;
+	background: url('../images/tv/oled3th/evolution_add.svg') no-repeat center center;
+	background-size: auto 100%;
+}
+.evolution-bottom__list {
+	display: flex;
+}
+.evolution-bottom__item {
+	padding: 0 20px 50px;
+	flex-basis: 100%;
+	display: inline-block;
+	background: #fff;
+}
+.evolution-bottom__item + .evolution-bottom__item {
+	margin-left: 20px;
+}
+.evolution-bottom__image {
+	display: block;
+	width: 347px;
+	height: 258px;
+}
+.evolution-bottom__txt {
+	display: block;
+	font-size: 24px;
+	font-weight: 600;
+	color: #111;
+	line-height: 1.4;
+	text-align: center;
+}
+/* // evolution */
+
+/* :: microlens video2 */
+.oled-prod .micro-lens {
+	padding-bottom: 120px;
+}
+.oled-meta .btn-video-play:before {
+	background: url('../images/tv/oled2rd/icon_vid_play.svg') no-repeat center center;
+	background-size: auto 100%;
+}
+@media screen and (min-width: 1201px){
+	.oled-meta .btn-video-play:hover:before {
+		background: url('../images/tv/oled2rd/icon_vid_play_h.svg') no-repeat center center;
+		background-size: auto 100%;
+	}
+}
+.oled-prod .micro-lens .visual-area,
+.oled-prod .micro-lens3 .visual-area {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	border-bottom: 0 !important;
+}
+.oled-prod .micro-lens .visual-area video,
+.oled-prod .micro-lens3 .visual-area video {
+	width: 100%;
+}
+.oled-prod .micro-lens .visual-area .btn-video-play,
+.oled-prod .micro-lens .visual-area .btn-video-pause,
+.oled-prod .micro-lens3 .visual-area .btn-video-play,
+.oled-prod .micro-lens3 .visual-area .btn-video-pause {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.oled-prod .micro-lens .visual-area .btn-video-pause,
+.oled-prod .micro-lens3 .visual-area .btn-video-pause {
+	opacity: 0;
+	cursor: default;
+}
+
+.oled-prod .micro-lens3 .video-block3 .video-inner {
+	position: relative;
+}
+
+/* counting box */
+.counting-box {
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+}
+.counting-box > div:nth-child(1) {
+	font-size: 80px;
+	font-weight: 700;
+	line-height: 100%;
+}
+.counting-box > div:nth-child(2) {
+	margin-top: 5px;
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 100%;
+}
+
+/* counting box */
+
+.oled-prod .oled-meta-996__etc {
+	display: block;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #767676
+}
+/* // :: microlens video2 */
+
+/* :: multi booster */
+.oled-prod .meta-multi-booster {
+	max-width: 1200px;
+	height: 500px;
+	margin: 0 auto;
+}
+.oled-prod .oled-meta .micro-lens .meta-multi-booster.custom-layout-content {
+	overflow: visible;
+	padding: 0;
+}
+.oled-prod .oled-meta .compare-area .handle button {
+	background: url('../images/tv/oled3th/icon_drag.svg') no-repeat center center;
+	background-size: cover;
+}
+.oled-prod .oled-meta .micro-lens .meta-multi-booster .text-area__name {
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
+}
+.oled-meta .micro-lens .meta-multi-booster .text-area__tag {
+	padding: 2px 15px 0;
+	border-radius: 0;
+	line-height: 140%;
+}
+
+
+/* > interaction */
+.oled-meta .compare-area {
+	overflow: hidden;
+}
+.oled-meta .micro-lens .meta-multi-booster button.ui-draggable-handle::before,
+.oled-meta .micro-lens .meta-multi-booster button.ui-draggable-handle::after {
+	content:unset;
+}
+.left-arrow-ani {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	right: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.left-arrow-ani span {
+	display: block;
+	position: relative;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+.left-arrow-ani span:nth-of-type(1) {
+	animation: fade-arrow 2.5s infinite 1.5s;
+	animation-direction: normal;
+	margin-left: 0;
+	border-radius: unset;
+	width: 14px;
+	height: 16px;
+	background: url('../images/tv/oled3th/icon_meta_arrow.png') no-repeat center center;
+	background-size: auto 100%;
+	/* border-bottom: 8px solid transparent;
+	border-top: 8px solid transparent;
+	border-left: 8px solid transparent;
+	border-right: 8px solid #fff; */
+}
+.left-arrow-ani span:nth-of-type(2) {
+	animation: fade-arrow 2.5s infinite 1.2s;
+	animation-direction: normal;
+	background-color: #fff;
+}
+.left-arrow-ani span:nth-of-type(3) {
+	animation: fade-arrow 2.5s infinite 0.9s;
+	animation-direction: normal;
+	background-color: darkgray;
+}
+.left-arrow-ani span:nth-of-type(4) {
+	animation: fade-arrow 2.5s infinite 0.6s;
+	animation-direction: normal;
+	background-color: gray;
+}
+.right-arrow-ani {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(50%, -50%);
+}
+.right-arrow-ani span {
+	display: block;
+	position: relative;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.right-arrow-ani span:nth-of-type(1) {
+	animation: fade-arrow 2.5s infinite 0.6s;
+	animation-direction: normal;
+	background-color: gray;
+}
+.right-arrow-ani span:nth-of-type(2) {
+	animation: fade-arrow 2.5s infinite 0.9s;
+	animation-direction: normal;
+	background-color: darkgray;
+}
+.right-arrow-ani span:nth-of-type(3) {
+	animation: fade-arrow 2.5s infinite 1.2s;
+	animation-direction: normal;
+	background-color: #fff;
+}
+.right-arrow-ani span:nth-of-type(4) {
+	animation: fade-arrow 2.5s infinite 1.5s;
+	animation-direction: normal;
+	margin-right: 0;
+	width: 14px;
+	height: 16px;
+	background: url('../images/tv/oled3th/icon_meta_arrow.png') no-repeat center center;
+	background-size: auto 100%;
+	transform: rotate(180deg)
+}
+
+@keyframes fade-arrow {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+/* // > interaction */
+
+
+/* // :: multi booster */
+
+/* :: common contents wrap */
+.oled-meta-common {
+	position: relative;
+	width: 100%;
+	padding: 120px 0;
+	overflow: hidden;
+}
+.oled-meta-common--gray {
+	background: #f8f8f8
+}
+/* :: // common contents wrap */
+
+/* :: product lineup */
+.oled-meta-lineup {
+	margin-top: 120px;
+	background: #f8f8f8;
+	text-align: center;
+	overflow: hidden;
+	padding-bottom: 120px;
+}
+.oled-meta__h3 {
+	font-size: 55px;
+	font-weight: 600;
+	color: #111;
+	letter-spacing: -1px;
+}
+.oled-meta__in-title {
+	margin-top: 20px;
+	font-size: 20px;
+	line-height: 1.6;
+	color: #111;
+}
+/* 20240603 추가 */
+.oled-meta-lineup .oled-meta__h3 {
+	font-weight: 500;
+}
+/* // 20240603 추가 */
+.oled-meta-lineup__sub-title {
+	display: block;
+	margin-top: 40px;
+	font-size: 28px;
+	color: #111;
+}
+.oled-meta-lineup__wrap {
+	display: flex;
+	justify-content: center;
+	max-width: 821px;
+	margin: 40px auto 0;
+}
+.oled-meta-lineup__wrap > * {
+	position: relative;
+	flex-basis: 50%;
+	flex-shrink: 0;
+}
+.oled-meta-lineup__wrap > * img {
+	max-height: 206px
+}
+.oled-meta-lineup--2rd .oled-meta-lineup__wrap {
+	max-width: 900px;
+}
+.oled-meta-lineup--2rd .oled-meta-lineup__wrap > * img {
+	max-height: 246px
+}
+.oled-meta-lineup__wrap > *:first-child:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -25px;
+	width: 1px;
+	height: 100%;
+	background: #dcdcdc;
+	z-index: 1;
+}
+.oled-meta-lineup__wrap > *:first-child {
+	margin-right: 38px;
+}
+.oled-meta-lineup__wrap > *:last-child {
+	margin-left: 38px;
+}
+.oled-meta-lineup__tit {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #111;
+}
+.oled-meta-lineup__list {
+	position: relative;
+}
+.oled-meta-lineup__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.oled-meta-lineup__item:nth-child(1) {
+	margin-right: 33px;
+	top: 18px;
+}
+.oled-meta-lineup__item:nth-child(2) {
+	top: 40px;
+	left: 72px
+}
+.oled-meta-lineup__item:nth-child(3) {
+	top: 77px;
+	left: 138px
+}
+.oled-meta-lineup__item:nth-child(4) {
+	top: 116px;
+	left: 207px
+}
+.oled-meta-lineup__item:nth-child(5) {
+	top: 155px;
+	left: 276px
+}
+.oled-meta-lineup__item:nth-child(6) {
+	top: 194px;
+	left: 345px
+}
+.oled-meta-lineup__item:nth-child(7) {
+	top: 233px;
+	left: 414px
+}
+.oled-meta-lineup__etc {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 17px;
+	font-weight: 700;
+	color: #555;
+}
+.oled-meta-lineup__item img {
+	border: 2px solid #111;
+}
+.oled-meta-lineup__inch {
+	display: block;
+	text-align: left;
+	margin-top: 5px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #555;
+}
+/* :: // product lineup */
+
+/* :: product spec */
+.oled-meta-spec {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+/* 20240603 추가 */
+.oled-meta-spec .oled-meta__h3 {
+	font-weight: 500;
+}
+/* // 20240603 추가 */
+.oled-meta-spec__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+}
+.oled-meta-spec__item {
+	position: relative;
+}
+.oled-meta-spec__item .oled-meta-spec__btn {
+	padding: 15px 27px;
+	font-size: 20px;
+	color: #111;
+}
+.oled-meta-spec__item.active .oled-meta-spec__btn {
+	font-weight: 600;
+	color: #F5C242;
+}
+.oled-meta-spec__item.active .oled-meta-spec__btn:before {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height:5px;
+	background: #F5C242
+}
+.oled-meta-spec__conts .table-head {
+	width: 100%;
+	padding: 30px 15px;
+	margin-top: 20px;
+	font-size: 26px;
+	font-weight: 600;
+	color: #111;
+	line-height: 1.4;
+	background: #F8F8F8;
+	border-bottom: 1px solid #DCDCDC
+}
+.oled-meta-spec__conts ul {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	width: 100%;
+}
+.oled-meta-spec__conts ul li {
+	width: 50%;
+	border-bottom: 1px solid #DCDCDC;
+}
+.oled-meta-spec__conts ul li.fulls {
+	width: 100%;
+}
+.oled-meta-spec__conts ul li.fulls dd {
+	border-right: 0;
+}
+.oled-meta-spec__conts ul li dl {
+	display: flex;
+	height: 100%;
+}
+/* 20240529 피드백 수정 */
+.oled-meta-spec__conts ul li dl > * {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	line-height: 1.5;
+	padding: 14px 20px;
+}
+.oled-meta-spec__conts ul li dt {
+	flex-basis: 250px;
+	flex-shrink: 0;
+	font-size: 20px;
+	font-weight: 400;
+	color: #111;
+	justify-content: center;
+	text-align: center;
+	border-right: 1px solid #DCDCDC;
+	height: 100%;
+}
+.oled-meta-spec__conts ul li dd {
+	flex: 1;
+	vertical-align: top;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	color: #111;
+	border-right: 1px solid #DCDCDC;
+	height: 100%;
+}
+/* //20240529 피드백 수정 */
+/* 20240529 피드백 추가 */
+.oled-meta-spec__conts ul li:nth-of-type(2n) dd:last-child {
+	border-right: 0;
+}
+/* //20240529 피드백 추가 */
+.oled-meta-spec__etc {
+	display: block;
+	text-align: left;
+	font-size: 16px;
+	color: #767676;
+	margin-top: 12px;
+}
+/* :: // product spec */
+
+/* :: product other */
+.oled-other {
+	padding: 80px 0 150px;
+	text-align: center;
+}
+/* 20240603 추가 */
+.oled-other .oled-meta__h3 {
+	font-weight: 500;
+}
+/* // 20240603 추가 */
+.oled-other__list {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+.oled-other__item {
+	display: inline-block;
+	overflow: hidden;
+}
+.oled-other__item + .oled-other__item {
+	margin-left: 20px;
+}
+.oled-other__link {
+	display: block;
+	text-align: left;
+}
+.oled-other__image-wrap {
+	display: block;
+	width: 285px;
+	height: 187px;
+	overflow: hidden;
+	background: url('../images/tv/oled3th/other_01.jpg') no-repeat center center;
+	background-size: auto 100%;
+	transition: all 0.2s ease-in-out;
+}
+.oled-other__item:nth-child(1) .oled-other__image-wrap {
+	background-size: auto 100%;
+}
+.oled-other__item:nth-child(2) .oled-other__image-wrap {
+	background: url('../images/tv/oled3th/other_02.jpg') no-repeat center center;
+	background-size: auto 100%;
+}
+.oled-other__item:nth-child(3) .oled-other__image-wrap {
+	background: url('../images/tv/oled3th/other_03.jpg') no-repeat center center;
+	background-size: auto 100%;
+}
+.oled-other__item:nth-child(4) .oled-other__image-wrap {
+	background: url('../images/tv/oled3th/other_04.jpg') no-repeat center center;
+	background-size: auto 100%;
+}
+/* 20240603 수정 */
+.oled-other__link:hover .oled-other__image-wrap {
+	background-size: auto 120% !important;
+}
+.oled-other__list.oled-other__list--type2 .oled-other__image-wrap {
+	background: none !important;
+}
+.oled-other__list.oled-other__list--type2 .oled-other__link .oled-other__image-wrap img {
+	transition: all 0.2s ease-in-out;
+}
+.oled-other__list.oled-other__list--type2 .oled-other__link:hover .oled-other__image-wrap img {
+	transform: scale(1.2);
+}
+
+/* // 20240603 수정 */
+.oled-other__title {
+	display: block;
+	margin-top: 12px;
+	font-size: 22px;
+	font-weight: 700;
+	color: #111;
+}
+.oled-other__more {
+	position: relative;
+	display: inline-block;
+	margin-top: 12px;
+	font-size: 14px;
+	color: #6d6d6d;
+}
+.oled-other__more:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+}
+
+.oled-other__link.active .oled-other__more{
+	color: #F5C242
+}
+.oled-other__link.active .oled-other__more:after {
+	background: #F5C242;
+    animation: exaw .5s ;
+}
+
+/* :: // product other */
+
+/* > 2rd */
+/* :: product highlight */
+.oled-ex-hl {
+	position: relative;
+	width: 100%;
+	padding: 120px 0;
+	background: #F8F8F8;
+	text-align: center;
+}
+.oled-ex-hl .oled-ex-h1__title,
+.oled-ex-common-title {
+	font-size: 64px;
+	font-weight: 600;
+	color: #111;
+}
+.oled-ex-hl .oled-ex-h1__title img {
+	display: block;
+	margin: 0 auto 15px;
+}
+.oled-ex-hl .oled-ex__text {
+	font-size: 26px;
+	font-weight: 600;
+	color: #111;
+	line-height: 1.5;
+	margin-top: 36px;
+}
+.oled-ex-hl .oled-ex-hl__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+}
+.oled-ex-hl .oled-ex-hl__list.oled-ex-hl__list--mt0 {
+	margin-top: 0;
+}
+.oled-ex-hl .oled-ex-hl__item {
+	width: 386px;
+	height: 350px;
+	background: #fff;
+	margin: 0 10px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #111;
+}
+.oled-ex-hl .oled-ex-hl__item img {
+	display: block;
+	margin: 0 auto;
+}
+.oled-ex-hl.type2 .oled-ex-hl__item {
+	line-height: 1.6;
+	height: 388px
+}
+/* :: // product highlight */
+
+/* :: hydrogen */
+.oled-ex-hydro {
+	position: relative;
+}
+.oled-ex-hydro:before {
+	content: '';
+	position: absolute;
+	top: -70px;
+	left: 0px;
+	width: 476px;
+	height: 762px;
+	background: url('../images/tv/oled2rd/hydro1.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+.oled-ex-hydro:after {
+	content: '';
+	position: absolute;
+	top: -70px;
+	right: -40px;
+	width: 454px;
+	height: 517px;
+	background: url('../images/tv/oled2rd/hydro2.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+.oled-ex-hydro__conts {
+	max-width: 1000px;
+	padding: 120px 0;
+	margin: 0 auto;
+}
+.oled-ex-hydro__title {
+	position: relative;
+	font-size: 55px;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #111;
+}
+.oled-ex-hydro__title span {
+	display: block;
+	font-size: 55px;
+	font-weight: 700;
+}
+.oled-ex-hydro__flex {
+	display: flex;
+	margin-top: 28px;
+	position: relative;
+	z-index: 1;
+}
+.oled-ex-hydro__flex-left {
+	flex-basis: 306px;
+	flex-shrink: 0;
+	text-align: center;
+}
+.oled-ex-hydro__flex-left img {
+	width: 141px;
+}
+.oled-ex-hydro__text {
+	flex-grow: 1;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.oled-ex-hydro__text + .oled-ex-hydro__text {
+	margin-top: 14px;
+}
+/* :: // hydrogen */
+
+/* :: personal algorithm */
+.personal_al {
+	text-align: center;
+	padding: 120px 0 120px;
+}
+.personal_al .oled-meta__h3 {
+	font-weight: 400;
+	line-height: 1.3;
+	margin-bottom: 80px;
+}
+.personal_al .oled-meta__h3 span {
+	display: block;
+	font-weight: 600;
+}
+.micro-lens3.personal_al {
+	padding-top: 0;
+}
+/* @media screen and (min-width: 1201px){
+	.personal_al .oled-meta .btn-video-play:before {
+		height: 50px;
+		background: url('../images/tv/oled2rd/icon_vid_play.svg') no-repeat center center;
+		background-size: auto 100%;
+	}
+} */
+/* // :: personal algorithm */
+
+/* :: oled pattern */
+.oled-ex-pattern {
+	position: relative;
+	width: 100%;
+	height: 580px;
+	background: url('../images/tv/oled2rd/h_pattern_bg.png') no-repeat center center;
+	background-size: cover;
+}
+.oled-ex-pattern__wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0 30px;
+}
+.oled-ex-pattern__wrap img:nth-of-type(2) {
+	display: none;
+}
+.oled-ex-pattern__text {
+	max-width: 500px;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #fff;
+}
+.oled-ex-pattern__text + .oled-ex-pattern__text {
+	margin-top: 10px;
+}
+/* // :: oled pattern */
+
+/* :: professional */
+.oled-ex-pro {
+	position: relative;
+	width: 100%;
+	padding: 120px 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.oled-ex-pro .oled-meta__h3 {
+	padding: 0 102px 80px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+.oled-ex-pro .oled-meta__h3 span {
+	display: block;
+	font-weight: 600;
+}
+.oled-ex-pro__item {
+	display: flex;
+	justify-content: space-between;
+}
+.oled-ex-pro__item + .oled-ex-pro__item {
+	margin-top: 60px;
+}
+.oled-ex-pro__desc {
+	flex-grow: 1;
+	padding: 0 102px;
+}
+.oled-ex-pro__img {
+	flex-basis: 590px;
+	flex-shrink: 0;
+}
+.oled-ex-pro__tit {
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 1;
+	color: #111;
+}
+.oled-ex-pro__txt {
+	margin-top: 15px;
+	font-size: 22px;
+	line-height: 1.5;
+}
+.oled-ex-pro__name {
+	margin-top: 32px;
+}
+.oled-ex-pro__name > * {
+	position: relative;
+	font-size: 20px;
+}
+.oled-ex-pro__name > * + * {
+	margin-left: 27px;
+}
+.oled-ex-pro__per {
+	font-weight: 600;
+	color: #555555;
+}
+.oled-ex-pro__name > * + *:before {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: -17px;
+	width: 1px;
+	height: 19px;
+	background: #555555;
+}
+.oled-ex-pro__view {
+	position: relative;
+	margin-top: 35px;
+	padding-left: 19px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #111;
+	transition: all .3s;
+}
+.oled-ex-pro__view:before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 12px;
+	height: 14px;
+	background: url('../images/tv/oled2rd/h_triangle.svg') no-repeat center center;
+	background-size: 100% auto;
+}
+.oled-ex-pro__view:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 19px;
+	width: calc(100% - 19px);
+	height: 1px;
+	background: #111;
+}
+.oled-ex-pro__view:hover {
+	color: #F5C242
+}
+.oled-ex-pro__view:hover:after {
+	background: #F5C242;
+	animation: expv .5s;
+}
+
+@keyframes expv {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: calc(100% - 19px);
+	}
+}
+/* :: // professional */
+
+/* :: award */
+.oled-ex-award {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 60px 100px 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid #E0E0E0
+}
+.oled-ex-award__title {
+	font-size: 55px;
+	/* 20240603 수정 */
+	font-weight: 500;
+	/* // 20240603 수정 */
+	color: #111;
+}
+.oled-ex-award__text {
+	margin-top: 18px;
+	line-height: 1.4;
+	font-size: 20px;
+	color: #555;
+}
+.oled-ex-award__link {
+	position: relative;
+	display: inline-block;
+	margin-top: 40px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #111;
+	transition: all .3s;
+}
+.oled-ex-award__link:before {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #111;
+}
+.oled-ex-award__right > img {
+	width: 310px;
+}
+.oled-ex-award__link:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -22px;
+	width: 16px;
+	height: 16px;
+	background: url('../images/tv/oled2rd/h_outlink.png') no-repeat center center;
+	background-size: auto 100%;
+}
+.oled-ex-award__link:hover {
+	color: #F5C242;
+}
+.oled-ex-award__link:hover:before {
+	background: #F5C242;
+	animation: exaw .5s;
+}
+/* 20240603 추가 */
+.oled-ex-award__link:hover:after {
+	background: url(../images/tv/oled2rd/h_outlink_hover.png) no-repeat center center;
+	background-size: auto 100%;
+}
+/* // 20240603 추가 */
+
+@keyframes exaw {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+.oled-ex-award__right .oled-ex-award__link {
+	display: none;
+}
+/* // :: award */
+
+/* :: lineup */
+/* 20240530 수정 */
+.oled-meta-lineup--2rd .oled-meta-lineup__wrap > *:first-child:before {
+    height: 100%;
+	right: -38px;
+}
+/* //20240530 수정 */
+.oled-meta-lineup__item--more {
+	font-size: 17px;
+	font-weight: 700;
+	color: #555;
+}
+
+/* > // :: lineup */
+
+
+
+/* Change animation */
+.oled-meta .high-definition-display .image-area .absolute-area.active .meta-img03 {
+	transition-delay: .1s;
+}
+.oled-meta .high-definition-display .image-area .absolute-area.active .meta-img02 {
+	transition-delay: .2s;
+}
+.oled-meta .high-definition-display .image-area .absolute-area.active .meta-img01 {
+	transition-delay: .3s;
+}
+
+/* // Change animation */
+
+
+/* // product > tv */
+
+
+/* oled */
+
+/* :: > kv */
+.oled-tech .oled-tech-kv{
+	position: relative;
+	width: 100%;
+	height: 700px;
+}
+@media screen and (min-width:1921px){
+	.oled-tech .oled-tech-kv {
+		height: 36vw;
+	}
+}
+
+.oled-tech .oled-tech-kv .kv__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.oled-tech-kv__conts {
+	position: absolute;
+	bottom: 106px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.oled-tech-kv__etc {
+	display: block;
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: 600;
+	color: #fff;
+}
+.oled-tech-kv__etc.oled-tech-kv__etc--semi {
+	font-weight: 500;
+}
+/* // :: > kv */
+
+/* :: > area-self-emissive */
+.oled-oneself {
+	padding: 150px 0;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.oled-tech__title {
+	font-size: 64px;
+	font-weight:600;
+	color: #111;
+}
+.oled-tech__sub-title {
+	font-size: 55px;
+	font-weight:600;
+	color: #111;
+}
+.oled-tech__text {
+	margin-top: 40px;
+	font-size: 20px;
+	color: #555;
+	line-height: 1.5;
+}
+
+.oled-oneself__flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 80px
+}
+.oled-oneself__title {
+	display: block;
+	font-size: 34px;
+	margin-bottom: 34px;
+	font-weight: 700;
+	color: #000
+}
+/* 20240529 TEXT 피드백 수정 */
+.oled-oneself__more {
+	position: relative;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	margin: 80px auto 0;
+	border: 1px solid #111111;
+	padding: 19px 30px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #111;
+	transition: all .3s;
+}
+/* //20240529 TEXT 피드백 수정 */
+.oled-oneself__more:hover {
+	border: 1px solid transparent;
+	background: #F5C242;
+	color: #fff;
+}
+.oled-oneself__more:after {
+	content: '';
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: url('../images/oled/icon-more.svg') no-repeat center center;
+	background-size: auto 100%;
+	margin-left: 8px;
+}
+.oled-oneself__more:hover:after {
+	background: url('../images/oled/icon-more-w.svg') no-repeat center center;
+}
+.oled-prod-popup.oled-prod-popup--lu {
+	background: rgba(0, 0, 0, .8);
+}
+.oled-prod-popup.oled-prod-popup--lu .oled-prod-popup__close {
+	top: -44px;
+	right: 0;
+	width: 24px;
+	height: 24px;
+	background: url('../images/oled/icon-popup-close.svg') no-repeat center center;
+	background-size: auto 100%;
+}
+.oled-popup-mx1200 {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.oled-prod-lu__in {
+	display: none;
+	width: 100%;
+	height: calc(100vh - 153px);
+	background: #fff;
+	margin-top: 108px;
+	padding: 102px;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	scrollbar-color: #dfdfdf #f0f0f0;
+}
+.oled-prod-lu__flex {
+	display: flex;
+	justify-content: space-between;
+}
+.oled-prod-lu__title {
+	flex-basis: 418px;
+	flex-shrink: 0;
+	font-size: 46px;
+	font-weight: 600;
+	line-height: 1.2;
+	color: #111;
+}
+.oled-prod-lu__text {
+	flex-grow: 1;
+	font-size: 19px;
+	color: #555;
+	line-height: 1.5;
+}
+.oled-prod-lu__in .micro-lens3 {
+	padding: 40px 0 0;
+}
+.oled-prod-lu__in #micro-lens-array-compare-video {
+	width: 100%;
+	height: 380px;
+}
+.vtn .oled-prod-lu__in #micro-lens-array-compare-video {
+	height: 330px;
+}
+
+.oled-prod-lu__list {
+	margin-top: 40px;
+	display: flex;
+	flex-flow: row wrap;
+}
+.oled-prod-lu__item {
+	position: relative;
+	padding-left: 12px;
+	flex-basis: 33%;
+	font-size: 16px;
+	color: #555;
+	margin-bottom: 10px;
+}
+.oled-prod-lu__item:before {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 5px;
+	height: 5px;
+	background: #111; 
+	border-radius: 100%;
+}
+/* // :: > area-self-emissive */
+
+/* :: > liber (about_what.css) */
+.oled-lib {
+	text-align: center;
+}
+.about-oled.what-is-oled .area-lcd-vs-oled .compare-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.area-lcd-vs-oled {
+	padding: 120px 0 0;
+	background: linear-gradient(#F8F8F8, #FFFFFF)
+}
+/* // :: > liber (about_what.css) */
+
+
+/* :: > char */
+/* 20240530 수정 */
+.oled-char {
+	text-align: center;
+	padding: 100px 0 120px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* //20240530 수정 */
+.oled-char__list {
+	margin-top: 60px;
+	display: flex;
+	flex-flow: row wrap;
+}
+.oled-char__item {
+	position: relative;
+	flex-basis: 50%;
+	display: flex;
+	align-items: center;
+	padding: 0 30px 30px 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #DCDCDC
+}
+.oled-char__item:nth-child(odd):after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1px;
+	height: calc(100% - 20px);
+	background: #DCDCDC
+}
+.oled-char__item + .oled-char__item + .oled-char__item {
+	border-bottom: 0;
+}
+.oled-char__item img {
+	flex-basis: 106px;
+	flex-shrink: 0;
+}
+.oled-char__item p {
+	flex-grow: 1;
+	text-align: left;
+	padding-left: 40px;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #555555;
+}
+/* // :: > char */
+
+/* :: > ace */
+.oled-ace {
+	background: #F8F8F8;
+	padding: 120px 0;
+	text-align: center;
+}
+.oled-ace__list {
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+}
+.oled-ace__item {
+	position: relative;
+	flex-basis: calc(33.333334% - 14px);
+	flex-shrink: 0;
+	padding: 50px 46px;
+	background: #fff;
+	margin-right: 20px;
+}
+.oled-ace__item > img {
+	margin: 0 auto;
+	display: block;
+}
+.oled-ace__item:last-child {
+	margin-right: 0;
+}
+.oled-ace__item li {
+	position: relative;
+	display: table;
+	margin: 0 auto;
+	font-size: 20px;
+	line-height: 1.4;
+	color: #111;
+}
+.oled-certi .oled-ace__item li {
+	display: block;
+	margin: 5px 0 0;
+	text-align: left;
+	padding-left: 14px;
+}
+.oled-ace__item li + li {
+	margin-top: 5px;
+}
+.oled-ace__item li:before {
+	content: '';
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background: #111;
+	border-radius: 100%;
+	vertical-align: 5px;
+	margin-right: 10px;
+}
+.oled-certi .oled-ace__item li:before {
+	position: absolute;
+	top: 9px;
+	left: 0;
+	margin: 0;
+}
+
+.oled-ace-tab {
+	max-width: 1200px;
+	margin: 120px auto 0;
+}
+.oled-ace-tab__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.oled-ace-tab__item {
+	position: relative;
+}
+.oled-ace-tab__item button {
+	font-size: 20px;
+	color: #111;
+	padding: 0 13px;
+}
+.oled-ace-tab__item.active:after {
+	content: '';
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 5px;
+	background: #F5C242
+}
+.oled-ace-tab__item.active button {
+	font-weight: 700;
+	color: #F5C242
+}
+
+.oled-ace__slide {
+	position: relative;
+	margin-top: 40px;
+	overflow: hidden;
+	background: #fff;
+}
+.oled-ace__slide:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 85px);
+	background: #fff;
+}
+.oled-ace__slide * + video {
+	margin-top: 0;
+}
+/* 20240603 추가 */
+.oled-ace__slide .swiper-slide img:nth-child(2) {
+	display: none;
+}
+/* // 20240603 추가 */
+
+.oled-ace__slide .swiper-slide--pol .common-int-play--interaction {
+	transition: none;
+}
+.oled-ace__slide .swiper-slide--pol .vid__pc img:nth-child(2),
+.oled-ace__slide .swiper-slide--pol .vid__mo img:nth-child(2) {
+	display: block;
+}
+.oled-ace__slide .swiper-slide--pol .vid__pc img:nth-child(2),
+.oled-ace__slide .swiper-slide--pol .vid__mo img:nth-child(2) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+}
+.oled-ace__slide .swiper-slide--pol.active .vid__pc img:nth-child(2),
+.oled-ace__slide .swiper-slide--pol.active .vid__mo img:nth-child(2) {
+	transition: all 1s;
+	opacity: 0;
+}
+
+.oled-ace__slide .swiper-slide.swiper-slide--monitor.active img {
+	transition: all .8s;
+}
+.oled-ace__slide .swiper-slide.swiper-slide--monitor img + img {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+}
+.oled-ace__slide .swiper-slide.swiper-slide--monitor img:nth-child(2) {
+	z-index: -1;
+}
+
+.pol__etc {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 18px;
+	color: #fff;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+.pol__etc:before {
+	content: '';
+	display: block;
+	margin-right: 9px;
+	width: 27px;
+	height: 27px;
+	background: url('../images/monitor/slide2-3_light-off.png') no-repeat center -1px;
+	background-size: auto 100%;
+}
+.oled-ace__slide .swiper-slide--pol.active .pol__etc:before {
+	font-weight: 600;
+	background: url('../images/monitor/slide2-3_light-on.png') no-repeat center -1px;
+	background-size: auto 100%;
+}
+
+
+.oled-code__title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.oled-code__left,
+.oled-code__right {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 272px;
+	height: 34px;
+	background: url('../images/monitor/slide_title_black.png') no-repeat center center;
+	background-size: auto 100%;
+	text-align: center;
+	line-height: 34px;
+	font-size: 18px;
+	/* font-weight: 500; */
+	color: #fff;
+}
+.oled-code__hdr {
+	position: absolute;
+	top: 153px;
+	font-size: 22px;
+	color: #fff;
+}
+.oled-code__hdr strong {
+	font-size: 40px;
+	font-weight: 600;
+}
+.oled-code__hdr.oled-code__hdr--left {
+	transform: translateX(-50%);
+	left: calc(50% - 124px);
+}
+.oled-code__hdr.oled-code__hdr--right {
+	transform: translateX(50%);
+	right: calc(50% - 467px);
+}
+
+.oled-ace__slide .swiper-slide video {
+	height: 500px;
+	background: #000
+}
+.oled-ace__slide .swiper-slide .video__slide-wrap video {
+	background: none;
+	object-fit: cover;
+}
+.oled-ace__slide .swiper-slide.swiper-slide--minimize {
+}
+.oled-ace__slide .swiper-slide.swiper-slide--minimize video {
+	/* object-fit: cover; */
+	/* background: none; */
+}
+
+.oled-code__left {
+	left: calc(50% - 292px);
+}
+.oled-code__right {
+	background: url('../images/monitor/slide_title_red.png') no-repeat center center;
+	left: calc(50% - -292px);
+}
+
+.human_gauge {
+	position: absolute;
+	top: 150px;
+	left: 80px;
+	display: flex;
+	align-items: center;
+}
+.human_gauge__text {
+	display: block;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 17px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
+}
+.chn .human_gauge__text,
+.vtn .human_gauge__text {
+	padding-bottom: 5px;
+}
+.human_gauge__text.human_gauge__text--black {
+	background: url(../images/monitor/slide4-1_3.png) no-repeat center center;
+	background-size: cover;
+	height: 41px;
+}
+.human_gauge__text.human_gauge__text--red {
+	background: url(../images/monitor/slide4-1_4.png) no-repeat center center;
+	background-size: auto 100%;
+	height: 46px;
+}
+.human_gauge__inner + .human_gauge__inner {
+	margin-left: 40px;
+}
+
+.oled-ace__controller {
+	position: relative;
+}
+.oled-ace__text-wrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 102px;
+	background: #fff;
+}
+.oled-ace__text-wrap .oled-ace__s-title {
+	flex-basis: 500px;
+	flex-shrink: 0;
+	text-align: left;
+	font-size: 55px;
+	font-weight: 600;
+	line-height: 1.2;
+	color: #111;
+}
+.oled-ace__text-wrap .oled-ace__s-title.type2 {
+	font-size: 49px;
+}
+.oled-ace__text-wrap .oled-ace__s-text {
+	flex-grow: 1;
+	text-align: left;
+	font-size: 20px;
+	color: #555;
+	line-height: 1.6;
+}
+.oled-ace__text-wrap .oled-ace__s-text.type2 {
+	font-size: 19px
+}
+.oled-ace__text-wrap .oled-ace__s-text > span:first-child {
+	display: block;
+	font-size: 22px;
+	font-weight: 600;
+	color: #111;
+	margin-bottom: 15px;
+}
+.oled-ace__text-wrap .oled-ace__s-etc {
+	display: block;
+	margin-top: 15px;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #767676
+}
+
+.oled-ace__text-wrap .oled-ace__exception {
+	margin-top: 15px;
+}
+.oled-ace__text-wrap .oled-ace__exception * {
+	margin-top: 0;
+}
+.oled-ace__text-wrap .oled-ace__exception * + * {
+	margin-top: 2px;
+}
+
+/* 20240530 추가 */
+.eng .oled-ace__text-wrap .oled-ace__s-etc {
+	display: block;
+	margin-top: 2px;
+	font-size: 15px;
+	color: #767676
+}
+/* //20240530 추가 */
+.oled-ace__controller {
+	position: absolute;
+	top: calc(50% - 164px);
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.oled-ace__controller > * {
+	position: relative;
+}
+.oled-ace__controller .swiper-button-prev {
+	left: 0 !important;
+}
+.oled-ace__controller .swiper-button-next {
+	right: 0 !important;
+}
+.oled-ace__controller .swiper-button-prev,
+.oled-ace__controller .swiper-button-next {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #DCDCDC;
+	background: rgba(255, 255, 255, 0.8);
+}
+.oled-ace__controller .swiper-button-prev:before,
+.oled-ace__controller .swiper-button-next:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 13px;
+	height: 24px;
+	background: url('../images/oled/oled-ace-arrow.svg') no-repeat center center;
+	background-size: auto 100%;
+}
+.oled-ace__controller .swiper-button-prev:before {
+	transform: translate(-50%, -50%) rotate(180deg)
+}
+
+.oled-ace__pg {
+	display: none !important; /* 추후 생성 대비 */
+	bottom: inherit !important;
+	top: 560px !important;
+	left: 50% !important;
+	transform: translateX(-50%);
+}
+.oled-ace__pg .swiper-pagination-bullet {
+	width: 8px !important;
+	height: 4px !important;
+	border-radius: 0 !important;
+	background: #dcdcdc !important;
+	margin: 0 5px !important;
+}
+.oled-ace__pg .swiper-pagination-bullet-active {
+	width: 51px !important;
+	background: #F5C242 !important;
+}
+/* // :: > ace */
+
+
+/* :: > certification */
+.oled-certi {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 150px 0 120px;
+	text-align: center;
+}
+.oled-certi .oled-ace__item {
+	border-right: 1px solid #DCDCDC
+}
+.oled-certi .oled-ace__item:last-child {
+	border-right: 0;
+}
+.oled-certi .oled-certi__img-wrap {
+	margin-top: 30px;
+}
+.oled-certi .oled-certi__img-wrap img {
+	display: block;
+	margin-top: 20px;
+}
+.oled-certi__img__ex {
+	display: block;
+	margin-top: 10px;
+	font-size: 16px;
+	color: #767676
+}
+.oled-certi__etc {
+	margin-top: 80px;
+	text-align: left;
+	font-size: 14px;
+	color: #767676;
+	line-height: 1.5;
+}
+/* // :: > certification */
+
+/* :: > more-link */
+.oled-more-link {
+	position: relative;
+	width: 100%;
+	padding-bottom: 60px;
+	background: #F8F8F8
+}
+.oled-more-link__wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.oled-more-link__depth {
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.oled-more-link__depth + .oled-more-link__depth {
+	border-top: 1px solid #E6E6E6
+}
+.oled-more-link__title {
+	font-size: 24px;
+	font-weight: 500;
+	color: #111;
+}
+/* 20240529 피드백 수정 */
+.oled-more-link__move {
+	position: relative;
+	padding: 19px 30px;
+	border: 1px solid #111;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 600;
+	flex-shrink: 0;
+	color: #111;
+	transition: all .3s;
+}
+/* //20240529 피드백 수정 */
+.oled-more-link__move:after {
+	content: '';
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url('../images/oled/icon-more-s.svg') no-repeat center center;
+	background-size: auto 100%;
+	vertical-align: -2px;
+	margin-left: 8px;
+}
+.oled-more-link__move:hover {
+	background: #F5C242;
+	border: 1px solid #F5C242;
+	color: #fff;
+}
+.oled-more-link__move:hover:after {
+	background: url('../images/oled/icon-more-s-w.svg') no-repeat center center;
+}
+/* // :: > more-link */
+
+/* oledspace -> lgd :: redefined */
+.oled-meta .evolution .thumb-box .type-one .item,
+.oled-meta .evolution .thumb-box .type-three>ul li .text-area {
+	color: #111;
+}
+.oled-meta .evolution .desc {
+	text-align: center;
+}
+/* // oledspace -> lgd :: redefined */
+/* // old */
+
+/* // oled */
+
+
+
+
+
+/* media */
+/* 1. product > tv 3th */
+@media screen and (max-width: 1200px){
+	.oled-prod-kv,
+	.oled-tech .oled-tech-kv {
+		height: 66vw;
+		margin-top: -1px;
+	}
+	.oled-prod-kv__title {
+		font-size: 3.9vw;
+		line-height: 1.3;
+	}
+
+	.oled-prod-kv-type2 {
+		height: 66vw;
+	}
+
+	.oled-prod-tab {
+		height: 60px;
+	}
+	.oled-prod-tab__btn {
+		padding: 0 10px;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.oled-prod-vid {
+		padding: 60px 0;
+	}
+	.oled-prod-vid__logo img {
+		width: 296px;
+	}
+	.oled-prod-vid__sub {
+		font-size: 16px;
+	}
+	.oled-prod-vid__text {
+		margin-top: 20px;
+		padding: 0 10px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	.oled-prod-vid__thumb {
+		margin: 40px 0 0 20px;
+		width: calc(100% - 40px);
+		height: calc(100vw - 47vw);
+	}
+	.oled-prod-vid__btn {
+		width: 50px;
+		height: 50px;
+		background: #fff;
+		border-radius: 100%;
+		font-size: 0;
+		line-height: 0;
+		text-indent: -9999px;
+	}
+	.oled-prod-vid__btn:before,
+	.oled-meta .btn-video-play:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: calc(50% - -3px);
+		transform: translate(-50%, -50%);
+		width: 25px;
+		height: 26px;
+		background: url('../images/tv/oled3th/m/icon-play.svg') no-repeat center center;
+		background-size: auto 100%;
+	}
+	.oled-prod-vid__btn:hover:before,
+	.oled-meta .btn-video-play:hover:before {
+		background: url('../images/tv/oled3th/m/icon-play_h.svg') no-repeat center center;
+		background-size: auto 100%;
+	}
+
+	.oled-prod-popup {
+		display: flex;
+		align-items: center;
+		padding: 0 20px;
+	}
+	.oled-prod-popup__close {
+		top: 20px;
+		right: 20px;
+		width: 18px;
+		height: 18px;
+	}
+
+	/* sticky */
+	.sticky-bar {
+		display: block;
+		padding: 0;
+		background: #fff;
+	}
+	.sticky-bar.active .sticky-bar__in {
+		border-bottom: 1px solid #dcdcdc
+	}
+	body:not(.up) .sticky-bar:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: #fff;
+		z-index: 1;
+	}
+	.sticky-title__btn:after {
+		top: 14px !important;
+		right: 20px !important;
+	}
+	.up .sticky-bar {
+		top: 67px !important
+	}
+	.sticky-title__btn {
+		width: 100%;
+		text-align: left;
+		font-size: 16px;
+		padding: 10px 20px;
+	}
+	.sticky-bar .sticky-tab-box {
+		padding: 0 20px;
+		background: #EDEDED;
+		border-top: 1px solid #E0E0E0;
+		/* 20240603 추가 */
+		overflow-x: auto;
+		/* // 20240603 추가 */
+	}
+	.sticky-bar .sticky-tab-box li a {
+		display: block;
+		/* 20240603 수정 */
+		padding: 10px 0;
+		/* // 20240603 수정 */
+	}
+	.sticky-bar__in {
+		top: 42px;
+		height: auto;
+		background: #fff;
+	}
+	.sticky-bar__in .sticky-bar__link {
+		width: 100%;
+		text-align: left;
+		font-size: 16px;
+		/* 20240603 수정 */
+		padding: 12px 20px;
+		/* // 20240603 수정 */
+	}
+
+	.oled-meta .text-area .title {
+		font-size: 36px;
+		font-weight: 500;
+	}
+	.oled-meta .text-area .desc {
+		text-align: center;
+	}
+
+	.oled-meta-996 {
+		display: block;
+		margin: 0 20px;
+		padding-top: 60px;
+	}
+	.micro-lens .oled-meta-996 {
+		padding-top: 40px;
+	}
+	.oled-meta-996__title,
+	.oled-meta-996__title.oled-meta-996__title--m {
+		font-size: 34px;
+	}
+	/* 20240530_v5 수정 */
+	.oled-meta-996__text {
+		font-size: 14px !important;
+	}
+	/* // 20240530_v5 수정 */
+	/* 20240530 추가 */
+	.chn .oled-meta-996__text {
+		word-break: break-all;
+	}
+	/* //20240530 추가 */
+	.oled-meta-996__right {
+		margin-top: 18px;
+	}
+	.oled-meta-996__text + .oled-meta-996__text {
+		margin-top: 10px;
+	}
+
+	.evolution-top {
+		display: flex;
+		align-items: center;
+		padding: 31px 14px;
+	}
+	.evolution-top__list {
+		display: block;
+	}
+	.evolution-top__logo {
+		margin: 0 20px 0 0;
+		width: 125px;
+	}
+	.evolution-top__item {
+		font-size: 14px;
+		font-weight: 500;
+	}
+	.evolution-top__item + .evolution-top__item {
+		margin: 6px 0 0 0;
+	}
+	.evolution-top__item + .evolution-top__item:before{
+		display: none;
+	}
+	.evolution-bottom__list,
+	.evolution-bottom__item {
+		display: block;
+	}
+	.evolution-bottom__item {
+		display: flex;
+		align-items: center;
+		padding: 20px 20px;
+	}
+	.evolution-bottom__item + .evolution-bottom__item {
+		margin: 10px 0 0;
+	}
+	.evolution-bottom__image {
+		width: 137px;
+		height: 113px;
+		margin-right: 20px;
+		/* 20240603 추가 */
+		flex-shrink: 0;
+		/* // 20240603 추가 */
+	}
+	.evolution-bottom__txt {
+		text-align: left;
+		font-size: 16px;
+	}
+	.evolution-bottom__item img {
+		width: 138px;
+	}
+
+	/* #features .oled-meta-996__title br:nth-of-type(1){
+		display: none;
+	} */
+	.br_1200_hide {
+		display: none !important
+	}
+	
+
+
+	.oled-prod .micro-lens .visual-area,
+	.oled-prod .micro-lens3 .visual-area {
+		margin-left: 20px;
+		width: calc(100% - 40px);
+		padding: 40px 0
+	}
+	.oled-prod .micro-lens .visual-area .btn-video-play,
+	.oled-prod .micro-lens .visual-area .btn-video-pause,
+	.oled-prod .micro-lens3 .visual-area .btn-video-play,
+	.oled-prod .micro-lens3 .visual-area .btn-video-pause {
+		width: 50px;
+		height: 50px;
+		background: #fff;
+		border-radius: 100%;
+	}
+	.oled-prod .micro-lens .visual-area .btn-video-play:hover,
+	.oled-prod .micro-lens3 .visual-area .btn-video-play:hover {
+		background: #F5C242
+	}
+
+	.oled-meta .evolution {
+		padding-top: 16vw;
+		padding-bottom: 60px;
+	}
+
+	.oled-meta-996__title strong br {
+		display: none;
+	}
+	.oled-prod .oled-meta-996__etc {
+		font-size: 12px;
+		margin-top: 10px;
+	}
+
+	.oled-prod .micro-lens {
+		padding-bottom: 40px;
+	}
+	.oled-prod .meta-multi-booster {
+		height: auto;
+	}
+	.oled-meta .micro-lens .custom-layout-content.meta-multi-booster {
+		margin: 40px 0 0 20px;
+		width: calc(100% - 40px);
+	}
+	.oled-meta .micro-lens .meta-multi-booster .text-area--off,
+	.oled-meta .micro-lens .meta-multi-booster .text-area--on {
+		top: 0;
+		padding: 0;
+	}
+	.oled-prod .oled-meta .micro-lens .meta-multi-booster .text-area__name {
+		display: none;
+	}
+	.oled-meta .micro-lens .meta-multi-booster .text-area--off .text-area__tag,
+	.oled-meta .micro-lens .meta-multi-booster .text-area--on .text-area__tag {
+		padding: 8px 18px;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.oled-meta .micro-lens .meta-multi-booster .text-area--off {
+		left: 0;
+	}
+	.oled-meta .micro-lens .meta-multi-booster .text-area--on {
+		right: 0;
+	}
+	.oled-meta .micro-lens .meta-multi-booster .text-area--on .text-area__tag {
+		font-weight: 700
+	}
+	.oled-meta .compare-area .handle button {
+		width: 50px;
+		height: 50px;
+	}
+	.oled-meta .micro-lens .meta-multi-booster .sub-title {
+		display: block;
+		margin-top: 12px;
+		margin-bottom: 0;
+		font-size: 16px;
+		font-weight: 500;
+		color: #111;
+	}
+
+	.oled-meta .compare-area.compare-area--type02 {
+		margin-bottom: 0;
+	}
+
+	.oled-meta-lineup {
+		margin-top: 0;
+	}
+
+	.oled-meta-lineup {
+		padding:50px 0 66px;
+	}
+	.oled-meta-lineup .oled-meta__in-title {
+		/* 20240603 추가 */
+		padding: 0 20px;
+		/* // 20240603 추가 */
+		margin: 10px auto 0;
+	}
+
+	.oled-meta__h3 {
+		font-size: 30px;
+	}
+	.oled-meta__in-title {
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	.oled-meta-lineup__sub-title {
+		margin-top: 32px;
+		font-size: 22px;
+	}
+
+	
+	.oled-meta-lineup__tit {
+		margin-bottom: 18px;
+		font-size: 18px;
+	}
+	.oled-meta-lineup__list {
+		height: 40.4vw;
+	}
+
+	.oled-meta-spec {
+		padding: 70px 20px
+	}
+	.oled-meta-spec__item .oled-meta-spec__btn {
+		font-size: 18px
+	}
+	.oled-meta-spec__list {
+		margin-top: 15px;
+	}
+	.oled-meta-spec__item .oled-meta-spec__btn {
+		padding: 5px 8px
+	}
+	.oled-meta-spec__conts ul li {
+		width: 100%;
+	}
+	.oled-meta-spec__conts .table-head {
+		font-size: 16px;
+		padding: 20px 18px
+	}
+	.oled-meta-spec__conts ul li dl > * {
+		padding: 16px 0;
+		font-size: 16px;
+	}
+	.oled-meta-spec__conts ul li dl {
+		align-items: flex-start;
+	}
+	.oled-meta-spec__conts ul li dt {
+		flex-basis: 200px;
+	}
+	/* 20240429 피드백 수정 */
+	.oled-meta-spec__conts ul li dd {
+		padding: 16px 10px;
+		border-right: 0;
+	}
+	/* //20240429 피드백 수정 */
+	.oled-meta-spec__etc {
+		margin-top: 14px;
+		font-size: 14px;
+	}
+
+	.oled-other {
+		padding: 50px 0 40px;
+	}
+	.oled-other__list {
+		display: block;
+		overflow: hidden;
+		max-width: 590px;
+		margin: 40px auto 0;
+		padding-left: 10px;
+	}
+	/* 20240530 수정 */
+	.oled-other__item {
+		float: left;
+		width: calc(50% - 10px);
+		margin-bottom: 20px;
+	}
+	/* //20240530 수정 */
+	/* 20240530 추가 */
+	.oled-other__item:nth-of-type(3), .oled-other__item:nth-of-type(4) {
+		margin-bottom: 10px;
+	}
+	/* //20240530 추가 */
+	.oled-other__item + .oled-other__item {
+		margin-left: 0;
+	}
+	.oled-other__item:nth-child(odd) {
+		margin-right: 10px;
+	}
+	.oled-other__title {
+		font-size: 16px;
+	}
+	.oled-other__more {
+		margin-top: 4px;
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.oled-meta-lineup__wrap {
+		display: block;
+	}
+
+	.oled-meta-lineup__wrap {
+		flex-direction: column;
+		margin: 36px auto 0;
+		padding: 0 20px;
+	}
+	.oled-meta-lineup__wrap > *:first-child,
+	.oled-meta-lineup__wrap > *:last-child {
+		margin:0;
+	}
+	/* 20240603 추가 */
+	.oled-meta-lineup__wrap > *:first-child {
+		padding-bottom: 33px;
+		border-bottom: 1px solid #DCDCDC;
+	}
+	/* // 20240603 추가 */
+	.oled-meta-lineup__wrap > * .oled-meta-lineup__list {
+		margin-left: 9vw
+	}
+	.oled-meta-lineup__wrap > *:first-child:before {
+		display: none;
+	}
+
+	/* 20240603 수정 */
+	.oled-meta-lineup__wrap > *:last-child {
+		margin-top: 38px;
+	}
+	/* // 20240603 수정 */
+
+	.oled-meta-lineup__item:nth-child(1) img {
+		height: 34.6666666667vw;
+	}
+	.oled-meta-lineup__item:nth-child(2) {
+		top: 4.6vw;
+		left: 30.1333333333vw
+	}
+	.oled-meta-lineup__item:nth-child(2) img {
+		height: 30.1333333333vw;
+	}
+
+	.oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(1) img {
+		height: 33.6vw;
+	}
+	.oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(2) {
+		top: 3.2vw;
+		left: 14.4vw;
+	}
+	.oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(2) img {
+		height: 30.1333333333vw;
+	}
+	.oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(3) {
+		top: 7.5vw;
+		left: 28.5333333333vw;
+	}
+	.oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(3) img {
+		height: 25.8666666667vw;
+	}
+	.oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(4) {
+		top: 10.4vw;
+		left: 42.6666666667vw;
+	}
+	.oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(4) img {
+		height: 23.2vw;
+	}
+	.oled-meta-lineup__inch {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.mobile_br {
+		display: block !important;
+	}
+	.mobile_hide_br {
+		display: none !important;
+	}
+	.oled-prod-kv {
+		height: 400px;
+		background: url('../images/tv/oled3th/m/tv_kv.jpg') no-repeat 50% 100%;
+		background-size: cover;
+	}
+	.oled-prod-kv__title {
+		padding: 80px 20px 0;
+		font-size: 22px;
+	}
+	.oled-prod2rd .oled-prod-vid__logo img {
+		width: 210px;
+	}
+
+	.oled-prod-kv-type2 {
+		height: 400px;
+	}
+	.oled-prod-kv-type2 .kv__img {
+		object-position: 50% 100%;
+	}
+	.oled-prod-kv-type2.mobile .kv__img {
+		object-position: 50% 83%;
+	}
+	.oled-prod-kv-type2.monitor .kv__img {
+		object-position: 50% 73%;
+	}
+
+	.oled-tech .oled-tech-kv {
+		height: 100vw;
+		background: url('../images/oled/m/oled-kv.jpg') no-repeat 50% 100%;
+		background-size: cover;
+	}
+
+	.oled-other__image-wrap {
+		width: 100%;
+		height: 163px;
+		background-size: cover;
+	}
+	/* 20240530 추가 */
+	.oled-other__item:nth-child(1) .oled-other__image-wrap {
+		background-size: 100% 100%;
+	}
+	.oled-other__item:nth-child(2) .oled-other__image-wrap {
+		background: url('../images/tv/oled3th/other_02.jpg') no-repeat center center;
+		background-size: 100% 100%;
+	}
+	.oled-other__item:nth-child(3) .oled-other__image-wrap {
+		background: url('../images/tv/oled3th/other_03.jpg') no-repeat center center;
+		background-size: 100% 100%;
+	}
+	.oled-other__item:nth-child(4) .oled-other__image-wrap {
+		background: url('../images/tv/oled3th/other_04.jpg') no-repeat center center;
+		background-size: 100% 100%;
+	}
+	/* 20240603 수정 (기존 : .oled-other__image-wrap:hover) */
+	.oled-other__link:hover .oled-other__image-wrap {
+		background-size: 100% 100% !important;
+	}
+
+	.oled-other__list.oled-other__list--type2 .oled-other__link .oled-other__image-wrap img {
+		width: 100%;
+		height: 100%;
+	}
+	.oled-other__list.oled-other__list--type2 .oled-other__link:hover .oled-other__image-wrap img {
+		transform: scale(1);
+	}
+	/* // 20240603 수정 */
+	/* //20240530 추가 */
+	.oled-other__item {
+		overflow: hidden
+	}
+}
+
+@media screen and (max-width: 750px){
+	/* oledspace -> lgd :: old css redefined */
+	.oled-meta .high-definition-display .text-area {
+		padding-top: 55px;
+	}
+	.oled-meta .evolution {
+		padding-top: 60px;
+	}
+	.oled-meta .evolution .text-area .title {
+		font-size: 36px;
+	}
+	.oled-meta .technology-ex-block .oled-box::before {
+		bottom: 4vw;
+    }
+	/* // oledspace -> lgd :: old css redefined */
+}
+/* // 1. product > tv 3th */
+
+
+
+/* 2. product > tv 2rd */
+@media screen and (max-width: 1279px){
+	.oled-meta-lineup--2rd .oled-meta-lineup__wrap {
+		max-width: 86vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(2) {
+		top: 23px;
+		left: 42px;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(3) {
+		top: 47px;
+		left: 85px;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(4) {
+		top: 69px;
+		left: 123px;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(5) {
+		top: 92px;
+		left: 164px;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(6) {
+		top: 114px;
+		left: 203px;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(7) {
+		top: 133px;
+		left: 237px;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.oled-ex-hl {
+		padding: 60px 0 50px;
+	}
+	.oled-ex-hl .oled-ex-h1__title img {
+		width: 210px;
+	}
+	.oled-ex-hl .oled-ex-h1__title,
+	.oled-ex-common-title {
+		font-size: 34px;
+	}
+	.oled-ex-hl .oled-ex-h1__title {
+		padding: 0 20px
+	}
+	/* 20240603 수정 */
+	.oled-ex-hl .oled-ex__text {
+		margin-top: 18px;
+		font-size: 14px;
+		padding: 0 20px;
+	}
+	/* // 20240603 수정 */
+	.oled-ex-hl .oled-ex-hl__list {
+		display: block;
+		margin:40px 0 0 20px;
+		width: calc(100% - 40px)
+	}
+	.oled-ex-hl .oled-ex-hl__item,
+	.oled-ex-hl.type2 .oled-ex-hl__item {
+		width: 100%;
+		height: auto;
+		margin: 0 0 10px;
+		display: flex;
+		align-items: center;
+	}
+	.oled-ex-hl .oled-ex-hl__item img {
+		margin: inherit;
+		width: 137px
+	}
+	.oled-ex-hl.type2 .oled-ex-hl__item img {
+		margin: inherit;
+	}
+	.oled-ex-hl .oled-ex-hl__item {
+		text-align: left;
+		line-height: 1.4;
+		font-size: 16px;
+	}
+
+	.oled-ex-hydro:before {
+		position: static;
+		display: block;
+		top: 0;
+		width: 100%;
+		height: 47vw;
+		background: url('../images/tv/oled2rd/m/hydro1.png') no-repeat center center;
+		background-size: cover
+	}
+	.oled-ex-hydro:after{
+		position: static;
+		display: block;
+		bottom: 0;
+		width: 100%;
+		height: 47vw;
+		background: url('../images/tv/oled2rd/m/hydro2.png') no-repeat center center;
+		background-size: cover;
+		margin-top: 30px;
+	}
+	.oled-ex-hydro__flex-left {
+		display: none;
+	}
+	.oled-ex-hydro__conts {
+		padding: 0 20px;
+		margin: inherit;
+	}
+	.oled-ex-hydro__title,
+	.oled-ex-hydro__title span {
+		font-size: 34px;
+		line-height: 1.3;
+	}
+	.oled-ex-hydro__text {
+		font-size: 14px;
+		line-height: 1.43;
+	}
+
+	.oled-ex-hydro__flex {
+		margin-top: 15px
+	}
+	.oled-ex-hydro__text + .oled-ex-hydro__text {
+		margin-top: 10px;
+	}
+
+	.oled-prod .personal_al {
+		padding: 60px 0;
+	}
+	.oled-prod .micro-lens3.personal_al {
+		padding: 40px 0 0;
+	}
+	.oled-prod .personal_al .oled-meta__h3 {
+		font-size: 34px;
+		text-align: left;
+		margin-bottom: 40px;
+		padding: 0 20px;
+	}
+	.oled-prod .personal_al .oled-meta {
+		padding: 0;
+	}
+
+	.counting-box {
+		bottom: 20px;
+	}
+	.counting-box > div:nth-child(1) {
+		font-size: 7vw;
+		font-weight: 700;
+	}
+	.counting-box > div:nth-child(2) {
+		font-size: 4.5vw
+	}
+	.btn-video--right {
+		top: inherit !important;
+		bottom: 0px !important;
+		left: inherit !important;
+		right: 0 !important;
+	}
+
+	.oled-ex-pattern {
+		height: auto;
+		background: url('../images/tv/oled2rd/m/h_pattern_bg.png') no-repeat center center;
+		background-size: cover;
+	}
+	.oled-ex-pattern__wrap {
+		display: block;
+		padding: 102px 20px 80px;
+	}
+	.oled-ex-pattern__wrap img:nth-of-type(1) {
+		display: none;
+	}
+	.oled-ex-pattern__wrap img:nth-of-type(2) {
+		display: block;
+	}
+	.oled-ex-pattern__text {
+		max-width: 100%;
+		font-size: 14px;
+	}
+	.oled-ex-pattern__wrap img:nth-of-type(2) {
+		margin: 80px auto 0;
+	}
+
+	.oled-ex-pro {
+		padding: 60px 20px;
+	}
+	.oled-ex-pro .oled-meta__h3 {
+		padding: 0;
+		font-size: 34px;
+	}
+	.oled-ex-pro__desc {
+		padding: 0;
+	}
+	.oled-ex-pro__item {
+		flex-flow: column wrap;
+	}
+	.oled-ex-pro__desc {
+		order: 2;
+		margin-top: 25px;
+	}
+	.oled-ex-pro__list {
+		margin-top: 20px;
+	}
+	.oled-ex-pro__item + .oled-ex-pro__item {
+		margin-top: 30px;
+	}
+	.oled-ex-pro__img {
+		flex-basis: auto;
+		width: 100%;
+	}
+	.oled-ex-pro__img img {
+		width: 100%;
+	}
+	.oled-ex-pro__tit {
+		font-size: 24px;
+	}
+	.oled-ex-pro__txt {
+		font-size: 14px;
+		margin-top: 8px;
+	}
+	.oled-ex-pro__name {
+		margin-top: 18px;
+	}
+	.oled-ex-pro__name > * {
+		font-size: 14px;
+	}
+	.oled-ex-pro__name > * + * {
+		margin-left: 21px;
+	}
+	.oled-ex-pro__name > * + *:before {
+		top: 1px;
+		left: -14px;
+		height: 15px;
+	}
+	.oled-ex-pro__view {
+		margin-top: 21px;
+		font-size: 16px;
+	}
+	.oled-ex-pro__view:before {
+		top: 3px;
+	}
+
+	.oled-ex-award {
+		display: block;
+		padding: 60px 0;
+		margin-left: 20px;
+		width: calc(100% - 40px);
+		text-align: center;
+	}
+	.oled-ex-award__title {
+		font-size: 34px;
+	}
+	.oled-ex-award__text {
+		font-size: 14px;
+		max-width: 290px;
+		margin: 18px auto 0;
+	}
+	.oled-ex-award__right img {
+		display: block;
+		margin: 0 auto;
+	}
+	.oled-ex-award__left .oled-ex-award__link {
+		display: none;
+	}
+	.oled-ex-award__right .oled-ex-award__link {
+		display: inline-block;
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 900px){
+	/* 1 */
+	.oled-meta-lineup--2rd .oled-meta-lineup__item:nth-child(1) img {
+		height: 36.7vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__item:nth-child(2) img {
+		height: 32.133333vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__wrap > * .oled-meta-lineup__list {
+		margin-left: 0;
+	}
+	/* 2 */
+	.oled-meta-lineup--2rd .oled-meta-lineup__wrap {
+		max-width: 100%;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(1) img {
+		height: 39.6vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(2) {
+		top: 3.4vw;
+		left: 9.4vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(2) img {
+		height: 36.1333333333vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(3) {
+		top: 7.7vw;
+		left: 20vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(3) img {
+		height: 31.8666666667vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(4) {
+		top: 10.4vw;
+		left: 27.666667vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(4) img {
+		height: 29.2vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(5) {
+		top: 13.4vw;
+		left: 35vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(5) img {
+		height: 26.2vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(6) {
+		top: 16.4vw;
+		left: 42vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(6) img {
+		height: 23.2vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(7) {
+		top: 19.4vw;
+		left: 49.5vw;
+	}
+	.oled-meta-lineup--2rd .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(7) img {
+		height: 20.2vw;
+	}
+
+	.oled-meta-lineup__etc {
+		font-size: 14px;
+	}
+
+	.oled-meta-spec--2rd .oled-meta-spec__conts ul li dt {
+		flex-basis: 162px;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	.oled-ex-h1__title.type2 {
+		font-size: 27px
+	}
+}
+/* // 2. product > tv 2rd */
+
+
+/* 3. technology > oled */
+@media screen and (max-width: 1200px){
+	.oled-tech-kv__logo {
+		width: 20vw;
+		margin: 0 auto
+	}
+	/* 20240603 수정 */
+	.oled-tech-kv__etc {
+		font-size: 2.1vw
+	}
+	/* // 20240603 수정 */
+
+	/* 20240603 추가 */
+	.chn .oled-tech-kv__etc {
+		font-size: 1.74vw
+	}
+	/* // 20240603 추가 */
+
+	.area-lcd-vs-oled {
+		padding: 60px 20px
+	}
+
+	.oled-oneself {
+		padding: 60px 20px;
+	}
+	.oled-tech__title {
+		font-size: 38px;
+	}
+	.oled-tech__text {
+		margin-top: 22px;
+		font-size: 14px;
+	}
+	.oled-tech__text br {
+		display: none;
+	}
+	.oled-oneself__flex {
+		display: block;
+		margin-top: 40px;
+	}
+	.oled-oneself__flex > div + div {
+		margin-top: 40px;
+	}
+	.oled-oneself__title {
+		font-size: 24px;
+	}
+	/* 20240529 TEXT 피드백 수정 */
+	.oled-oneself__more {
+		margin: 40px auto 0;
+		font-size: 15px;
+	}
+	/* //20240529 TEXT 피드백 수정 */
+
+	.oled-prod-popup.oled-prod-popup--lu {
+		padding: 0;
+		background: #fff;
+	}
+	.oled-prod-popup--lu .oled-popup-mx1200 {
+		max-width: 100%;
+		height: 100vh;
+		margin: inherit;
+		width: 100%;
+	}
+	.oled-prod-popup--lu .oled-prod-lu__in {
+		height: 100vh;
+		margin: 0;
+		padding: 0 0 30px 0;
+	}
+	.oled-prod-lu__flex {
+		display: block;
+		text-align: center;
+		margin-top: 106px;
+	}
+	.oled-prod-lu__text {
+		padding: 0 20px;
+		margin-top: 18px;
+		font-size: 14px;
+	}
+	.oled-prod-lu__text br {
+		display: none;
+	}
+	.oled-prod-popup.oled-prod-popup--lu .oled-prod-popup__close {
+		top: 14px;
+		right: 14px;
+		background: url('../images/oled/m/icon-popup-close.svg') no-repeat center center;
+	}
+	.oled-prod-lu__list {
+		padding: 0 20px;
+		display: block;
+		max-width: 754px;
+		margin: 0 auto;
+	}
+	.oled-prod-lu__item {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.oled-prod-lu__item:before {
+		top: 7px;
+		width: 3px;
+		height: 3px;
+	}
+	.oled-prod-lu__in #micro-lens-array-compare-video,
+	.vtn .oled-prod-lu__in #micro-lens-array-compare-video {
+		height: 300px;
+	}
+
+	/* 20240530 수정 */
+	.oled-char {
+		padding: 60px 0 60px;
+	}
+	/* //20240530 수정 */
+	.oled-tech__sub-title {
+		font-size: 34px;
+		max-width: 350px;
+		margin: 0 auto;
+	}
+	/* 20240530 추가 */
+	.chn .oled-tech__sub-title {
+		font-size: 33px;
+		max-width: 350px;
+		margin: 0 auto;
+	}
+	/* //20240530 추가 */
+	.oled-char__list {
+		display: block;
+	}
+	.oled-char__list {
+		display: block;
+		margin-top: 20px;
+		margin-left: 20px;
+		width: calc(100% - 40px);
+	}
+	.oled-char__item {
+		padding: 20px 10px;
+		margin-bottom: 0px;
+	}
+	.oled-char__item:nth-child(odd):after {
+		display: none;
+	}
+	.oled-char__item + .oled-char__item + .oled-char__item {
+		border-bottom: 1px solid #DCDCDC
+	}
+	.oled-char__item:last-child {
+		border-bottom: 0 !important;
+	}
+	.oled-char__item img {
+		flex-basis: 76px;
+		overflow: hidden;
+	}
+	.oled-char__item p {
+		padding-left: 20px;
+		font-size: 12px;
+	}
+
+	.oled-ace {
+		padding: 60px 0 20px;
+	}
+	.oled-ace h4 {
+		width: 126px;
+		margin: 0 auto;
+	}
+	.oled-ace .oled-tech__text {
+		margin-top: 18px;
+		padding: 0 20px;
+	}
+	.oled-ace__list {
+		display: block;
+		margin: 40px 0 0 20px;
+		width: calc(100% - 40px);
+	}
+	.oled-ace__item {
+		display: flex;
+		align-items: center;
+		margin-right: 0;
+		padding: 14px;
+	}
+	.oled-ace__item + .oled-ace__item {
+		margin-top: 10px;
+	}
+	.oled-ace__item > img {
+		margin: inherit;
+		max-width: 137px;
+		height: 113px;
+	}
+	.oled-ace__item ul {
+		flex-grow: 1;
+		padding-left: 22px
+	}
+	.oled-ace__item li {
+		display: block;
+		text-align: left;
+		padding-left: 10px;
+		font-size: 14px;
+	}
+	.oled-ace__item li + li {
+		margin-top: 5px;
+	}
+	.oled-ace__item li:before {
+		width: 3px;
+		height: 3px;
+		vertical-align: 4px;
+		margin-right: 7px;
+	}
+	
+	.oled-ace-tab {
+		margin-top: 60px;
+		margin: 60px 0 0 20px;
+		width: calc(100% - 40px)
+	}
+	.oled-ace-tab__item button {
+		font-size: 18px;
+		padding: 0 8px;
+	}
+	.oled-ace__slide {
+		margin-top: 18px
+	}
+	.oled-ace__slide:after {
+		height: calc(100% - 70px);
+	}
+
+	.oled-code__hdr {
+		top: 12vw;
+		font-size: 1.7vw;
+	}
+	.oled-code__hdr strong {
+		font-size: 4vw;
+	}
+	.oled-code__hdr.oled-code__hdr--left {
+		left: calc(50vw - 12vw);
+	}
+	.oled-code__hdr.oled-code__hdr--right {
+		right: calc(50vw - 41vw);
+	}
+
+	.oled-ace__slide .swiper-slide video {
+		height: 38.8vw;
+	}
+
+	.oled-code__left {
+		left: calc(50% - 23vw);
+	}
+	.oled-code__right {
+		left: calc(50% - -23vw);
+	}
+
+	.human_gauge {
+		top: calc(50vw - 80%);
+	}
+
+	.oled-ace__pg {
+		top: 45.5vw !important
+	}
+	.oled-ace__text-wrap {
+		padding: 30px 20px 46px;
+		display: block;
+	}
+	.oled-ace__text-wrap .oled-ace__s-title,
+	.oled-ace__text-wrap .oled-ace__s-title.type2 {
+		display: block;
+		text-align: left;
+		font-size: 24px;
+	}
+	.oled-ace__text-wrap .oled-ace__s-title br {
+		display: none
+	}
+	.oled-ace__text-wrap .oled-ace__s-text > span:first-child {
+		font-size: 14px;
+		font-weight: 500;
+		margin-top: 8px;
+	}
+	.oled-ace__text-wrap .oled-ace__s-text,
+	.oled-ace__text-wrap .oled-ace__s-text.type2 {
+		margin-top: 18px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	.oled-ace__text-wrap .oled-ace__s-etc {
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 1.4;
+	}
+	.oled-ace__text-wrap .oled-ace__exception {
+		margin-top: 10px;
+	}
+	.oled-ace__text-wrap .oled-ace__exception * {
+		margin-top: 0;
+	}
+	.oled-ace__text-wrap .oled-ace__exception * + * {
+		margin-top: 2px;
+	}
+	/* 20240530 추가 */
+	.eng .oled-ace__text-wrap .oled-ace__s-etc {
+		margin-top: 5px;
+		font-size: 14px;
+	}
+	/* //20240530 추가 */
+	.oled-ace__controller .swiper-button-prev {
+		left: 0;
+	}
+	.oled-ace__controller .swiper-button-next {
+		right: 0;
+	}
+	.oled-ace__controller {
+		margin-top: 42px;
+	}
+	.oled-ace__pg {
+		margin-top: -19px
+	}
+
+	.oled-certi {
+		padding: 60px 0 20px;
+	}
+	.oled-certi--type2 {
+		padding: 60px 20px 20px
+	}
+	.oled-certi .oled-tech__title {
+		font-size: 34px;
+	}
+	.oled-certi .oled-ace__item {
+		border-right: 0;
+		display: block;
+		margin: 0 auto;
+		padding: 30px 10px 40px;
+	}
+	.oled-certi .oled-ace__item + .oled-ace__item {
+		border-top: 1px solid #DCDCDC
+	}
+	.oled-certi .oled-ace__item ul {
+		padding: 0;
+		/* 20240603 추가 */
+		margin: 0 auto;
+		display: table;
+		/* // 20240603 추가 */
+	}
+	.oled-certi .oled-ace__item li {
+		/* display: table;
+		text-align: center; */
+		padding-left: 10px;
+	}
+	.oled-certi .oled-ace__item li:before {
+		top: 7px;
+	}
+	.oled-certi .oled-certi__img-wrap img {
+		margin: 20px auto 0;
+	}
+	.oled-certi__img__ex {
+		font-size: 12px;
+	}
+	.oled-certi__etc {
+		margin-top: 0;
+		padding: 0 20px;
+		font-size: 12px;
+		text-align: left;
+	}
+
+	.oled-more-link {
+		padding-bottom: 0;
+	}
+	.oled-more-link__depth {
+		display: block;
+		text-align: center;
+	}
+	.oled-more-link__move {
+		display: table;
+		margin: 0 auto;
+	}
+	.oled-more-link__title {
+		display: block;
+		font-size: 16px;
+		margin-bottom: 20px;
+		line-height: 1.4;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	.oled-tech-kv__logo {
+		width: 127px;
+	}
+
+	.oled-ex-hl.type2 {
+		padding: 40px 0;
+	}
+	/* 20240603 추가 */
+	.kor .oled-tech-kv__logo,
+	.eng .oled-tech-kv__logo {
+		width: 138px;
+	}
+	.chn .oled-tech-kv__logo {
+		width: 162px;
+	}
+	.vtn .oled-tech-kv__logo {
+		width: 143px;
+	}
+	/* // 20240603 추가 */
+	/* 20240603 수정 (.chn .oled-tech-kv__etc 추가) */
+	.oled-tech-kv__etc,
+	.chn .oled-tech-kv__etc {
+		margin-top: 12px;
+		font-size: 14px;
+	}
+	/* // 20240603 수정 (.chn .oled-tech-kv__etc) */
+	.oled-tech-kv__conts {
+		bottom: 40px;
+	}
+
+	.oled-certi .oled-ace__item > img {
+		max-width: 100%;
+	}
+
+	.oled-code__hdr {
+		top: calc(50vw - 38vw);
+		font-size: 12px;
+	}
+	.oled-code__hdr strong {
+		font-size: 16px;
+	}
+	.oled-code__hdr.oled-code__hdr--left {
+		left: calc(50vw - 27vw);
+	}
+	.oled-code__hdr.oled-code__hdr--right {
+		right: calc(50vw - 27vw);
+	}
+
+	.oled-code__left,
+	.oled-code__right {
+		width: 140px;
+		height: 22px;
+		font-size: 12px;
+		line-height: 22px;
+	}
+	.oled-code__left {
+		transform: translateX(-50%);
+		background: url('../images/monitor/m/slide_title_black.png') no-repeat center center;
+		left: calc(50% - 25%);
+		background-size: auto 100%;
+	}
+	.oled-code__right {
+		transform: translateX(50%);
+		background: url('../images/monitor/m/slide_title_red.png') no-repeat center center;
+		left: auto;
+		right: calc(50% - 25%);
+		background-size: auto 100%;
+	}
+	.oled-prod-monitor .oled-monitor__slide .swiper-slide img {
+		width: 100%;
+	}
+	.oled-ace__slide .swiper-slide video {
+		height: 50.3vw;
+	}
+	.oled-ace__slide .swiper-slide.swiper-slide--minimize video {
+		object-fit: cover;
+	}
+
+
+	.human_gauge {
+		top: calc(50vw - 37vw);
+		left: 55px;
+	}
+	.human_gauge__inner {
+		display: flex;
+		flex-flow: column wrap;
+	}
+	.oled-prod-monitor .oled-monitor__slide .swiper-slide .human_gauge__inner img {
+		margin: 0 auto;
+		display: block;
+		width: 19vw;
+		min-width: 67px;
+		order: 2;
+	}
+	.human_gauge__text.human_gauge__text--black {
+		background: url('../images/monitor/m/slide4-1_3.png') no-repeat center center;
+		background-size: contain;
+		width: 90px;
+		height: 25px;
+	}
+	.human_gauge__text.human_gauge__text--red {
+		background: url('../images/monitor/m/slide4-1_4.png') no-repeat center center;
+		background-size: contain;
+		width: 90px;
+		height: 22px;
+	}
+	.chn .human_gauge__text,
+	.vtn .human_gauge__text {
+		padding-bottom: 3px;
+	}
+	.human_gauge__inner + .human_gauge__inner {
+		margin-left: 0;
+	}
+	.human_gauge__text{
+		margin: 0 auto 8px;
+		padding-top: 3px;
+		font-size: 12px;
+	}
+
+	.pol__etc {
+		top: calc(50vw - 7.2%);
+		font-size: 12px;
+	}
+	.pol__etc:before {
+		margin-right: 5px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.oled-ace__pg {
+		top: 44vw !important
+	}
+	.oled-ace__controller{
+		/* 20240607 수정 */
+		top: calc(31vw - 50px);
+		/* // 20240607 수정 */
+	}
+	.oled-ace__controller .swiper-button-prev,
+	.oled-ace__controller .swiper-button-next {
+		width: 45px;
+		height: 45px;
+	}
+	/* 20240603 추가 */
+	.oled-ace__slide .swiper-slide > img:first-child {
+		display: none;
+	}
+	.oled-ace__slide .swiper-slide > img:nth-child(2) {
+		display: block;
+	}
+	/* // 20240603 추가 */
+}
+/* // 3. technology > oled */
+
+/* // media */
+
+
+
+/* 20240605 */
+/* 4. technology > Automotive */
+.mx_1200 {
+	max-width: 1220px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.ptb_120 {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+
+@media screen and (min-width: 1201px){
+	.sticky-bar__flex {
+		display: flex;
+		align-items: center;
+	}
+	.sticky-bar__flex > * {
+		position: relative;
+	}
+	.sticky-bar__flex > *:first-child {
+		padding-right: 20px;
+	}
+	.sticky-bar__flex > *:nth-child(2) {
+		padding-left: 20px;
+		padding-right: 0;
+	}
+	.sticky-bar__flex > *:nth-child(2):before {
+		content: '';
+		position: absolute;
+		top: 19px;
+		left: 0;
+		width: 1px;
+		height: 17px;
+		background: #dcdcdc;
+	}
+}
+
+
+
+.auto-wrap .oled-prod-kv {
+	background: url('../images/automotive/kv.jpg') no-repeat center center;
+	background-size: cover;
+}
+.auto-wrap .oled-prod-kv__title {
+	text-align: right;
+	max-width: 1090px;
+	margin: 0 auto;
+	height: 100%;
+	padding-top: 0;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-end;
+	padding-bottom: 106px;
+}
+.auto__title {
+	font-size: 55px;
+	color: #111;
+	line-height: 1.3;
+}
+.auto__title.auto__title--semi-org {
+	font-weight: 500;
+}
+.auto__text {
+	font-size: 20px;
+	line-height: 1.6;
+	color: #555555;
+	margin-top: 26px;
+}
+.auto__text + .auto__text {
+	margin-top: 16px;
+}
+
+.auto-safe {
+	text-align: center;
+	padding: 120px 20px;
+}
+.auto-safe__vid {
+	position: relative;
+	margin-top: 80px;
+	padding: 0;
+	height: 510px;
+	display: flex;
+	background: #000
+}
+.auto-safe__vid > * {
+	position: relative;
+	flex-basis: 50%;
+	height: 100%;
+}
+.auto-safe__vid .auto-safe__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+/* .auto-safe__left {
+	background: url('../images/automotive/safe_left.jpg') no-repeat center center;
+	background-size: auto 100%;
+}
+.auto-safe__right {
+	background: url('../images/automotive/safe_right.jpg') no-repeat center center;
+	background-size: auto 100%;
+} */
+.auto-safe__wrap {
+	text-align: center;
+	padding-top: 60px;
+}
+.auto-safe__title {
+	position: relative;
+	font-size: 26px;
+	color: #fff;
+}
+.auto-safe__title.auto-safe__title--semi {
+	font-weight: 500;
+}
+.auto-safe__title + .auto-safe__title {
+	margin-left: 46px;
+}
+.auto-safe__title + .auto-safe__title:before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: -25px;
+	width: 1px;
+	height: calc(100% - 4px);
+	background: #fff;
+}
+
+
+.auto-safe__list {
+	display: flex;
+	flex-flow: column wrap;
+	text-align: left;
+	margin: 34px auto 0;
+	max-width: 996px;
+}
+.auto-safe__item {
+	display: flex;
+	padding: 26px 0;
+}
+.auto-safe__item:first-child {
+	border-bottom: 1px solid #DCDCDC;
+	padding-bottom: 0;
+}
+.vtn .auto-safe__item:first-child {
+	padding-bottom: 26px;
+}
+.auto-safe__item:last-child {
+	padding-bottom: 0;
+}
+.auto-safe__list-title {
+	flex-basis: 166px;
+	flex-shrink: 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: #111;
+}
+.auto-safe__list-txt {
+	flex-grow: 1;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #555;
+}
+
+.auto-exp {
+	position: relative;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.auto-exp__text {
+	padding: 0 102px 20px;
+}
+.auto-exp__list {
+	margin-top: 60px;
+}
+.auto-exp__item {
+	display: flex;
+}
+.auto-exp__item + .auto-exp__item {
+	margin-top: 60px;
+}
+.auto-exp__conts {
+	flex-grow: 1;
+	padding: 59px 93px;
+}
+
+/* lcd interaction */
+.auto-exp__inter > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.auto-exp__list.active .auto-exp__inter .exp__lcd__off {
+	animation: roll 1s forwards;
+	animation-delay: .5s;
+}
+.auto-exp__inter .auto-exp__inter__etc {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: 389px;
+	height: 40px;
+	display: flex;
+}
+.auto-exp__inter .auto-exp__inter__etc > * {
+	height: 100%;
+}
+.auto-exp__inter__title {
+	flex-basis: 339px;
+	flex-shrink: 0;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
+	font-size: 16px;
+	color: #111;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 14px;
+}
+.auto-exp__inter__status {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #555;
+	font-size: 16px;
+	color: #fff;
+	transition: all .5s;
+}
+.auto-exp__inter__status.active {
+	background: #F5C242
+}
+.auto-exp__inter .common-int-play {
+	opacity: 1;
+	animation-delay: 1s;
+}
+/* // lcd interaction */
+
+
+
+.auto-exp__conts-title {
+	font-size: 34px;
+	font-weight: 600;
+	line-height: 1.2;
+	color: #111;
+}
+.auto-exp__conts-txt {
+	margin-top: 16px;
+	font-size: 20px;
+	color: #555555;
+	line-height: 1.6;
+}
+.auto-exp__list--chn .auto-exp__conts-txt {
+	font-size: 18px
+}
+.auto-exp__conts-etc {
+	display: block;
+	margin-top: 32px;
+	font-size: 16px;
+	color: #767676;
+}
+.auto-exp__image {
+	position: relative;
+	flex-basis: 590px;
+	height: 312px;
+	flex-shrink: 0;
+}
+.auto-exp__image #video,
+.auto-exp__image video {
+	width: 100%;
+}
+.auto-exp__image .common-int-play#playPauseBtn2 {
+	opacity: 1;
+}
+
+.vid__mo,
+.vid__tb {
+	display: none !important;
+}
+
+
+/* .common-int-play.end {
+	background: red;
+} */
+
+.auto-exp__image--lens {
+	overflow: hidden;
+}
+.auto-exp__image--lens .common-int-play {
+	opacity: 0;
+	z-index: 2;
+}
+.auto-exp__image--lens .lens-hide {
+	position: relative;
+	z-index: 1;
+}
+.auto-exp__image--lens .lens-zoom {
+	position: absolute;
+	top: 250px;
+	left: 0;
+	transform: scale(3.6);
+}
+
+.auto-exp__list.active .auto-exp__image--lens .lens-hide {
+	animation: lens1 2s forwards;
+	animation-delay: .3s;
+}
+.auto-exp__list.active .auto-exp__image--lens .lens-zoom {
+	position: absolute;
+	top: 250px;
+	left: 0;
+	animation: lens2 1.5s forwards;
+	animation-delay: 1s;
+}
+.auto-exp__list.active .auto-exp__image--lens .common-int-play {
+	animation: lensPlay 1s forwards;
+	animation-delay: 2.5s;
+}
+
+@keyframes lens1 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes lens2 {
+	0% {
+		top: 250px;
+		transform: scale(3.6);
+	}
+	100% {
+		top: 0px;
+		transform: scale(1);
+	}
+}
+@keyframes lensPlay {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.auto-exp__image--lens .lens-zoom,
+	.auto-exp__list.active .auto-exp__image--lens .lens-zoom {
+		top: 45px;
+	}
+	.auto-exp__image--lens .lens-zoom {
+		transform: scale(1.6);
+	}
+	@keyframes lens2 {
+		0% {
+			top: 45px;
+			transform: scale(1.6);
+		}
+		100% {
+			top: 0px;
+			transform: scale(1);
+		}
+	}
+}
+
+.auto-lcd {
+	display: flex;
+	max-width: 1200px;
+	margin: 80px auto 0;
+}
+.auto-lcd__box {
+	position: relative;
+	width: 590px;
+	height: 580px;
+	background: url('../images/automotive/lcd_bg.png') no-repeat center center;
+	background-size: cover;
+}
+.eng .auto-lcd__box,
+.vtn .auto-lcd__box {
+	height: 620px
+}
+.auto-lcd__box + .auto-lcd__box {
+	margin-left: 20px
+}
+.auto-lcd__imgbox {
+	height: 434px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.auto-lcd__textbox {
+	padding: 0 52px;
+	text-align: left;
+}
+.auto-lcd__box-title {
+	font-size: 24px;
+	font-weight: 500;
+	color: #111111;
+}
+.auto-lcd__box-conts {
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #555555;
+}
+
+.auto-eco {
+	text-align: center;
+}
+.auto-eco__list {
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.auto-eco__item + .auto-eco__item {
+	margin-left: 45px;
+}
+
+@media screen and (max-width: 1370px){
+	.auto-wrap .oled-prod-kv__title {
+		padding-left: 72px
+	}
+}
+
+
+@media screen and (max-width: 1200px){
+	.vid__pc2 {
+		display: none !important;
+	}
+	.vid__tb {
+		display: block !important
+	}
+	.auto-wrap .oled-prod-kv {
+		background: url('../images/automotive/m/kv.jpg') no-repeat center center;
+		background-size: cover;
+	}
+	.auto-wrap .oled-prod-kv__title {
+		display: block;
+		text-align: center;
+		padding: 80px 0 0;
+		font-size: 22px;
+	}
+
+	.auto__title {
+		text-align: left;
+		font-size: 34px;
+	}
+	.auto__title.auto__title--semi,
+	.auto__title.auto__title--semi strong {
+		font-weight: 500;
+	}
+
+	.auto-safe {
+		padding-top: 60px;
+		padding-bottom: 0;
+	}
+	.auto__text {
+		margin-top: 18px;
+		text-align: left;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	.auto__text + .auto__text {
+		margin-top: 10px;
+	}
+	.auto-safe__vid {
+		margin-top: 40px;
+		height: 40vw;
+		min-height: 188px;
+	}
+
+	.auto-safe__list {
+		display: block;
+		max-width: 100%;
+		margin-top: 20px;
+	}
+	.auto-safe__item {
+		padding: 0 0 20px;
+	}
+	.auto-safe__item:first-child {
+		border-bottom: 1px solid #DCDCDC;
+		border-right: 0;
+		padding-bottom: 20px;
+	}
+	.vtn .auto-safe__item:first-child {
+		padding-bottom: 20px;
+	}
+	.auto-safe__item + .auto-safe__item {
+		margin-top: 20px;
+	}
+	
+	.auto-safe__item {
+		display: block;
+	}
+
+	.auto-safe__list-title {
+		font-size: 16px;
+	}
+	.auto-safe__list-txt {
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	.auto-exp {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.auto-exp__text {
+		padding: 0;
+	}
+	.auto-exp__list {
+		margin-top: 20px;
+	}
+	.auto-exp__item {
+		flex-flow: column;
+	}
+	.auto-exp__item + .auto-exp__item {
+		margin-top: 30px;
+	}
+	.auto-exp__conts {
+		padding: 0;
+		order: 2;
+		margin-top: 20px;
+	}
+	.auto-exp__image {
+		flex-basis: auto;
+		min-height: auto;
+		height: auto;
+	}
+	.auto-exp__image.auto-exp__inter {
+		flex-basis: 50vw;
+	}
+	.auto-exp__image img {
+		width: 100%;
+	}
+	.auto-exp__conts-title {
+		font-size: 24px;
+	}
+
+	/* lcd interaction */
+	.auto-exp__inter .auto-exp__inter__etc {
+		width: 231px;
+		height: 23px;
+	}
+	.auto-exp__inter__title {
+		flex-basis: 195px;
+	}
+	.auto-exp__inter .auto-exp__inter__etc > * {
+		font-size: 12px;
+	}
+	/* // lcd interaction */
+
+	.auto-exp__conts-txt,
+	.auto-exp__list--chn .auto-exp__conts-txt {
+		margin-top: 8px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	.auto-exp__conts-etc {
+		margin-top: 18px;
+		font-size: 14px;
+	}
+
+	.auto-lcd {
+		display: block;
+		margin-top: 40px;
+	}
+	.auto-lcd__box {
+		width: 100%;
+		padding: 50px 20px;
+		height: auto;
+	}
+	.eng .auto-lcd__box,
+	.vtn .auto-lcd__box {
+		height: auto;
+	}
+	.auto-lcd__box + .auto-lcd__box {
+		margin-top: 20px;
+		margin-left: 0;
+	}
+	.auto-lcd__box:first-child {
+		margin-right: 0;
+	}
+	.auto-lcd__imgbox {
+		height: auto;
+	}
+	.auto-lcd__textbox {
+		margin-top: 20px;
+		padding: 0;
+	}
+	.auto-lcd__box-title {
+		font-size: 14px;
+	}
+	.auto-lcd__box-conts {
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+
+	.auto-eco__list {
+		margin-top: 40px;
+		display: block;
+	}
+	.auto-eco__item + .auto-eco__item {
+		margin: 24px 0 0
+	}
+}
+
+@media screen and (max-width: 767px){
+	.auto-safe__vid .auto-safe__img {
+		width: 100%;
+	}
+	.auto-safe__vid {
+		height: 62vw
+	}
+}
+
+
+/* // 4. technology > Automotive */
+
+/* 5. technology > Automotive */
+.pro-mobile .oled-prod-kv {
+	background: url(../images/pro_mobile/pro_mobile_kv.jpg) no-repeat center center;
+	background-size: cover;
+}
+.pro-mobile-power {
+	position: relative;
+	overflow: hidden;
+	background: #F8F8F8;
+}
+.pro-mobile-power__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.pro-mobile-power__item {
+	display: inline-block;
+	width: 100%;
+	margin-right: 20px;
+	height: 350px;
+	background: #fff;
+}
+.pro-mobile-power__item:last-child {
+	margin-right: 0;
+}
+.pro-mobile-power__item img {
+	margin: 50px auto 0;
+	display: block;
+}
+.pro-mobile-power__text {
+	display: block;
+	text-align: center;
+	margin-top: 4px;
+	font-size: 24px;
+	font-weight: 600;
+	color: #111;
+}
+
+.pro-mobile-rev > * {
+	text-align: center;
+}
+.pro-mobile-rev__shape {
+	position: relative;
+	width: 100%;
+	height: 675px;
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pro-mobile-rev__shape:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 1;
+}
+#btnPhoneControl {
+	display: none;
+	opacity: 1;
+	left: calc(50% - -15px);
+	z-index: 2;
+	transition: none;
+}
+.pro-mobile__left {
+	position: relative;
+	min-width: 435px;
+}
+.pro-mobile__left .swiper-container {
+	margin: 0;
+	margin-left: 100px;
+	padding: 20px 20px;
+	min-width: 160px;
+	height: 380px;
+}
+.pro-mobile__left .pro-mobile__click {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 88px;
+	height: 88px !important;
+	background: #fff;
+	border-radius: 100%;
+	box-shadow: 0px 5.86667px 18.3333px rgba(93, 93, 93, 0.14);
+	transition: all .3s;
+}
+.pro-mobile__left .pro-mobile__click:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.pro-mobile__left .pro-mobile__home-i:before {
+	background: url('../images/pro_mobile/rev1.svg') no-repeat center center;
+	background-size: 28px;
+}
+.pro-mobile__left .pro-mobile__play-i:before {
+	background: url('../images/pro_mobile/rev2.svg') no-repeat center center;
+	background-size: 28px;
+}
+.pro-mobile__left .pro-mobile__search-i:before {
+	background: url('../images/pro_mobile/rev3.svg') no-repeat center center;
+	background-size: 28px;
+}
+	
+.pro-mobile__left .swiper-slide.swiper-slide-active {
+	width: 120px;
+	height: 120px !important;
+}
+.pro-mobile__left .pro-mobile__home-i.swiper-slide-active:before {
+	background: url('../images/pro_mobile/rev4_on.svg') no-repeat center center;
+	background-size: 38px;
+}
+.pro-mobile__left .pro-mobile__play-i.swiper-slide-active:before {
+	background: url('../images/pro_mobile/rev2_on.svg') no-repeat center center;
+	background-size: 34px;
+	margin-left: 5px;
+}
+.pro-mobile__left .pro-mobile__search-i.swiper-slide-active:before {
+	background: url('../images/pro_mobile/rev3_on.svg') no-repeat center center;
+	background-size: 37px;
+}
+
+.pro-mobile__view {
+	text-align: left;
+	display: none;
+	/* transition: all .3s; */
+}
+.pro-mobile__view-title {
+	display: block;
+	font-size: 24px;
+	color: #555;
+	line-height: 1.2;
+	text-align: left;
+}
+.pro-mobile__view-title strong {
+	display: block;
+	margin-top: 15px;
+	font-size: 50px;
+	font-weight: 500;
+	color: #111;
+}
+.chn .pro-mobile__view-title strong {
+	margin-left: -7px;
+}
+
+.pro-mobile__right {
+	display: flex;
+	align-items: center;
+}
+.pro-mobile__right .pro-mobile__phone {
+	padding: 8px 9px 9px 9px;
+	margin: 0;
+	width: 305px;
+	height: 626px;
+	background: url('../images/pro_mobile/rev_shape2.png') no-repeat center center;
+	background-size: auto 100%;
+}
+.pro-mobile__phone img {
+	width: 100%;
+	border-radius: 38px 38px 38px 38px;
+}
+.pro-mobile__slide-text {
+	width: 400px;
+}
+.pro-mobile__slide-text .swiper-slide {
+	opacity: 0 !important;
+}
+.pro-mobile__slide-text .swiper-slide.swiper-slide-active {
+	opacity: 1 !important;
+}
+.pro-mobile__slide-text .swiper-slide > * {
+	display: block;
+	line-height: 1.1;
+}
+.pro-mobile__slide-conts {
+	margin-bottom: 18px;
+	font-size: 24px;
+	color: #111;
+}
+.pro-mobile__slide-conts.pro-mobile__slide-conts--wh {
+	color: transparent;
+}
+.pro-mobile__slide-hz {
+	font-size: 86px;
+	background: linear-gradient(to right, #2A87FF 0%, #9E52FF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.pro-mobile__slide-hz.pro-mobile__slide-hz--green {
+	background: linear-gradient(to right, #64CA27 0%, #DCDF3F 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.pro-mobile__slide-hz.pro-mobile__slide-hz--org {
+	background: linear-gradient(112deg, #FF9BBF 30%, #C41BFF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.pro-mobile__slide-hz strong {
+	letter-spacing: -0.04em;
+	margin-right: 2px;
+}
+
+
+.auto__text-etc {
+	display: block;
+	text-align: center;
+	margin-top: 16px;
+	font-size: 16px;
+	color: #767676
+}
+.auto__text-etc + .auto__text-etc {
+	margin-top: 2px;
+}
+.pro-mobile-rev__int {
+	position: relative;
+	margin-top: 80px;
+}
+
+.pro-mobile-thin {
+	position: relative;
+	width: 100%;
+	height: 675px;
+	overflow: hidden;
+	/* background: url('../images/pro_mobile/thin_bg.jpg') no-repeat center center;
+	background-size: cover; */
+}
+.pro-mobile-thin__inner {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.pro-mobile__thin__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.pro-mobile__thin__bg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.pro-mobile-thin__h-title {
+	display: none;
+}
+.pro-mobile-thin__frame {
+	position: relative;
+	width: 579px;
+	height: 590px;
+	background: url('../images/pro_mobile/thin_frame2.png') no-repeat center center;
+	background-size: auto 100%;
+	align-self: flex-start;
+	flex-shrink: 0;
+}
+.pro-mobile-thin__border {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 37px);
+	height: calc(100% - 14px);
+	background: transparent;
+	border: 15px solid #2B2B2B;
+	border-top: 0;
+	/* border-bottom: 0; */
+	border-radius: 0 0 71px 71px;
+}
+.pro-mobile-thin__abs {
+	position: absolute;
+	bottom: 90px;
+	left: 50px;
+}
+.pro-mobile-thin__arrow {
+	opacity: 0;
+}
+.pro-mobile-thin__text {
+	display: block;
+	font-size: 33px;
+	font-weight: 500;
+	color: #111;
+	margin-bottom: 20px;
+	opacity: 0;
+}
+.pro-mobile-thin__text strong {
+	font-size: 52px;
+}
+.pro-mobile-thin.active .pro-mobile-thin__border {
+	animation: thinFrame 2s forwards;
+	animation-delay: .3s;
+}
+.pro-mobile-thin.active .pro-mobile-thin__arrow {
+	animation: thinFrameOpacity 1s forwards;
+	animation-delay: 1s;
+}
+.pro-mobile-thin.active .pro-mobile-thin__text {
+	animation: thinFrameOpacity 1s forwards;
+	animation-delay: 2s;
+	/* animation: thinFrameOpacity 6s forwards; */
+}
+@keyframes thinFrame{
+	0% {
+		border: 15px solid #2B2B2B;
+		border-top: 0;
+	}
+	100% {
+		border: 0px solid transparent;
+	}
+}
+@keyframes thinFrameOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.pro-mobile-thin__right {
+	position: relative;
+	padding-left: 130px;
+}
+.pro-mobile-thin__title {
+	font-size: 55px;
+	color: #111;
+	line-height: 1.3;
+}
+.pro-mobile-thin__te {
+	margin-top: 20px;
+	font-size: 20px;
+	line-height: 1.6;
+	color: #111;
+}
+.chn .pro-mobile-thin__te {
+	font-size: 19px;
+}
+.pro-mobile-thin__etc {
+	display: block;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #555;
+}
+
+.pro-mobile-clear {
+	position: relative;
+}
+.pro-mobile-clear__text {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 102px;
+}
+.pro-mobile-clear__text .auto__title {
+	flex-shrink: 0;
+	padding-right: 30px;
+}
+.pro-mobile-clear__text .auto__text {
+	margin-top: 0;
+}
+.pro-mobile-clear__slide {
+	margin-top: 80px;
+	height: 500px;
+}
+.pro-mobile-clear__slide .swiper-slide {
+
+}
+.pro-mobile-clear__controller,
+.pro-mobile-clear__pg {
+	display: none;
+}
+
+.oled-prod-transparent .pro-mobile-clear__text .auto__text {
+	flex-basis: 453px;
+	flex-shrink: 0;
+}
+.oled-prod-transparent .pro-mobile-clear__text .auto__text.type2 {
+	flex-basis: 460px;
+}
+
+.common-prod-button-prev,
+.common-prod-button-next {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #DCDCDC;
+	background: rgba(255, 255, 255, 0.8);
+}
+.common-prod-button-prev:before,
+.common-prod-button-next:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 13px;
+	height: 24px;
+	background: url('../images/oled/oled-ace-arrow.svg') no-repeat center center;
+	background-size: auto 100%;
+}
+.common-prod-button-prev:before {
+	transform: translate(-50%, -50%) rotate(180deg)
+}
+.common-prod__pg .swiper-pagination-bullet {
+	width: 8px !important;
+	height: 4px !important;
+	border-radius: 0 !important;
+	background: #dcdcdc !important;
+	margin: 0 5px !important;
+}
+.common-prod__pg .swiper-pagination-bullet-active {
+	width: 51px !important;
+	background: #F5C242 !important;
+}
+
+.pro-mobile-clear__slide .common-prod-button-prev {
+	left: 0;
+}
+.pro-mobile-clear__slide .common-prod-button-next {
+	right: 0;
+}
+
+
+/* > Watch */
+.pro-mobile-act > * {
+	text-align: center;
+}
+.pro-mobile-act .pro-mobile-act__bg {
+	position: relative;
+	margin-top: 80px;
+	width: 100%;
+	height: 580px;
+}
+.pro-mobile-act .pro-mobile-act__bg .pro-mobile-act__img {
+	width: 100%;
+	height: 100%;
+}
+.pro-mobile-act .pro-mobile-act__bg .pro-mobile-act__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+/* > Tablet */
+.pro-mobile-tan {
+	position: relative;
+	padding: 150px 20px;
+	overflow: hidden;
+}
+.pro-mobile-title {
+	text-align: center;
+	font-size: 64px;
+	font-weight: 600;
+	color: #111;
+}
+.pro-mobile-title.pro-mobile-title--semi {
+	font-weight: 500;
+}
+.pro-mobile-title__sub {
+	text-align: center;
+	display: block;
+	font-size: 22px;
+	font-weight: 600;
+	color: #111;
+	margin-top: 14px;
+	line-height: 1.5;
+}
+.pro-mobile-text {
+	margin-top: 28px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	color: #111;
+	line-height: 1.6;
+}
+.pro-mobile-tan__int {
+	position: relative;
+	margin-top: 80px;
+	width: 100%;
+	height: 500px;
+	background: #000;
+}
+
+.pro-mobile-tan__wrap {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.pro-mobile-tan__wrap .pro-mobile-tan__item {
+	position: relative;
+	transition: all .6s;
+	opacity: 0;
+}
+.pro-mobile-tan__wrap .pro-mobile-tan__item.mbAni {
+	margin-top: -25px;
+	margin-bottom: 25px;
+}
+.pro-mobile-tan__mobile-img {
+	display: none;
+}
+.pro-mobile-tan__wrap .pro-mobile-tan__item + .pro-mobile-tan__item {
+	margin-top: -60px;
+}
+.pro-mobile-tan__title {
+	position: absolute;
+	top: 16px;
+	right: calc(100% + -14px);
+	display: block;
+	width: max-content;
+	font-size: 16px;
+	color: #fff;
+}
+.pro-mobile-tan__title:nth-of-type(1) {
+	top: 21px;
+}
+.pro-mobile-tan__title:nth-of-type(2) {
+	top: 78px;
+}
+.pro-mobile-tan__title:nth-of-type(3) {
+	top: 134px;
+}
+.pro-mobile-tan__title:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -20px;
+	width: 14px;
+	height: 1px;
+	background: #fff;
+}
+.common-int-play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50px;
+	height: 50px;
+	background: url(../images/tv/oled2rd/icon_vid_play.svg) no-repeat center center;
+	background-size: cover;
+	transition: all .5s;
+	opacity: 0;
+}
+@media screen and (min-width: 769px){
+	.common-int-play:hover {
+		background: url(../images/tv/oled2rd/icon_vid_play_h.svg) no-repeat center center;
+		background-size: auto 100%;
+	}
+}
+
+.pro-mobile-bright__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.pro-mobile-bright__item + .pro-mobile-bright__item {
+	margin-top: 160px;
+}
+.pro-mobile-bright__text {
+	padding: 120px 103px;
+}
+.eng .pro-mobile-bright__text {
+	padding: 120px 100px;
+}
+.pro-mobile__bright__wrap {
+	position: relative;
+}
+.pro-mobile__bright__wrap.shrink {
+	flex-shrink: 0;
+	flex-basis: 560px
+}
+.pro-mobile__bright__wrap.type2 {
+	flex-basis: 480px
+}
+.pro-mobile__bright__abs {
+	position: absolute;
+	top: 76px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	padding: 0 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.eng .pro-mobile__bright__abs,
+.vtn .pro-mobile__bright__abs {
+	top: 32px;
+}
+.eng .pro-mobile__bright__txt,
+.vtn .pro-mobile__bright__txt {
+	line-height: 1;
+}
+.pro-mobile__bright__per {
+	font-size: 55px;
+	background: linear-gradient(to right, #B236FF 0%, #FF71F9 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: 1;
+	margin: 0 12px 0 22px;
+}
+.pro-mobile__bright__txt {
+	font-size: 21px;
+	color: #111;
+	margin-top: 16px;
+}
+
+.pro-mobile__bright__abs--blue {
+	justify-content: flex-start;
+	top: 70px;
+	left: 50px;
+	transform: inherit;
+}
+.pro-mobile__bright__abs--blue .pro-mobile__bright__per {
+	background: linear-gradient(to right, #230DA9 0%, #52AFFD 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.pro-mobile__expression {
+	padding-top: 80px;
+}
+.pro-mobile__expression .oled-meta {
+	margin-top: 80px
+}
+.pro-mobile__expression .oled-meta .micro-lens {
+	padding-bottom: 0;
+}
+.pro-mobile__expression .oled-meta .micro-lens .meta-multi-booster .text-area__name {
+	padding: 0;
+}
+.pro-mobile__expression .oled-meta .micro-lens .meta-multi-booster .text-area__name {
+	display: block
+}
+.pro-mobile__expression .oled-meta .micro-lens .meta-multi-booster .text-area--off {
+	left: 248px;
+}
+.pro-mobile__expression .oled-meta .micro-lens .meta-multi-booster .text-area--on {
+	right: 248px;
+}
+
+
+@media screen and (max-width: 1200px){
+	.ptb_120 {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.pro-mobile-rev__int {
+		margin-top: 65px;
+	}
+	.auto__text-etc {
+		margin-top: 10px;
+		font-size: 12px;
+	}
+	.auto__text-etc + .auto__text-etc {
+		margin-top: 0;
+	}
+
+	.pro-mobile-power__list {
+		display: block;
+		padding: 40px 20px;
+	}
+	.pro-mobile-power__item {
+		display: flex;
+		align-items: center;
+		margin: 0 0 20px;
+		height: 270px;
+	}
+	.pro-mobile-power__item:last-child {
+		margin-bottom: 0;
+	}
+	.pro-mobile-power__item img {
+		margin: 0;
+		width: auto;
+	}
+	.pro-mobile-power__text {
+		margin-left: 20px;
+		text-align: left;
+	}
+
+	.pro-mobile-clear__text {
+		display: block;
+		padding: 0;
+	}
+	.pro-mobile-clear__text > * {
+		text-align: center;
+	}
+	.pro-mobile-clear__text .auto__title {
+		padding: 0;
+	}
+	.pro-mobile-clear__text .auto__text {
+		margin-top: 18px
+	}
+	.pro-mobile-clear__slide {
+		margin-top: 40px;
+		height: 40vw;
+		min-height: 312px;
+	}
+
+	.pro-mobile__expression .oled-meta {
+		margin-top: 0;
+	}
+	.pro-mobile__expression .oled-meta .micro-lens .custom-layout-content.meta-multi-booster {
+		margin: 40px auto 0;
+		width: 100%;
+	}
+	.pro-mobile__expression .oled-meta .micro-lens .meta-multi-booster .text-area--off {
+		top: 18px;
+		left: calc(50% - 6vw);
+	}
+	.pro-mobile__expression .oled-meta .micro-lens .meta-multi-booster .text-area--on {
+		top: 18px;
+		right: calc(50% - 27vw);
+	}
+
+
+	.pro-mobile-act {
+		padding-bottom: 20px;
+	}
+	.pro-mobile-act .pro-mobile-act__bg {
+		margin-top: 40px;
+		height: 45vw;
+		min-height: 312px;
+	}
+
+	.pro-mobile-tan {
+		padding: 60px 20px;
+	}
+	.pro-mobile-title {
+		font-size: 30px;
+		line-height: 1.3;
+	}
+	.pro-mobile-title__sub {
+		margin-top: 8px;
+		font-size: 16px;
+	}
+	.pro-mobile-text {
+		margin-top: 14px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	.pro-mobile-tan__int {
+		margin-top: 40px;
+		padding: 40px 0;
+		height: auto;
+	}
+
+	.pro-mobile-bright__item {
+		flex-flow: column wrap;
+	}
+	.pro-mobile-bright__text,
+	.eng .pro-mobile-bright__text {
+		padding: 0;
+	}
+	.pro-mobile-bright__item + .pro-mobile-bright__item {
+		margin-top: 80px;
+	}
+	.pro-mobile-bright__text > * {
+		text-align: center;
+	}
+	.chn .pro-mobile-bright__text .auto__title--exception1 {
+		margin-left: -33px
+	}
+	.pro-mobile__bright__wrap {
+		order: 2;
+	}
+	.pro-mobile__bright__wrap.shrink,
+	.pro-mobile__bright__wrap.type2 {
+		flex-basis: auto;
+	}
+	.pro-mobile__bright__abs {
+		padding: 0 10px;
+		max-width: calc(100% - 30px);
+	}
+	.eng .pro-mobile__bright__abs,
+	.vtn .pro-mobile__bright__abs {
+		top: 76px;
+	}
+	.pro-mobile__bright__abs--blue {
+		left: 27px
+	}
+	.pro-mobile__bright__abs img {
+		width: 38px;
+	}
+	.pro-mobile-bright__img {
+		display: block;
+		margin: 40px auto 0;
+	}
+	.pro-mobile__bright__per {
+		margin: 0 6px 0 16px;
+		font-size: 32px;
+	}
+	.pro-mobile__bright__txt {
+		margin-top: 0px;
+		font-size: 16px;
+	}
+
+	.pro-mobile-rev {
+		padding-bottom: 84px;
+	}
+	.pro-mobile-rev__shape {
+		display: block;
+		margin-top: 40px;
+		height: auto;
+	}
+	.pro-mobile__left .swiper-container {
+		max-width: 230px;
+		height: 100px;
+		margin: 0 auto;
+		padding-bottom: 40px;
+	}
+	.pro-mobile__left .swiper-container:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 8px;
+		height: 100%;
+		background: #fff;
+		z-index: 2;
+	}
+	.pro-mobile__left .swiper-container {
+		padding: 0;
+		padding-top: 20px;
+	}
+	.pro-mobile__left .pro-mobile__click {
+		width: 50px !important;
+		height: 50px !important;
+		/* margin: 0 8px; */
+		box-shadow: 0px 3.33333px 10.4167px rgba(93, 93, 93, 0.14);
+	}
+	.pro-mobile__right .pro-mobile__phone {
+		padding: 5px 6px 6px 6px;
+		margin: 0 auto;
+		width: 276px;
+		height: 403px;
+	}
+	.pro-mobile__left .swiper-slide.swiper-slide-active {
+		width: 67px !important;
+		height: 67px !important;
+	}
+	.pro-mobile__phone img {
+		width: 70%;
+		border-radius: 26px 23px 23px 25px;
+	}
+
+	.pro-mobile__left {
+		min-width: auto;
+	}
+	.pro-mobile__left .pro-mobile__home-i:before {
+		background: url('../images/pro_mobile/rev1.svg') no-repeat center center;
+		background-size: 16px;
+	}
+	.pro-mobile__left .pro-mobile__play-i:before {
+		background: url('../images/pro_mobile/rev2.svg') no-repeat center center;
+		background-size: 16px;
+	}
+	.pro-mobile__left .pro-mobile__search-i:before {
+		background: url('../images/pro_mobile/rev3.svg') no-repeat center center;
+		background-size: 16px;
+	}
+
+	.pro-mobile__left .pro-mobile__home-i.swiper-slide-active:before {
+		background-size: 18px;
+	}
+	.pro-mobile__left .pro-mobile__play-i.swiper-slide-active:before {
+		background-size: 18px;
+		margin: 0;
+	}
+	.pro-mobile__left .pro-mobile__search-i.swiper-slide-active:before {
+		background-size: 18px;
+	}
+	.pro-mobile__left .swiper-slide.swiper-slide-active {
+		margin-top: -8px;
+	}
+
+	.pro-mobile__view-title {
+		margin-bottom: 22px;
+		min-height: 78px;
+		text-align: center;
+		font-size: 16px;
+	}
+	.pro-mobile__view-title strong {
+		margin-top: 6px;
+		font-size: 22px;
+	}
+	.chn .pro-mobile__view-title strong {
+		margin-left: 0;
+	}
+	.pro-mobile__right {
+		display: block;
+	}
+	#btnPhoneControl {
+		left: 50%
+	}
+
+	.pro-mobile__slide-text {
+		margin-top: 30px;
+	}
+	.pro-mobile__slide-conts {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.pro-mobile__slide-hz {
+		font-size: 73px;
+	}
+	.pro-mobile__slide-text {
+		width: auto;
+	}
+
+	.pro-mobile-thin {
+		height: auto;
+		padding-bottom: 40px;
+		margin-left: 20px;
+		width: calc(100% - 40px);
+	}
+	.pro-mobile-thin__inner {
+		flex-flow: column wrap;
+	}
+	.pro-mobile-thin__frame {
+		order: 2;
+		margin:0 auto;
+		width: 479px;
+		height: 490px;
+	}
+	.pro-mobile-thin__right {
+		display: none;
+		text-align: center;
+		padding: 60px 0 0;
+	}
+	.pro-mobile-thin__title {
+		font-size: 34px;
+	}
+	.pro-mobile-thin__te {
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	.pro-mobile-thin__etc {
+		margin-top: 10px;
+		font-size: 12px;
+	}
+	.pro-mobile-thin__border {
+		top: 0px;
+		width: calc(100% - 22px);
+		height: calc(100% - 9px);
+	}
+	.pro-mobile-thin__h-title {
+		display: block;
+		margin-bottom: 40px;
+		padding: 0 20px;
+	}
+	.pro-mobile-thin__h-title > * {
+		text-align: center;
+	}
+
+	
+	.pro-mobile-tan__title {
+		font-size: 12px;
+		right: calc(100% + -20px);
+	}
+	.pro-mobile-tan__title:after {
+		right: -20px;
+		width: 10px;
+	}
+	.pro-mobile-tan__wrap .pro-mobile-tan__item {
+		max-width: 497px;
+		display: block;
+	}
+	.pro-mobile-tan__wrap .pro-mobile-tan__item + .pro-mobile-tan__item {
+		margin-top: -44px;
+	}
+	.pro-mobile-tan__title:nth-of-type(1) {
+		top: 10px;
+	}
+	.pro-mobile-tan__title:nth-of-type(2) {
+		top: 77px;
+	}
+	.pro-mobile-tan__title:nth-of-type(3) {
+		top: 142px;
+	}
+	.pro-mobile-tan__mobile-img {
+		display: block;
+	}
+	.pro-mobile-tan__pc-img {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	.vid__pc {
+		display: none !important;
+	}
+	.vid__mo {
+		display: block !important;
+	}
+
+	.auto-lcd__box {
+		padding: 20px;
+	}
+
+	.pro-mobile .oled-prod-kv {
+		background: url(../images/pro_mobile/m/pro_mobile_kv.jpg) no-repeat center 75%;
+		background-size: cover;
+	}
+
+	.pro-mobile__expression .oled-meta {
+		margin-top: 0;
+	}
+	.pro-mobile__expression .oled-meta .micro-lens .meta-multi-booster .text-area--off {
+		top: 14px;
+		left: calc(25vw - 54px);
+	}
+	.pro-mobile__expression .oled-meta .micro-lens .meta-multi-booster .text-area--on {
+		top: 14px;
+		right: calc(25vw - 38px);
+	}
+	.pro-mobile__expression .oled-meta .micro-lens .meta-multi-booster .text-area__name {
+		font-size: 14px;
+	}
+
+
+	.pro-mobile-power__item {
+		height: auto;
+		padding: 14px;
+	}
+	.pro-mobile-power__item img {
+		margin: 0;
+		width: 138px;
+	}
+	.pro-mobile-power__text {
+		font-size: 16px;
+	}
+	.pro-mobile-clear__slide {
+		height: 45vw;
+		min-height: 342px;
+		padding-bottom: 30px;
+	}
+	.pro-mobile-clear__slide .common-prod-button-prev,
+	.pro-mobile-clear__slide .common-prod-button-next {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.pro-mobile-clear__controller,
+	.pro-mobile-clear__pg {
+		display: block;
+	}
+	.pro-mobile-clear__slide .swiper-slide {
+		/* height: 90vw; */
+		overflow: hidden;
+	}
+	.pro-mobile-clear__pg {
+		position: static;
+		margin-top: 20px;
+	}
+	
+	.pro-mobile-clear__slide .swiper-slide img {
+		width: 100%;
+		/* height: 100%;
+		object-fit: cover; */
+	}
+	.pro-mobile-clear__slide .swiper-slide.swiper-slide--01 {
+		background: url('../images/pro_mobile/m/clear01.jpg') no-repeat center center;
+		background-size: cover;
+	}
+	.pro-mobile-clear__slide .swiper-slide.swiper-slide--02 {
+		background: url('../images/pro_mobile/m/clear02.jpg') no-repeat center bottom;
+		background-size: cover;
+	}
+	.pro-mobile-clear__slide .swiper-slide.swiper-slide--03 {
+		background: url('../images/pro_mobile/m/clear03.jpg') no-repeat center top;
+		background-size: cover;
+	}
+	.pro-mobile-clear__slide .swiper-slide.swiper-slide--04 {
+		background: url('../images/pro_mobile/m/clear04.jpg') no-repeat center center;
+		background-size: cover;
+	}
+	.pro-mobile-clear__slide .swiper-slide.swiper-slide--05 {
+		background: url('../images/pro_mobile/m/clear05.jpg') no-repeat center top;
+		background-size: cover;
+	}
+	.pro-mobile-clear__slide .swiper-slide.swiper-slide--06 {
+		background: url('../images/pro_mobile/m/clear06.jpg') no-repeat center bottom;
+		background-size: cover;
+	}
+
+	.pro-mobile-thin {
+		padding-bottom: 30px;
+		/* background : url('../images/pro_mobile/m/thin_bg.jpg') no-repeat top center;
+		background-size: cover; */
+	}
+	.pro-mobile-thin__frame {
+		width: 290px;
+		height: 299px;
+	}
+	.pro-mobile-thin__border {
+		width: calc(100% - 13px);
+		height: calc(100% - 7px);
+		border: 10px solid #000;
+		border-top: 0;
+		border-radius: 0 0 37px 37px;
+	}
+	@keyframes thinFrame{
+		0% {
+			border: 10px solid #000;
+			border-top: 0;
+		}
+		100% {
+			border: 0px solid transparent;
+		}
+	}
+	.pro-mobile__phone img {
+		border-radius: 18px 18px 19px 19px;
+		width: 50%;
+	}
+	.pro-mobile-thin__text {
+		font-size: 30px;
+	}
+	.pro-mobile-thin__text strong {
+		font-size: 46px;
+	}
+	.pro-mobile-thin__arrow {
+		width: 232px;
+	}
+	.pro-mobile-thin__abs {
+		bottom: 42px;
+		left: 30px;
+	}
+	.pro-mobile__right .pro-mobile__phone {
+		height: 287px;
+		padding: 4px 6px 6px 6px;
+	}
+
+	.pro-mobile-tan__mobile-img {
+		max-width: 211px;
+	}
+	.pro-mobile-tan__title {
+		right: calc(100% + 6px);
+		font-size: 10px;
+	}
+	.pro-mobile-tan__title:after {
+		right: -18px;
+	}
+	.pro-mobile-tan__title:nth-of-type(1) {
+		top: -2px;
+	}
+	.pro-mobile-tan__title:nth-of-type(2) {
+		top: 26px;
+	}
+	.pro-mobile-tan__title:nth-of-type(3) {
+		top: 54px;
+	}
+	.pro-mobile-tan__wrap .pro-mobile-tan__item + .pro-mobile-tan__item {
+		margin-top: -18px;
+	}
+
+	.auto-safe__wrap {
+		padding-top: 23px;
+	}
+	/* .auto-safe__left {
+		background: url('../images/automotive/m/safe_left.jpg') no-repeat center center;
+		background-size: cover;
+	}
+	.auto-safe__right {
+		background: url('../images/automotive/m/safe_right.jpg') no-repeat center center;
+		background-size: cover;
+	} */
+	.auto-safe__title {
+		display: table;
+		margin: 0 auto;
+		font-size: 18px;
+	}
+	.auto-safe__title + .auto-safe__title {
+		margin: 8px auto 0;
+		padding-top: 8px;
+		border-top: 1px solid #fff;
+	}
+	.auto-safe__title + .auto-safe__title:before {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.pro-mobile-tan__wrap {
+		padding-left: 15vw;
+	}
+	.oled-code__hdr {
+		top: calc(50vw - 41vw);
+	}
+
+	.oled-meta-spec__conts ul li dt {
+		flex-basis: 160px;
+	}
+	.oled-meta-spec__conts ul li dd {
+		word-break: break-all;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.br_360 {
+		display: block;
+	}
+	.auto__title.type2 {
+		font-size: 31px;
+	}
+	.auto__text.type2 {
+		font-size: 13px;
+	}
+	.pro-mobile__right .pro-mobile__phone {
+		margin-left: calc(50% - 136px);
+	}
+
+	.pro-mobile-thin__frame {
+		width: 240px;
+		height: 249px;
+	}
+	.pro-mobile-thin__border {
+		width: calc(100% - 10px);
+		height: calc(100% - 3px);
+		border-radius: 0 0 30px 30px;
+	}
+	.pro-mobile-thin__text {
+		font-size: 28px
+	}
+	.pro-mobile-thin__text strong {
+        font-size: 44px;
+    }
+}
+
+/* // 5. technology > Automotive */
+
+
+/* 6. tv > transparent OLED */
+.oled-prod-transparent .oled-prod-vid__thumb {
+	background: url('../images/tv/transparent/video_thumb.jpg') no-repeat center center;
+	background-size: cover;
+}
+.eng .oled-prod-transparent .oled-prod-vid__thumb,
+.chn .oled-prod-transparent .oled-prod-vid__thumb,
+.vtn .oled-prod-transparent .oled-prod-vid__thumb {
+	background: url('../images/tv/transparent/video_thumb_en.jpg') no-repeat center center;
+	background-size: cover;
+}
+.oled-ex-h1__title.oled-ex-h1__title--semi,
+.oled-ex-common-title.oled-ex-common-title--semi {
+	font-weight: 500;
+	line-height: 1.3;
+}
+.oled-ex__text-type2 {
+	margin-top: 42px;
+	font-size: 20px;
+	line-height: 1.6;
+	color: #555;
+}
+
+.oled-roll {
+	position: relative;
+	width: 100%;
+	height: 968px;
+}
+.oled-roll__bg {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.oled-roll__bg_m {
+	display: none;
+}
+.oled-roll__bg img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.oled-roll.oled-roll--active .oled-roll__basic {
+	animation: roll 2s forwards;
+	/* animation-delay: .3s; */
+}
+
+@keyframes roll {
+	0%{ 
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.oled-roll__text {
+	position: absolute;
+	top: 179px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+}
+.oled-roll__count {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 55px;
+	color: #fff;
+	line-height: 1;
+}
+.eng .oled-roll__count {
+	flex-flow: column wrap;
+}
+.oled-roll__gauge {
+	font-weight: 500;
+}
+.oled-roll__gauge-txt {
+	margin-left: 12px;
+}
+.oled-roll__in {
+	margin-top: 28px;
+	font-size: 20px;
+	line-height: 1.6;
+	color: #fff;
+}
+
+.oled-roll__bottom {
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+	min-width: 1200px;
+	max-width: 1200px;
+	padding:35px 102px;
+	background: rgba(78, 78, 78, 0.08);
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.16);
+	backdrop-filter: blur(5.95px);
+	border-radius: 39px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.oled-roll__bottom > * {
+	flex-basis: 50%;
+}
+.oled-roll__bottom__text {
+	padding-right: 36px;
+}
+.oled-roll__bottom__title {
+	font-size: 24px;
+	font-weight: 500;
+}
+.oled-roll__bottom__conts {
+	margin-top: 13px;
+	font-size: 16px;
+	line-height: 1.6;
+}
+.oled-roll__bottom__image {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+}
+
+.oled-design {
+	padding-bottom: 0;
+}
+.oled-design__slide {
+	margin-top: 80px;
+	/* height: 500px; */
+}
+.oled-design__slide .swiper-slide video {
+	width: 100%;
+}
+.oled-design .swiper-pagination {
+	position: static;
+	margin-top: 42px;
+}
+.oled-design .swiper-button-prev,
+.oled-design .swiper-button-next {
+	top: calc(50% - 22px);
+}
+.oled-design .swiper-button-prev {
+	left: 0;
+}
+.oled-design .swiper-button-next {
+	right: 0;
+}
+
+.oled-create {
+	padding-top: 200px;
+	padding-bottom: 120px;
+}
+.oled-create__bg {
+	position: relative;
+	margin-top: 80px;
+	height: 500px;
+}
+.oled-create__bg img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.oled-create__mo {
+	display: none;
+}
+.oled-create__pc,
+.oled-create__mo {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.oled-create.oled-create--active .oled-create__basic {
+	animation: roll 2s forwards;
+	animation-delay: .5s;
+}
+
+.oled-roadmap {
+	background :#F8F8F8
+}
+.oled-roadmap .oled-other {
+	padding: 0;
+}
+.oled-roadmap__title,
+.oled-roadmap__etc {
+	display: block;
+	text-align: center;
+	color: #111;
+}
+.oled-roadmap__title {
+	margin: 40px 0 15px;
+	font-size: 24px;
+	font-weight: 600;
+}
+.oled-roadmap__etc {
+	font-size: 18px;
+}
+.oled-roadmap img {
+	margin-top: 24px;
+}
+
+@media screen and (min-width: 1921px){
+	.oled-roll {
+		height: auto;
+	}
+	.oled-roll__bg:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: 46.875%;
+	}
+	.oled-roll__text {
+		top: calc(50vw - 80%);
+		transform: translate(-50%, -50%);
+	}
+}
+
+
+@media screen and (max-width: 1200px){
+	.hide_br_1200 {
+		display: none !important
+	}
+	.oled-ex__text-type2 {
+		margin-top: 18px;
+		padding: 0 20px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	
+	.oled-roll__bottom {
+		min-width: auto;
+		width: calc(100% - 40px);
+		padding: 35px 22px 35px 62px;
+	}
+	.oled-roll__bottom__image img {
+		width: 21.5vw
+	}
+	.oled-roll__bottom__image {
+		justify-content: flex-end;
+	}
+	.oled-roll__bottom__title {
+		font-size: 22px;
+	}
+	.oled-roll__bottom__conts {
+		font-size: 15px;
+		line-height: 1.5;
+	}
+
+	.oled-design .auto__title,
+	.oled-create .auto__title,
+	.oled-design .auto__text,
+	.oled-create .auto__text {
+		text-align: left;
+	}
+	.hide_br_1200 {
+		display: none !important
+	}
+
+	.oled-create {
+		padding-top: 116px;
+		padding-bottom: 80px;
+	}
+	.oled-design__slide {
+		margin-top: 40px;
+	}
+	.oled-design .swiper-pagination {
+		margin-top: 14px
+	}
+
+	.oled-create__bg {
+		margin-top: 40px;
+		height: 40vw;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.oled-roll__in {
+		margin-top: 0;
+	}
+	.oled-roll {
+		height: auto;
+	}
+	.oled-roll__bg_pc {
+		display: none;
+	}
+	.oled-roll__bg_m {
+		display: block;
+		height: 66vw;
+		/* height: calc(68vw - 12px); */
+	}
+
+	.oled-roll__bg img {
+		height: 100%;
+		object-fit: inherit;
+	}
+
+	.oled-roll__text {
+		position: static;
+		transform: inherit;
+	}
+	.oled-roll__count {
+		position: absolute;
+		top: calc(50vw - 13%);
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 34px;
+	}
+	.oled-roll__in {
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	.oled-roll__bottom-wrap {
+		width: 100%;
+		background: url('../images/tv/transparent/m/roll_bottom.jpg') no-repeat top center;
+		background-size: cover;
+		padding: 0 20px 40px;
+	}
+
+	.oled-roll__bottom {
+		position: static;
+		display: block;
+		width: 100%;
+		padding: 26px 20px 20px;
+		margin-top: 28px;
+		transform: inherit;
+	}
+	.oled-roll__bottom__title {
+		font-size: 16px;
+	}
+	.oled-roll__bottom__conts {
+		text-align: left;
+		font-size: 12px;
+	}
+	.oled-roll__bottom__text {
+		text-align: center;
+		padding: 0;
+	}
+	.oled-roll__bottom__image {
+		margin-top: 14px;
+	}
+	.oled-roll__bottom__image img {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.oled-prod-transparent .oled-prod-vid__logo img {
+		width: 165px;
+		margin: 0 auto;
+	}
+	.oled-prod-vid__etc {
+		margin-top: 8px;
+		font-size: 14px;
+	}
+	.oled-roadmap {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.oled-roadmap img {
+		margin-top: 12px;
+	}
+	.oled-design .swiper-button-prev,
+	.oled-design .swiper-button-next {
+		top: calc(50% - 5px);
+	}
+
+	.oled-create__pc {
+		display: none;
+	}
+	.oled-create__mo {
+		display: block;
+	}
+	.oled-create__bg {
+		height: 51vw;
+	}
+
+	.oled-roadmap__title {
+		margin: 32px 0 4px;
+		font-size: 18px
+	}
+	.oled-roadmap__etc {
+		font-size: 14px;
+	}
+
+	.oled-design__slide .swiper-slide video {
+		margin-top: 0;
+	}
+
+	.oled-design .swiper-pagination {
+		margin-top: 20px;
+	}
+
+	.eng .oled-roll__count,
+	.vtn .oled-roll__count {
+		display: block;
+		top: calc(50vw - 14%);
+		width: calc(50vw - -92px);
+		font-size: 26px;
+	}
+	.eng .oled-roll__count .oled-roll__gauge-txt,
+	.vtn .oled-roll__count .oled-roll__gauge-txt {
+		margin-top: 5px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.oled-roll__count {
+		top: calc(50vw - 12%);
+	}
+	.chn .oled-roll__count {
+		font-size: 27px;
+	}
+	
+	/* .oled-roll__bottom {
+		top: calc(50vw - -48vw);
+		padding: 6vw 4vw 5vw;
+	}
+	.oled-roll__bottom__conts {
+		font-size: 4vw;
+	}
+	.oled-roll__bottom__title {
+		font-size: 5.5vw;
+	}
+	.oled-roll__in {
+		margin-top: calc(50vw - 55px);
+		font-size: 3.8vw;
+	} */
+}
+
+
+/* // 6. tv > transparent OLED */
+
+
+/* 7. Monitor */
+.mx_1200--type2 {
+	max-width: 1200px;
+	margin:0 auto;
+}
+.oled-monitor .oled-prod-kv {
+	background: url(../images/monitor/kv.jpg) no-repeat center center;
+	background-size: cover;
+}
+.oled-prod-monitor .oled-prod-vid__thumb {
+	background: url(../images/monitor/video_thumb.jpg) no-repeat center center;
+	background-size: cover;
+}
+.eng .oled-prod-monitor .oled-prod-vid__thumb, .chn .oled-prod-monitor .oled-prod-vid__thumb, .vtn .oled-prod-monitor .oled-prod-vid__thumb {
+    background: url(../images/monitor/video_thumb_en.jpg) no-repeat center center;
+    background-size: cover;
+}
+.oled-prod-monitor .oled-ace__text-wrap {
+	padding: 50px 92px 50px 102px
+}
+
+.oled-monitor__list {
+	margin-top: 60px;
+	display: flex;
+	flex-flow: row wrap;
+}
+.oled-monitor__item {
+	display: flex;
+	align-items: center;
+	flex-basis: calc(50% - 10px);
+	margin-bottom: 20px;
+	background: #fff;
+	padding: 57px 10px 57px 20px;
+}
+.oled-monitor__item img {
+	margin-right: -5px;
+}
+.oled-monitor__item:nth-child(even) {
+	margin-left: 20px;
+}
+.oled-monitor__text {
+	text-align: left;
+	padding-left: 10px;
+}
+.oled-monitor__title {
+	display: block;
+	font-size: 24px;
+	font-weight: 600;
+	color: #111;
+	margin-bottom: 13px;
+}
+.oled-monitor__subitem {
+	position: relative;
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: #111;
+	line-height: 1.6;
+	padding-left: 17px;
+}
+.oled-monitor__subitem:last-child {
+	margin-bottom: 0;
+}
+.oled-monitor__subitem:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 5px;
+	height: 5px;
+	background: #111;
+	border-radius: 100%;
+}
+
+.oled-monitor__slide {
+	padding-bottom: 0;
+}
+.oled-monitor__slide .oled-meta__h3,
+.oled-prod-monitor .oled-tech__title {
+	text-align: center;
+	font-weight: 500;
+}
+.oled-prod-monitor .common-int-play {
+	top: 245px;
+	opacity: 1;
+}
+.oled-prod-monitor .oled-ace__controller {
+	top: 249px;
+	height: 0;
+}
+
+.oled-certi__title {
+	display: block;
+	margin-top: 7px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+	color: #111;
+}
+.oled-certi.oled-certi--type2 .oled-certi__img-wrap {
+	margin-top: 50px;
+}
+.oled-certi.oled-certi--type2 .oled-certi__img-wrap img {
+	margin: 20px auto 0;
+}
+.oled-prod-monitor .oled-meta-lineup {
+	margin-top: 0;
+}
+
+.oled-meta-lineup--type2 .oled-meta-lineup__wrap {
+	margin: 80px auto 0
+}
+.oled-prod-monitor .oled-ace__text-wrap .oled-ace__s-title {
+	font-weight: 500;
+}
+
+
+@media screen and (max-width: 1200px){
+	.mx_1200--type2 {
+		padding: 60px 20px 60px;
+	}
+	.oled-monitor__list {
+		margin-top: 40px;
+	}
+	.oled-monitor__list {
+		display: block;
+	}
+	.oled-monitor__item {
+		padding: 20px 14px;
+		margin-bottom: 10px;
+	}
+	.oled-monitor__item:nth-child(even) {
+		margin-left: 0;
+	}
+	.oled-monitor__text {
+		padding-left: 20px;
+	}
+
+	.oled-prod-monitor .oled-ace__controller {
+		margin-top: 0;
+		top: 21vw;
+	}
+	.oled-prod-monitor .common-int-play {
+		top: 20.5vw;
+	}
+	.oled-monitor__slide .oled-ace__text-wrap {
+		padding-bottom: 0;
+	}
+	.oled-prod-monitor .oled-ace__text-wrap  {
+		padding: 30px 20px 46px;
+	}
+
+	.oled-certi.oled-certi--type2 .oled-ace__list {
+		margin-top: 0;
+	}
+	.oled-certi.oled-certi--type2 .oled-ace__item > img:first-child {
+		display: none;
+	}
+	.oled-certi.oled-certi--type2 .oled-tech__text {
+		margin-top: 18px;
+	}
+	.oled-certi.oled-certi--type2 .oled-certi__img-wrap {
+		margin-top: 0;
+	}
+
+	.oled-meta-lineup--type2 .oled-meta-lineup__wrap {
+		margin: 40px auto 0;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.oled-monitor .oled-prod-kv {
+		background: url(../images/monitor/m/kv.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	.oled-monitor__item img {
+		max-width: 110px;
+		margin-right: 0;
+	}
+	.oled-monitor__title {
+		font-size: 16px;
+		margin-bottom: 11px;
+	}
+	.oled-monitor__subitem {
+		padding-left: 10px;
+		font-size: 12px;
+		line-height: 1.5;
+	}
+	.oled-monitor__subitem:before {
+		top: 7px;
+		width: 3px;
+		height: 3px;
+	}
+
+	.oled-prod-monitor .oled-ace__controller {
+		top: 29vw;
+	}
+	.oled-prod-monitor .common-int-play {
+		top: 26.5vw;
+	}
+
+}
+
+@media screen and (max-width: 500px){
+	.oled-meta-spec__scroll {
+		overflow: hidden;
+		overflow-x: auto;
+	}
+	.oled-meta-spec__scroll .oled-meta-spec__list {
+		width: max-content;
+		padding-right: 10px;
+	}
+	.oled-meta-spec__scroll.type2 {
+		overflow: hidden;
+	}
+	.oled-meta-spec__scroll.type2 .oled-meta-spec__list:after {
+		display: none;
+	}
+	.oled-meta-spec__scroll.type2 .oled-meta-spec__list {
+		margin: 15px auto 0
+	}
+	.oled-meta-spec__scroll.type2 .oled-meta-spec__item .oled-meta-spec__btn {
+		font-size: 16px;
+	}
+
+
+	/* .oled-meta-spec__scroll .oled-meta-spec__list:after {
+		content: '';
+		position: absolute;
+		top: 120px;
+		right: 0;
+		width: 70px;
+		height: 35px;
+	} */
+	.oled-meta-spec__scroll.active .oled-meta-spec__list:after {
+		display: none;
+	}
+
+	.oled-code__hdr {
+		top: calc(50vw - 39vw);
+	}
+}
+
+@media screen and (max-width: 400px){
+	.oled-code__hdr {
+		top: calc(50vw - 41vw);
+	}
+	.oled-meta-spec__scroll.depth2 .oled-meta-spec__list:after {
+		top: 157px
+	}
+}
+
+@media screen and (max-width: 375px){
+	.oled-meta-spec__scroll .oled-meta-spec__list:after {
+		content: '';
+		position: absolute;
+		top: 120px;
+		right: 0;
+		width: 70px;
+		height: 35px;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.72) 59.8%, #FFFFFF 97.05%);
+	}
+}
+
+@media screen and (max-width: 360px){
+	.oled-meta-spec__scroll .oled-meta-spec__list:after {
+		width: 50px;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.72) 29.8%, #FFFFFF 67.05%)
+	}
+	.oled-meta-spec__item .oled-meta-spec__btn {
+		padding: 5px 5px;
+	}
+}
+
+
+/* // 7. Monitor */
+
+
+/* // 20240605 */
+
+
+
+/* technology > lcd */
+.tech-lcd__screen {
+	text-align: center;
+}
+.tech-lcd .oled-tech-kv__logo {
+	text-align: center;
+}
+.tech-lcd__screen__inner {
+	position: relative;
+	margin-top: 80px;
+}
+.tech-lcd__screen__inner img:nth-of-type(2),
+.tech-lcd__screen__list {
+	display: none;
+}
+.tech-lcd__screen__txt {
+	position: absolute;
+	top: 0;
+	right: 970px;
+	font-size: 20px;
+	color: #767676;
+}
+.tech-lcd__screen__txt.tech-lcd__screen__txt--01 {
+	top: 147px;
+}
+.tech-lcd__screen__txt.tech-lcd__screen__txt--02 {
+	top: 202px;
+}
+.tech-lcd__screen__txt.tech-lcd__screen__txt--03 {
+	top: 307px;
+}
+.tech-lcd__screen__txt.tech-lcd__screen__txt--04 {
+	top: 404px;
+}
+.tech-lcd__screen__txt.tech-lcd__screen__txt--05 {
+	top: 447px;
+}
+.tech-lcd__screen__txt.tech-lcd__screen__txt--06 {
+	top: 502px;
+}
+
+.tech-lcd__ips {
+	background: #F8F8F8;
+	text-align: center;
+}
+.tech-lcd__ips__flex {
+	display: flex;
+	align-items: center;
+	margin-top: 105px;
+}
+.tech-lcd__ips__inner {
+	flex-basis: 50%;
+	flex-shrink: 0;
+}
+.tech-lcd__ips__title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-weight: 500;
+	color: #666666;
+}
+.tech-lcd__ips__title strong {
+	font-weight: 600;
+}
+.tech-lcd__ips .oled-ex__text-type2 {
+	margin-top: 20px;
+}
+.tech-lcd__ips__stuff {
+	position: relative;
+	margin-left: 28px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #666;
+}
+.tech-lcd__ips__stuff:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -14px;
+	width: 1px;
+	height: 100%;
+	background: #666666
+}
+.tech-lcd__ips__inner--red > *,
+.tech-lcd__ips__inner--red .tech-lcd__ips__stuff {
+	color: #F5C242
+}
+.tech-lcd__ips__inner--red .tech-lcd__ips__stuff:before {
+	background: #F5C242
+}
+
+.tech-lcd__ips__img {
+	margin-top: 20px;
+}
+
+.tech-lcd .pro-mobile-bright .auto__text {
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px){
+	.tech-lcd__screen__inner img:nth-of-type(1) {
+		display:none;
+	}
+	.tech-lcd__screen__inner img:nth-of-type(2) {
+		display:block;
+		margin: 0 auto;
+	}
+	.tech-lcd__screen__txt {
+		display: none;
+	}
+	
+	.tech-lcd__screen__inner {
+		margin-top: 40px;
+	}
+	.tech-lcd__screen__list {
+		display: flex;
+		flex-flow: row wrap;
+		max-width: 605px;
+		margin: 0 auto;
+		font-size: 15px;
+		font-weight: 500;
+	}
+	.tech-lcd__screen__item:not(:last-child) {
+		margin-right: 34px;
+	}
+	.tech-lcd__screen .oled-ex__text-type2 {
+		padding: 0;
+	}
+
+	.tech-lcd__ips .auto__title {
+		text-align: center;
+	}
+	.tech-lcd__ips .oled-ex__text-type2 {
+		margin-top: 18px;
+		padding: 0;
+	}
+	
+	.tech-lcd__ips__flex {
+		display: block;
+		margin-top: 60px;
+	}
+	.tech-lcd__ips__inner + .tech-lcd__ips__inner {
+		margin-top: 60px;
+	}
+	.tech-lcd__ips__title {
+		font-size: 14px;
+	}
+	.tech-lcd__ips__stuff {
+		margin-left: 20px;
+		font-size: 12px;
+	}
+	.tech-lcd__ips__stuff:before {
+		top: 3px;
+		left: -10px;
+		height: calc(100% - 8px);
+	}
+	.tech-lcd__ips__img {
+		margin-top: 10px;
+	}
+
+	.tech-lcd .pro-mobile-bright {
+		padding-bottom: 20px;
+	}
+	.tech-lcd .pro-mobile-bright__img {
+		margin:0 auto;
+	}
+	.tech-lcd .pro-mobile-bright__item + .pro-mobile-bright__item {
+		margin-top: 20px;
+	}
+	.tech-lcd .pro-mobile-bright .auto__text {
+		margin-top: 18px;
+	}
+}
+
+
+@media screen and (max-width: 767px){
+	.tech-lcd .oled-tech-kv__logo {
+		width: 76px;
+	}
+	.tech-lcd .oled-tech .oled-tech-kv .kv__img {
+		object-position: 50% 100%;
+	}
+	.tech-lcd__screen__list {
+		font-size: 12px;
+	}
+	.tech-lcd__screen__item:not(:last-child) {
+		margin-right: 17px;
+		margin-bottom: 5px;
+	}
+
+	.tech-lcd__screen__list {
+		max-width: calc(100vw - 16%);
+	}
+
+	.tech-lcd .pro-mobile-bright .pro-mobile-bright__item:nth-child(2) .pro-mobile__bright__wrap {
+		margin: 40px auto 60px;
+	}
+
+	.tech-lcd__ips__flex {
+		padding: 0 30px;
+	}
+}
+
+
+/* tandem-ato */
+.tandem-ato .oled-prod-kv {
+	background: url(../images/laptop/tandem_kv.html) no-repeat center center;
+	background-size: cover;
+}
+.tandem-ato .oled-meta-spec__conts .table-head {
+	margin-top: 40px;
+}
+.tandem-ato__comm {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.tandem-ato__comm .pro-mobile-title {
+	line-height: 1.25;
+}
+.tandem-ato__stack {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+	background: #000;
+	height: 500px;
+}
+.tandem-ato__stack__tit {
+	position: absolute;
+	right: calc(100% + -14px);
+	display: block;
+	width: max-content;
+	font-size: 16px;
+	color: #fff;
+}
+.tandem-ato__stack__tit:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -20px;
+	width: 14px;
+	height: 1px;
+	background: #fff;
+}
+.tandem-ato__stack__tit:nth-of-type(1) {
+	bottom: 134px;
+}
+.tandem-ato__stack__tit:nth-of-type(2) {
+	bottom: 21px;
+}
+.tandem-ato__stack__wrap {
+	position: relative;
+}
+.oled-tandem .oled-ex-hl__item img {
+	padding-top: 50px;
+}
+.tandem-lumi {
+	position: relative;
+	height: 500px;
+	margin-top: 80px;
+}
+.tandem-lumi img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.tandem-ato__m1 {
+	padding: 120px 0 80px
+}
+.tandem-ato__m1.ato--active .tandem-lumi__off {
+	animation: roll 2s forwards;
+	animation-delay: .3s;
+}
+.tandem-lumi .oled-roll__gauge {
+	position: absolute;
+	top: 300px;
+	left: 190px;
+	font-weight: 600;
+	z-index: 1;
+	color: #fff;
+}
+.tandem-lumi .oled-roll__gauge > div:first-child {
+	padding-bottom: 19px;
+	font-size: 50px;
+	border-bottom: 2px solid #fff;
+}
+.tandem-lumi .oled-roll__gauge > div:first-child .ato-effect {
+	font-size: 80px;
+}
+.tandem-lumi .oled-roll__gauge > div:first-child span:first-child {
+	vertical-align: 3px;
+	margin-right: 4px;
+}
+.tandem-lumi .oled-roll__gauge > div:nth-child(2) {
+	text-align: center;
+	font-size: 21px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+.tandem-battery {
+	position: relative;
+	margin-top: 80px
+}
+.tandem-battery__in {
+	position: relative;
+	margin-top: 80px;
+}
+.tandem-battery__gauge {
+	position: absolute;
+	top: 93px;
+	right: 159px;
+	padding-left: 24px;
+	z-index: 1;
+}
+.tandem-battery__gauge:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 100%;
+	background: #dcdcdc;
+}
+.tandem-battery__gauge .tbt__count {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 55px;
+	font-weight: 600;
+	line-height: 1;
+	color: #fff
+}
+.tbt-effect {
+	margin-left: 10px;
+	font-size: 56px;
+	min-width: 70px
+}
+.tbt__etc {
+	display: block;
+	margin-top: 8px;
+	font-size: 20px;
+	color: #fff
+}
+.tbt__arrow {
+	position: absolute;
+	top: 20px;
+	right: -80px;
+	opacity: 0;
+}
+.tandem-battery.active .tbt__arrow {
+	animation: tbtA 1s forwards;
+	animation-delay: 1.2s;
+}
+
+@keyframes tbtA {
+	0% {
+		opacity: 0;
+		top: 10px;
+	}
+	100% {
+		opacity: 1;
+		top: 20px;
+	}
+}
+
+
+.tandem-tiny {
+	padding-top: 120px;
+	padding-bottom: 40px;
+}
+.tandem-tiny__in {
+	margin-top: 80px;
+	display: flex;
+}
+.tandem-tiny__in > * {
+	flex-basis: 50%;
+	flex-shrink: 0;
+}
+.tandem-tiny__title {
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+	color: #767676
+}
+
+
+
+
+/* media */
+@media screen and (max-width: 1200px){
+	.tandem-ato .oled-meta-spec__conts .table-head {
+		margin-top: 20px;
+	}
+
+	.oled-vis-type {
+		padding-top: 60px;
+		padding-bottom: 20px;
+	}
+	.oled-vis-type__in {
+		margin-top: 40px;
+		height: 40vw;
+	}
+}
+@media screen and (max-width: 767px){
+	.tandem-ato .oled-prod-kv {
+		background: url(../images/laptop/m/kv.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	.oled-vis-type__in {
+		height: 51vw;
+	}
+}
+
+
+/* ips-black */
+.oled-prod-static {
+	margin-top: 80px;
+	height: 675px;
+}
+
+.oled-ips .auto-exp__list {
+	margin-top: 0;
+}
+.oled-ips .oled-create {
+	padding-top: 40px;
+}
+.oled-ips .pro-mobile-bright__text {
+	padding: 120px 73px 120px 103px
+}
+.auto__etc {
+	display: block;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #767676
+}
+
+.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > *:first-child:before {
+	display: none;
+}
+.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > * + *:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -33px;
+	width: 1px;
+	height: 100%;
+	background: #dcdcdc;
+	z-index: 1;
+}
+.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > *:first-child img {
+	margin-top: 29px
+}
+.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > *:last-child img {
+	margin-top: 20px;
+}
+.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > * {
+	flex-basis: auto;
+}
+.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > *:last-child {
+	margin-left: 0;
+}
+.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > *:not(:last-child) {
+	margin-right: 65px
+}
+
+.oled-gauge {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 236px;
+}
+.oled-gauge__img {
+	width: 183px;
+	height: 184px;
+	background: url('../images/ips/light_gauge.png') no-repeat center center;
+	background-size: auto 100%;
+	margin: 0 auto;
+}
+.oled-gauge__txt {
+	display: block;
+	padding: 85px 0 0 21px;
+	text-align: center;
+	color: #fff;
+}
+.chn .oled-gauge__txt {
+	padding: 78px 0 0 21px;
+}
+.vtn .oled-gauge__txt {
+	padding: 80px 0 0 21px;
+}
+.oled-gauge__txt > * {
+	display: block;
+}
+.oled-gauge__emp {
+	font-size: 18px;
+	font-weight: 500;
+	color: #0086E2
+}
+.oled-gauge__emp strong {
+	font-size: 50px;
+	font-weight: 600;
+}
+.oled-gauge__etc {
+	margin-top: 8px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #e9e9e9
+}
+.oled-gauge__lot {
+	display: block;
+	padding-left: 12px;
+	margin-top: 14px;
+	text-align: center;
+	font-size: 20px;
+	color: #dcdcdc
+}
+
+.oled-ips .oled-meta-lineup {
+	margin-top: 0;
+}
+
+
+/* media */
+@media screen and (max-width: 1200px){
+	.plb_20 {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.oled-prod-static {
+		margin: 40px 0 0 20px;
+		width: calc(100% - 40px);
+		height: calc(100vw - 47vw);
+	}
+	
+
+	.auto__etc {
+		margin-top: 10px;
+		font-size: 12px;
+	}
+
+	.oled-ips .oled-create {
+		padding-top: 20px;
+	}
+	.oled-ips .oled-create .pro-mobile-clear__text > * {
+		text-align: center;
+	}
+
+	.oled-ips .pro-mobile-bright__text {
+		padding: 0;
+	}
+
+	.oled-gauge {
+		right: calc(50% - 40vw);
+	}
+
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > * + *:before {
+		display: none;
+	}
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > * + * {
+		margin-top: 38px;
+	}
+
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap {
+		display: block;
+	}
+
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap {
+		flex-direction: column;
+		margin: 36px auto 0;
+		padding: 0 20px;
+	}
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > *:first-child,
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > *:last-child {
+		margin:0;
+	}
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > *:not(:last-child) {
+		padding-bottom: 33px;
+		border-bottom: 1px solid #DCDCDC;
+		margin-right: 0;
+	}
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > * .oled-meta-lineup__list {
+		margin-left: 9vw
+	}
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > *:first-child:before {
+		display: none;
+	}
+
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > * img,
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > *:last-child img {
+		margin-top: 0 !important;
+	}
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > *:last-child {
+		margin-top: 38px;
+	}
+
+	.oled-meta-lineup__inner.lots.oled-meta-lineup__item:nth-child(1) img {
+		height: 34.6666666667vw;
+	}
+	.oled-meta-lineup__inner.lots.oled-meta-lineup__item:nth-child(2) {
+		top: 4.6vw;
+		left: 30.1333333333vw
+	}
+	.oled-meta-lineup__inner.lots.oled-meta-lineup__item:nth-child(2) img {
+		height: 30.1333333333vw;
+	}
+
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(1) img {
+		height: 33.6vw;
+	}
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(2) {
+		top: 3.2vw;
+		left: 14.4vw;
+	}
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(2) img {
+		height: 30.1333333333vw;
+	}
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(3) {
+		top: 7.5vw;
+		left: 28.5333333333vw;
+	}
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(3) img {
+		height: 25.8666666667vw;
+	}
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(4) {
+		top: 10.4vw;
+		left: 42.6666666667vw;
+	}
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__tv:nth-of-type(2) .oled-meta-lineup__item:nth-child(4) img {
+		height: 23.2vw;
+	}
+	.oled-meta-lineup__inner.lots .oled-meta-lineup__inch {
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	.oled-ips .oled-create__bg {
+		height: 83vw;
+	}
+	.oled-gauge {
+		top: 6px;
+		right: inherit;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.oled-gauge__img {
+		width: 145px;
+		height: 67px;
+		background: url('../images/ips/m/light_gauge.png') no-repeat center center;
+		background-size: auto 100%;
+	}
+	.eng .oled-gauge__img {
+		width: 153px;
+		height: 71px;
+	}
+	.oled-gauge__txt {
+		padding: 8px 0 0 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.chn .oled-gauge__txt,
+	.vtn .oled-gauge__txt {
+		padding: 5px 0 0 12px;
+	}
+	.oled-gauge__emp strong {
+		font-size: 22px;
+	}
+	.oled-gauge__etc {
+		margin: 0 0 0 5px;
+		font-size: 14px;
+	}
+	.eng .oled-gauge__etc {
+		margin: 0 0 0 3px;
+		font-size: 13px;
+	}
+	.oled-gauge__emp,
+	.oled-gauge__lot {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.oled-ips .oled-meta-lineup__inner.lots .oled-meta-lineup__wrap > *:first-child img {
+		max-height: 118px
+	}
+}
+
+
+
+/* other product new type */
+.other-view {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 80px 0 120px;
+}
+.other-view__list {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 60px;
+}
+.other-view__item {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+.other-view__item + .other-view__item {
+	margin-left: 20px;
+}
+.other-view__image {
+	height: 187px;
+	margin-bottom: 14px;
+}
+.other-view__title {
+	display: block;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 34px;
+	color: #111;
+}
+.other-view__more {
+	position: relative;
+	display: inline-block;
+	margin-top: 12px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #111;
+}
+.other-view__link {
+	display: block;
+}
+.other-view__link:hover .other-view__more {
+	color: #F5C242
+}
+.other-view__link.active .other-view__more:after {
+	background: #F5C242;
+	animation: exaw .5s;
+}
+.other-view__more:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+}
+.other-view__image {
+	overflow: hidden
+}
+.other-view__image img {
+	width: 100%;
+	transition: all .3s;
+}
+@media screen and (min-width: 768px){
+	.other-view__link:hover .other-view__image img {
+		transform: scale(1.2);
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.other-view {
+		padding: 50px 20px 60px;
+	}
+	.other-view__list {
+		display: block;
+		max-width: 670px;
+		margin: 40px auto 0;
+	}
+	.other-view__item + .other-view__item {
+		margin: 30px 0 0 0
+	}
+	.other-view__list.type2 {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.other-view__list.type2 .other-view__item {
+		flex-basis: calc(50% - 5px);
+		flex-shrink: 0;
+	}
+	.other-view__list.type2 .other-view__item + .other-view__item {
+		margin-top: 0;
+	}
+	.other-view__list.type2 .other-view__item:nth-child(odd) {
+		margin-right: 10px;
+	}
+	.other-view__list.type2 .other-view__item + .other-view__item + .other-view__item {
+		margin-top: 30px;
+	}
+	.other-view__list.type2 .other-view__text {
+		display: block;
+	}
+	.other-view__list.type2 .other-view__more {
+		display: table;
+		margin-top: 5px;
+	}
+
+
+	.other-view__image {
+		height: auto;
+		margin-bottom: 14px;
+	}
+	.other-view__title {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 26px;
+	}
+	.other-view__text {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.other-view__more {
+		margin-top: 0;
+	}
+}
+
+/* // other product new type */
